@@ -1,0 +1,81 @@
+/* ==========================================================================
+   TESTIMONIALS - SUPABASE STYLE WALL OF LOVE
+   ========================================================================== */
+.testimonials-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.testimonial-card:hover {
+  border-color: var(--border-color-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.testimonial-avatar-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--brand-red-light);
+  border: 1px solid var(--brand-red-border);
+  color: var(--brand-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.testimonial-user-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.testimonial-username {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.testimonial-handle {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.testimonial-body {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.85rem;
+}
+
+.testimonial-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  background: var(--brand-red-light);
+  color: var(--brand-red);
+  font-weight: 700;
+  font-size: 0.75rem;
+}

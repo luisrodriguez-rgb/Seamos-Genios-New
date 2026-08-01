@@ -1,0 +1,52 @@
+/* ==========================================================================
+   BUTTONS & BADGES COMPONENTS (ELEGANT COMPACT SIZES)
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.835rem;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+  min-height: 36px;
+  height: 36px;
+  line-height: 1;
+}
+
+.btn-primary {
+  background-color: var(--brand-red);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-red-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-surface-subtle);
+  border-color: var(--border-color-hover);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: var(--brand-red-light);
+  border: 1px solid var(--brand-red-border);
+  color: var(--brand-red);
+  font-size: 0.785rem;
+  font-weight: 600;
+}

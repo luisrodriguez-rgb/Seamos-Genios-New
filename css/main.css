@@ -1,0 +1,21 @@
+/* ==========================================================================
+   SEAMOS GENIOS - MASTER CSS ENTRY POINT (7-1 ARCHITECTURE)
+   ========================================================================== */
+
+/* 1. Global Tokens & Reset */
+@import './global/variables.css';
+@import './global/reset.css';
+
+/* 2. Components */
+@import './components/buttons.css';
+@import './components/navbar.css';
+@import './components/modal.css';
+@import './components/tables.css';
+
+/* 3. Sections & Responsive Layout */
+@import './sections/hero.css';
+@import './sections/features.css';
+@import './sections/pricing.css';
+@import './sections/team.css';
+@import './sections/testimonials.css';
+@import './sections/footer.css';

@@ -1,0 +1,104 @@
+/* ==========================================================================
+   FEATURES & METRICS SECTIONS (SPLIT ROWS - NO CARDS)
+   ========================================================================== */
+.metrics-bar {
+  padding: 2rem 0;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.metrics-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.metric-block {
+  text-align: center;
+}
+
+.metric-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--brand-red);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.section {
+  padding: 4.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  margin-top: 0.5rem;
+}
+
+.split-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.feature-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.feature-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.feature-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--brand-red);
+  background: var(--brand-red-light);
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left-Border Quotes */
+.quotes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.quote-item {
+  border-left: 3px solid var(--brand-red);
+  padding-left: 1.25rem;
+}
+
+.quote-text {
+  font-size: 1rem;
+  color: var(--text-main);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.quote-author {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}

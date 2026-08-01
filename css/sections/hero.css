@@ -1,0 +1,137 @@
+/* ==========================================================================
+   HERO SECTION STYLES WITH UI DASHBOARD WIDGET
+   ========================================================================== */
+.hero {
+  padding-top: 6.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  margin: 0.85rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  max-width: 540px;
+}
+
+.countdown-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.countdown-digits {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.digit-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digit-val {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--brand-red);
+  font-family: monospace;
+}
+
+.digit-lbl {
+  font-size: 0.65rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+/* Hero UI Dashboard Widget */
+.hero-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.hero-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.25rem;
+}
+
+.subject-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.subject-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.subject-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.subject-progress-bg {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-surface-subtle);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.subject-progress-fill {
+  height: 100%;
+  background: var(--brand-red);
+  border-radius: 3px;
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.stat-item {
+  border-left: 3px solid var(--brand-red);
+  padding-left: 0.65rem;
+}
+
+.stat-item-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.stat-item-lbl {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

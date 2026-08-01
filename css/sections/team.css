@@ -1,0 +1,13 @@
+/* ==========================================================================
+   TEAM & LEADERSHIP SECTION
+   ========================================================================== */
+.leadership-highlight {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
