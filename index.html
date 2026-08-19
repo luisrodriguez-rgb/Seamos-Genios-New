@@ -1,203 +1,374 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Seamos Genios | Preparación Inteligente ICFES, Tecnología & Neurociencia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.png">
+  <!-- Primary Title & Meta -->
+  <title>Seamos Genios | Preparación Inteligente ICFES Saber 11, Tecnología & Neurociencia en Colombia</title>
+  <meta name="title" content="Seamos Genios | Preparación Inteligente ICFES Saber 11, Tecnología & Neurociencia en Colombia">
+  <meta name="description" content="Plataforma educativa líder en Colombia que combina inteligencia artificial y neurociencia para revolucionar el rendimiento en el examen ICFES Saber 11. Simulacros calibrados de 254 preguntas y entrega de resultados en 24 horas.">
+  <meta name="keywords" content="PreICFES, PreICFES Saber 11, ICFES 2026, Simulacros ICFES, Neurociencia Educativa, Seamos Genios, Preparación ICFES Colombia, Puntaje 400 ICFES, Becas Universitarias Colombia">
+  <meta name="author" content="Seamos Genios SAS">
+  <meta name="publisher" content="Seamos Genios">
+  
+  <!-- Google AI, Search & Bot Crawlers -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  <link rel="canonical" href="https://seamosgenios.org/">
+  
+  <!-- Theme & Mobile Appearance -->
+  <meta name="theme-color" content="#0D1117">
+  <meta name="msapplication-TileColor" content="#0D1117">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Seamos Genios">
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Plataforma educativa líder en Colombia que combina tecnología de IA y neurociencia para revolucionar el rendimiento en el examen ICFES.">
-  <meta name="keywords" content="PreICFES, ICFES 2026, Simulacros ICFES, Neurociencia Educativa, Seamos Genios, Preparación ICFES Colombia">
-  <meta name="author" content="Seamos Genios">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://seamosgenios.com/">
+  <!-- Favicon & Touch Icons (Safari / Chrome / iOS / Android) -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-red.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seamosgenios.com/">
-  <meta property="og:title" content="Seamos Genios | Fusión de Tecnología y Neurociencia">
-  <meta property="og:description" content="Preparación inteligente para el ICFES con simulacros calibrados y resultados en 24 horas.">
-  <meta property="og:image" content="assets/logo-red.svg">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Seamos Genios">
+  <meta property="og:url" content="https://seamosgenios.org/">
+  <meta property="og:title" content="Seamos Genios | Preparación Inteligente ICFES con IA & Neurociencia">
+  <meta property="og:description" content="Simulacros quincenales calibrados con 254 preguntas oficiales y entrega de resultados analíticos en 24 horas. Alcanza 400+ puntos.">
+  <meta property="og:image" content="https://seamosgenios.org/assets/logo-red.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Seamos Genios - Preparación ICFES Colombia">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@seamosgenios">
+  <meta name="twitter:creator" content="@seamosgenios">
+  <meta name="twitter:title" content="Seamos Genios | Preparación ICFES Saber 11 con IA">
+  <meta name="twitter:description" content="Supera los 400 puntos en el ICFES con analítica predictiva, neuroaprendizaje y mentores de las mejores universidades de Colombia.">
+  <meta name="twitter:image" content="https://seamosgenios.org/assets/logo-red.svg">
+
+  <!-- Performance Preconnects & Font Optimization -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Stylesheet -->
+  <!-- Main Modular Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- Structured Data -->
+  <!-- Comprehensive Google & AI Search Schema (JSON-LD Linked Data) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Seamos Genios",
-    "url": "https://seamosgenios.com",
-    "logo": "assets/logo-red.svg",
-    "description": "Plataforma educativa que combina tecnología e IA con neurociencia para el examen ICFES en Colombia."
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://seamosgenios.org/#organization",
+        "name": "Seamos Genios",
+        "url": "https://seamosgenios.org",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://seamosgenios.org/assets/logo-red.svg"
+        },
+        "description": "Plataforma educativa líder en Colombia que combina inteligencia artificial y neurociencia para maximizar el rendimiento en el examen de estado ICFES Saber 11.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CO",
+          "addressLocality": "Bogotá D.C. & Cali"
+        },
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Daniel De La Cruz",
+            "jobTitle": "Presidente & Fundador"
+          },
+          {
+            "@type": "Person",
+            "name": "Ángel Pacheco",
+            "jobTitle": "Vicepresidente (475 Puntos ICFES)"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+57-300-123-4567",
+          "contactType": "customer service",
+          "availableLanguage": ["Spanish"]
+        },
+        "sameAs": [
+          "https://instagram.com/seamosgenios",
+          "https://tiktok.com/@seamosgenios",
+          "https://youtube.com/@seamosgenios",
+          "https://linkedin.com/company/seamosgenios"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://seamosgenios.org/#website",
+        "url": "https://seamosgenios.org",
+        "name": "Seamos Genios",
+        "publisher": {
+          "@id": "https://seamosgenios.org/#organization"
+        },
+        "inLanguage": "es-CO"
+      },
+      {
+        "@type": "Course",
+        "@id": "https://seamosgenios.org/#course-preicfes",
+        "name": "PreICFES Intensivo Calendario A 2026",
+        "description": "Programa integral de preparación para la prueba ICFES Saber 11 con simulacros calibrados quincenales, dashboard de analítica con IA y neuroaprendizaje.",
+        "provider": {
+          "@id": "https://seamosgenios.org/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "300000",
+          "priceCurrency": "COP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://seamosgenios.org/#programas"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://seamosgenios.org/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Los simulacros son virtuales o presenciales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nuestros simulacros son 100% virtuales a través de nuestra plataforma web interactiva, accesibles desde cualquier computador, tablet o smartphone en cualquier ciudad o municipio de Colombia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo y cómo recibo los resultados de mi prueba?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Garantizamos la entrega de tu dashboard analítico completo al día siguiente de presentar el simulacro (menos de 24 horas), con desglose por componente, percentil nacional y plan de estudio adaptativo con inteligencia artificial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas preguntas incluye cada simulacro calibrado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cada simulacro consta de 254 preguntas calibradas que replican exactamente la estructura oficial del examen ICFES Saber 11: Lectura Crítica, Matemáticas, Ciencias Naturales, Sociales y Ciudadanas, e Inglés."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo funcionan los convenios para colegios y secretarías?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos planes institucionales con panel de control para rectores, reportes comparativos por curso, talleres de neuroaprendizaje docente y emisión de factura electrónica legal validada por la DIAN a través de Factus."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
 
   <!-- =========================================================================
-       1. FIXED NAVBAR (COMPACT ELEGANTS BUTTONS & OFFICIAL BRAND LOGO)
+       1. FIXED NAVBAR (CLEAN SINGLE-LINE WITH ENLARGED LOGO)
        ========================================================================= -->
-  <header class="navbar">
+  <header class="navbar" role="banner">
     <div class="container navbar-container">
-      <!-- Official Brand Logo (Dynamic Theme Toggle) -->
-      <a href="#hero" class="logo">
-        <img src="assets/logo-black.svg" alt="Seamos Genios Logo" class="brand-logo-img logo-light">
-        <img src="assets/logo-white.svg" alt="Seamos Genios Logo" class="brand-logo-img logo-dark">
+      <!-- Brand Logo -->
+      <a href="#hero" class="logo" aria-label="Seamos Genios - Inicio">
+        <img src="assets/logo-black.svg" alt="Seamos Genios Logo" class="brand-logo-img" width="180" height="48">
       </a>
 
-      <!-- Desktop Nav Center -->
-      <div class="nav-center">
+      <!-- Desktop Nav Menu (Single-Line Centered) -->
+      <nav class="nav-center" aria-label="Navegación principal">
         <ul class="nav-links">
           <li><a href="#nosotros">Quiénes Somos</a></li>
-          <li><a href="#equipo">Mentores</a></li>
+          <li><a href="#metodologia">Metodología</a></li>
+          <li><a href="#red-nacional">Cobertura</a></li>
           <li><a href="#programas">Programas</a></li>
-          <li><a href="#comparativa">¿Por qué SG?</a></li>
+          <li><a href="#colegios">Colegios</a></li>
           <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#equipo">Mentores</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <!-- Nav Actions Right (Compact 34px Buttons) -->
+      <!-- Nav Actions Right (Pill Buttons) -->
       <div class="nav-actions">
-        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Cambiar Modo de Color">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <button class="btn btn-secondary" data-open-modal id="btn-login-desktop" type="button">
+          Iniciar Sesión
         </button>
         
-        <a href="https://simulacros-sg.web.app/demo/dashboard" target="_blank" class="btn btn-secondary" style="display: none;" id="btn-login-desktop">
-          Iniciar Sesión
-        </a>
-        
-        <button class="btn btn-primary" data-open-modal>
+        <button class="btn btn-primary" data-open-modal type="button">
           Inscribirme
         </button>
 
-        <button class="theme-toggle-btn" id="mobile-menu-btn" style="display: none;" aria-label="Abrir Menú Móvil">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <button class="nav-mobile-toggle" id="mobile-menu-btn" aria-label="Abrir Menú de Navegación" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </div>
 
     <!-- Mobile Drawer Menu -->
-    <div class="mobile-drawer" id="mobile-drawer" style="display: none; padding: 1.5rem; background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
-      <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.25rem; font-weight: 600;">
+    <div class="mobile-drawer" id="mobile-drawer" aria-label="Menú móvil">
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; padding: 0; margin: 0;">
         <li><a href="#nosotros" class="mobile-nav-link">Quiénes Somos</a></li>
-        <li><a href="#equipo" class="mobile-nav-link">Mentores</a></li>
+        <li><a href="#metodologia" class="mobile-nav-link">Metodología</a></li>
+        <li><a href="#red-nacional" class="mobile-nav-link">Cobertura Nacional</a></li>
         <li><a href="#programas" class="mobile-nav-link">Programas & Tarifas</a></li>
-        <li><a href="#comparativa" class="mobile-nav-link">¿Por qué SG?</a></li>
+        <li><a href="#colegios" class="mobile-nav-link">Colegios Aliados</a></li>
         <li><a href="#resultados" class="mobile-nav-link">Resultados</a></li>
+        <li><a href="#equipo" class="mobile-nav-link">Mentores de Élite</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a></li>
         <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
-        <li style="padding-top: 1rem; border-top: 1px solid var(--border-color);">
-          <a href="https://simulacros-sg.web.app/demo/dashboard" target="_blank" class="btn btn-secondary" style="width: 100%;">Demo Dashboard</a>
+        <li style="padding-top: 0.75rem; border-top: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 0.6rem;">
+          <button class="btn btn-secondary" data-open-modal style="width: 100%;" type="button">Iniciar Sesión</button>
+          <button class="btn btn-primary" data-open-modal style="width: 100%;" type="button">Inscribirme</button>
         </li>
       </ul>
     </div>
   </header>
 
-  <main>
+  <main role="main">
     <!-- =========================================================================
-         2. HERO SECTION WITH UI DASHBOARD PREVIEW WIDGET (NO IMAGE)
+         2. HERO SECTION (LIGHT BASE WITH INTERACTIVE LIVE WIDGET)
          ========================================================================= -->
     <section class="hero" id="hero">
       <div class="container hero-grid">
         <div>
-          <div class="badge">
+          <!-- Pill Badge (No Emojis) -->
+          <div class="badge" style="margin-bottom: 1.25rem;">
             Tecnología & Neurociencia Aplicada
           </div>
 
           <h1 class="hero-title">
-            Preparación Inteligente para el <span style="color: var(--brand-red);">Examen ICFES</span>
+            Preparación Inteligente para el <span class="text-gradient-red">Examen ICFES</span>
           </h1>
 
           <p class="hero-subtitle">
-            Metodología propia, análisis de datos con IA y simulacros calibrados para optimizar el desempeño académico de estudiantes e instituciones en Colombia.
+            Metodología propia, algoritmos de análisis adaptativo y simulacros quincenales calibrados con entrega de resultados en 24 horas. Alcanza 400+ puntos e ingresa a las mejores universidades del país.
           </p>
 
-          <!-- Countdown Strip -->
+          <!-- Pill-Shaped Countdown Strip -->
           <div class="countdown-strip">
-            <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-main); line-height: 1.3;">
+            <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-main); line-height: 1.3;">
               EXAMEN CALENDARIO A<br>
-              <span style="font-size: 0.7rem; color: var(--text-light); font-weight: 500;">26 JULIO 2026</span>
+              <span style="font-size: 0.725rem; color: var(--brand-red); font-weight: 700;">26 JULIO 2026</span>
             </div>
+            <div class="digit-separator">•</div>
             <div class="countdown-digits">
-              <div class="digit-box"><span class="digit-val" id="timer-days">00</span><span class="digit-lbl">Días</span></div>
-              <div class="digit-box"><span class="digit-val" id="timer-hours">00</span><span class="digit-lbl">Horas</span></div>
-              <div class="digit-box"><span class="digit-val" id="timer-mins">00</span><span class="digit-lbl">Min</span></div>
-              <div class="digit-box"><span class="digit-val" id="timer-secs">00</span><span class="digit-lbl">Seg</span></div>
+              <div class="digit-box"><span class="digit-val" id="timer-days">00</span><span class="digit-lbl">d</span></div>
+              <span style="color: var(--text-light); font-weight: 700;">:</span>
+              <div class="digit-box"><span class="digit-val" id="timer-hours">00</span><span class="digit-lbl">h</span></div>
+              <span style="color: var(--text-light); font-weight: 700;">:</span>
+              <div class="digit-box"><span class="digit-val" id="timer-mins">00</span><span class="digit-lbl">m</span></div>
+              <span style="color: var(--text-light); font-weight: 700;">:</span>
+              <div class="digit-box"><span class="digit-val" id="timer-secs">00</span><span class="digit-lbl">s</span></div>
             </div>
           </div>
 
-          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <button class="btn btn-primary" data-open-modal style="flex: 1; min-width: 200px;">
-              Ver Simulacros desde $15.000 COP
+          <!-- Hero Action Pill Buttons -->
+          <div class="hero-cta-group">
+            <button class="btn btn-primary" data-open-modal type="button">
+              Inscribirme al Programa →
             </button>
-            <a href="https://simulacros-sg.web.app/demo/dashboard" target="_blank" class="btn btn-secondary" style="flex: 1; min-width: 180px;">
-              Explorar Dashboard en Vivo
+            <a href="#programas" class="btn btn-secondary">
+              Ver Planes y Simulacros
             </a>
           </div>
 
-          <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem;">
-            1.583 estudiantes inscritos esta temporada. Resultados garantizados en 24 horas.
+          <p style="font-size: 0.825rem; color: var(--text-light); margin-top: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="live-status-dot" style="display: inline-block;"></span> 1.583 estudiantes inscritos esta temporada • Resultados garantizados en 24h
           </p>
         </div>
 
-        <!-- Hero UI Dashboard Preview Widget (Clean Component) -->
+        <!-- Hero UI Dashboard Preview Widget (CAMBAS+ & Factus Style) -->
         <div class="hero-panel">
           <div class="hero-panel-head">
             <div>
-              <span class="badge" style="font-size: 0.7rem;">Dashboard en Vivo</span>
-              <div style="font-size: 0.9rem; font-weight: 700; margin-top: 0.2rem;">Rendimiento Diagnóstico ICFES</div>
+              <div class="live-status-pill">
+                <span class="live-status-dot"></span> Diagnóstico en Vivo
+              </div>
+              <div style="font-size: 0.95rem; font-weight: 800; margin-top: 0.4rem; color: var(--text-main);">
+                Rendimiento Académico Global
+              </div>
             </div>
             <div style="text-align: right;">
-              <span style="font-size: 1.25rem; font-weight: 800; color: var(--brand-red);">477 / 500</span>
-              <div style="font-size: 0.7rem; color: var(--text-light);">Puntaje Global</div>
+              <span class="hero-score-badge">477 / 500</span>
+              <div style="font-size: 0.725rem; color: var(--text-light); font-weight: 600;">Percentil 99.8%</div>
             </div>
           </div>
 
           <!-- Subject Progress Bars -->
           <div class="subject-bars">
             <div class="subject-row">
-              <div class="subject-info"><span>Lectura Crítica</span><span style="color: var(--accent-emerald);">100/100</span></div>
-              <div class="subject-progress-bg"><div class="subject-progress-fill" style="width: 100%;"></div></div>
+              <div class="subject-info">
+                <span>Lectura Crítica</span>
+                <span style="color: var(--accent-emerald); font-weight: 800;">100 / 100</span>
+              </div>
+              <div class="subject-progress-bg">
+                <div class="subject-progress-fill" style="width: 100%;"></div>
+              </div>
             </div>
+
             <div class="subject-row">
-              <div class="subject-info"><span>Matemáticas & Razonamiento</span><span style="color: var(--accent-emerald);">100/100</span></div>
-              <div class="subject-progress-bg"><div class="subject-progress-fill" style="width: 100%;"></div></div>
+              <div class="subject-info">
+                <span>Matemáticas & Razonamiento</span>
+                <span style="color: var(--accent-emerald); font-weight: 800;">100 / 100</span>
+              </div>
+              <div class="subject-progress-bg">
+                <div class="subject-progress-fill" style="width: 100%;"></div>
+              </div>
             </div>
+
             <div class="subject-row">
-              <div class="subject-info"><span>Ciencias Naturales</span><span>95/100</span></div>
-              <div class="subject-progress-bg"><div class="subject-progress-fill" style="width: 95%;"></div></div>
+              <div class="subject-info">
+                <span>Ciencias Naturales</span>
+                <span style="font-weight: 700;">95 / 100</span>
+              </div>
+              <div class="subject-progress-bg">
+                <div class="subject-progress-fill" style="width: 95%;"></div>
+              </div>
             </div>
+
             <div class="subject-row">
-              <div class="subject-info"><span>Sociales & Ciudadanas</span><span>98/100</span></div>
-              <div class="subject-progress-bg"><div class="subject-progress-fill" style="width: 98%;"></div></div>
+              <div class="subject-info">
+                <span>Sociales & Ciudadanas</span>
+                <span style="font-weight: 700;">98 / 100</span>
+              </div>
+              <div class="subject-progress-bg">
+                <div class="subject-progress-fill" style="width: 98%;"></div>
+              </div>
             </div>
           </div>
 
+          <!-- Quick Stats Grid -->
           <div class="hero-stats-row">
-            <div class="stat-item">
+            <div class="stat-box-inner">
               <div class="stat-item-num" style="color: var(--brand-red);">24 Horas</div>
-              <div class="stat-item-lbl">Entrega de Resultados</div>
+              <div class="stat-item-lbl">Entrega Resultados</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-box-inner">
               <div class="stat-item-num">254</div>
-              <div class="stat-item-lbl">Preguntas Réplica ICFES</div>
+              <div class="stat-item-lbl">Preguntas Calibradas</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-box-inner">
               <div class="stat-item-num">Top 1%</div>
               <div class="stat-item-lbl">Ranking Nacional</div>
             </div>
-            <div class="stat-item">
-              <div class="stat-item-num">100%</div>
+            <div class="stat-box-inner">
+              <div class="stat-item-num" style="color: var(--accent-emerald);">100%</div>
               <div class="stat-item-lbl">Formato Oficial</div>
             </div>
           </div>
@@ -206,80 +377,209 @@
     </section>
 
     <!-- =========================================================================
-         3. METRICS BAR
+         3. TRUST METRICS & ALLIANCES (NEUTRAL SURFACE - NO EMOJIS)
          ========================================================================= -->
-    <section class="metrics-bar">
+    <section class="trust-bar" id="nosotros">
       <div class="container">
-        <div class="metrics-flex">
-          <div class="metric-block">
-            <div class="metric-number">1.400+</div>
-            <div class="metric-label">Estudiantes Activos</div>
+        <div class="trust-stats-grid">
+          <div>
+            <div class="trust-stat-val" data-counter="1.400+">1.400+</div>
+            <div class="trust-stat-lbl">Estudiantes Activos</div>
           </div>
-          <div class="metric-block">
-            <div class="metric-number">450+</div>
-            <div class="metric-label">Puntajes Superiores a 450</div>
+          <div>
+            <div class="trust-stat-val" data-counter="450+">450+</div>
+            <div class="trust-stat-lbl">Puntajes Superiores a 450</div>
           </div>
-          <div class="metric-block">
-            <div class="metric-number">15+</div>
-            <div class="metric-label">Ediciones de Simulacros</div>
+          <div>
+            <div class="trust-stat-val" data-counter="15+">15+</div>
+            <div class="trust-stat-lbl">Ediciones de Simulacros</div>
           </div>
-          <div class="metric-block">
-            <div class="metric-number">98%</div>
-            <div class="metric-label">Satisfacción Garantizada</div>
+          <div>
+            <div class="trust-stat-val" data-counter="98%">98%</div>
+            <div class="trust-stat-lbl">Satisfacción Garantizada</div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--text-light); letter-spacing: 0.05em; margin-bottom: 1.25rem;">
+            Respaldado por mentores e investigadores de las mejores universidades del país
+          </div>
+          <div class="alliances-pills-row">
+            <span class="alliance-pill">
+              <span class="alliance-icon-badge">UN</span> Universidad Nacional de Colombia
+            </span>
+            <span class="alliance-pill">
+              <span class="alliance-icon-badge">UA</span> Universidad de los Andes
+            </span>
+            <span class="alliance-pill">
+              <span class="alliance-icon-badge">UIS</span> Universidad Industrial de Santander
+            </span>
+            <span class="alliance-pill">
+              <span class="alliance-icon-badge">PUJ</span> Pontificia Universidad Javeriana
+            </span>
+            <span class="alliance-pill">
+              <span class="alliance-icon-badge">UR</span> Universidad del Rosario
+            </span>
+            <span class="alliance-pill">
+              <span class="alliance-icon-badge">UI</span> Universidad Icesi
+            </span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =========================================================================
-         4. ¿QUÉ ES SEAMOS GENIOS? (SPLIT FEATURE ROWS)
+         3.1 EDUCACIÓN CON PROPÓSITO (COCA-COLA STYLE PHOTO & OVERLAPPING CARD)
          ========================================================================= -->
-    <section class="section" id="nosotros">
+    <section class="purpose-section">
+      <div class="container">
+        <div class="purpose-wrapper">
+          <!-- Photo Container -->
+          <div class="purpose-photo-card">
+            <svg class="purpose-photo-img" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Plataforma de Neuroaprendizaje Seamos Genios">
+              <defs>
+                <linearGradient id="gradPhoto" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1E293B"/>
+                  <stop offset="50%" stop-color="#0F172A"/>
+                  <stop offset="100%" stop-color="#131A26"/>
+                </linearGradient>
+                <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#gradPhoto)"/>
+              <rect width="100%" height="100%" fill="url(#gridPattern)"/>
+              <circle cx="200" cy="180" r="130" fill="rgba(255,30,39,0.12)" filter="blur(40px)"/>
+              <circle cx="500" cy="300" r="160" fill="rgba(59,130,246,0.1)" filter="blur(50px)"/>
+              
+              <!-- Abstract Educational Geometry -->
+              <g opacity="0.9" transform="translate(80, 70)">
+                <rect x="40" y="40" width="280" height="190" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+                <circle cx="90" cy="90" r="24" fill="#FF1E27"/>
+                <text x="90" y="96" fill="#FFFFFF" font-size="14" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">SG</text>
+                <text x="130" y="85" fill="#FFFFFF" font-size="15" font-weight="800" font-family="Inter, sans-serif">Neuroaprendizaje Aplicado</text>
+                <text x="130" y="105" fill="#94A3B8" font-size="12" font-family="Inter, sans-serif">Diagnóstico cognitivo en tiempo real</text>
+                
+                <line x1="65" y1="140" x2="295" y2="140" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <rect x="65" y="160" width="140" height="10" rx="5" fill="#10B981"/>
+                <rect x="220" y="160" width="75" height="10" rx="5" fill="rgba(255,255,255,0.2)"/>
+                <text x="65" y="195" fill="#38BDF8" font-size="11" font-weight="700" font-family="Inter, sans-serif">99.8% Precisión Calibrada</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Overlapping White Floating Card (Coca-Cola Style) -->
+          <div class="purpose-floating-card">
+            <div class="badge" style="margin-bottom: 1rem;">Nuestra Filosofía</div>
+            <h2 class="purpose-card-title">
+              El talento no tiene límites cuando la educación es personalizada
+            </h2>
+            <div class="purpose-card-body">
+              <p>
+                Creemos firmemente que cualquier estudiante en Colombia, sin importar su ciudad o colegio de origen, tiene el potencial de superar los 400 puntos en el ICFES Saber 11.
+              </p>
+              <p>
+                Combinamos neurociencia del aprendizaje, simulacros con cronómetro real y la guía de mentores de las mejores universidades para democratizar las oportunidades y abrir las puertas a becas del 100%.
+              </p>
+            </div>
+            <a href="#metodologia" class="purpose-pill-btn">
+              Conoce Nuestra Metodología →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. METODOLOGÍA EN 4 PASOS (CURSOR/ANTIGRAVITY DARK SECTION - FACTUS FLOW)
+         ========================================================================= -->
+    <section class="section section-dark" id="metodologia">
       <div class="container">
         <div class="section-header">
-          <div class="badge">Pilares Metodológicos</div>
-          <h2 class="section-title">La Fusión entre <span style="color: var(--brand-red);">Tecnología y Neurociencia</span></h2>
-          <p style="color: var(--text-muted);">Innovación educativa diseñada para maximizar la retención y el análisis crítico.</p>
+          <div class="badge badge-dark">Ruta al Éxito 400+ ICFES</div>
+          <h2 class="section-title">Nuestra Metodología en <span class="text-gradient-red">4 Pasos</span></h2>
+          <p class="section-subtitle">
+            Un ecosistema integral que fusiona neurociencia del aprendizaje, simulacros cronometrados y retroalimentación inteligente en 24 horas.
+          </p>
         </div>
 
-        <div class="split-features">
-          <div class="feature-row">
-            <div class="feature-num">01</div>
-            <div>
-              <h3>IA + Neurociencia Adaptativa</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">
-                Cada estudiante recibe un plan personalizado basado en sus fortalezas y debilidades. La neurociencia aplicada optimiza la carga cognitiva y el espacio de repetición.
-              </p>
+        <!-- 4 Step Flow Cards -->
+        <div class="flow-grid-4">
+          <!-- Step 1 -->
+          <div class="flow-step-card">
+            <div class="flow-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
             </div>
+            <span class="flow-step-badge">Paso 01</span>
+            <h3 class="flow-step-title">Diagnóstico IA</h3>
+            <p class="flow-step-desc">
+              Identificamos tu línea base cognitiva y mapeamos con precisión quirúrgica tus brechas por materia y competencia.
+            </p>
           </div>
 
-          <div class="feature-row">
-            <div class="feature-num">02</div>
-            <div>
-              <h3>Simulacros Reales en Formato Oficial</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">
-                Más de 15 simulacros calibrados con 254 preguntas que replican exactamente la estructura, tiempo y dificultad del examen ICFES oficial.
-              </p>
+          <!-- Step 2 -->
+          <div class="flow-step-card">
+            <div class="flow-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </div>
+            <span class="flow-step-badge">Paso 02</span>
+            <h3 class="flow-step-title">Simulacros Calibrados</h3>
+            <p class="flow-step-desc">
+              Presentas pruebas idénticas al examen oficial ICFES con 254 preguntas bajo condiciones reales de presión y tiempo.
+            </p>
           </div>
 
-          <div class="feature-row">
-            <div class="feature-num">03</div>
-            <div>
-              <h3>Dashboard Analítico con Ranking Nacional</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">
-                Panel de control con desglose detallado por materia, diagnóstico de competencias y comparación en tiempo real frente a más de 380 estudiantes.
-              </p>
+          <!-- Step 3 -->
+          <div class="flow-step-card">
+            <div class="flow-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
+            <span class="flow-step-badge">Paso 03</span>
+            <h3 class="flow-step-title">Neuroaprendizaje</h3>
+            <p class="flow-step-desc">
+              Recibes tu reporte analítico en 24 horas con plan de estudio adaptativo y micro-cápsulas de repetición espaciada.
+            </p>
           </div>
 
-          <div class="feature-row">
-            <div class="feature-num">04</div>
-            <div>
-              <h3>Tutores de las Mejores Universidades</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">
-                Docentes y mentores de UNAL, Uniandes, UIS, Icesi y U. del Rosario con puntajes ICFES destacados y comprobada experiencia pedagógica.
-              </p>
+          <!-- Step 4 -->
+          <div class="flow-step-card">
+            <div class="flow-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34"/><path d="M14 14.66V17c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.34"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <span class="flow-step-badge">Paso 04</span>
+            <h3 class="flow-step-title">Admisión & Beca</h3>
+            <p class="flow-step-desc">
+              Consolidas tu puntaje superior a 400 puntos y aseguras tu ingreso a Medicina, Ingeniería o la carrera de tu vocación.
+            </p>
+          </div>
+        </div>
+
+        <!-- Visual Diagram Pipeline (Factus Flow Graphic) -->
+        <div class="flow-diagram-wrapper">
+          <div class="diagram-line-connector"></div>
+          <div class="diagram-steps-row">
+            <div class="diagram-node">
+              <div class="diagram-node-circle">1</div>
+              <div class="diagram-node-title">Registro & Diagnóstico</div>
+              <div class="diagram-node-sub">Plataforma Seamos Genios</div>
+            </div>
+
+            <div class="diagram-node">
+              <div class="diagram-node-circle">2</div>
+              <div class="diagram-node-title">Simulacro 254P</div>
+              <div class="diagram-node-sub">Formato Oficial ICFES</div>
+            </div>
+
+            <div class="diagram-node">
+              <div class="diagram-node-circle">3</div>
+              <div class="diagram-node-title">Entrega en 24h</div>
+              <div class="diagram-node-sub">Procesamiento Analítico</div>
+            </div>
+
+            <div class="diagram-node">
+              <div class="diagram-node-circle">4</div>
+              <div class="diagram-node-title">Puntaje 400+</div>
+              <div class="diagram-node-sub">Admisión Universitaria</div>
             </div>
           </div>
         </div>
@@ -287,33 +587,735 @@
     </section>
 
     <!-- =========================================================================
-         5. EQUIPO ACADÉMICO & MENTORES
+         4.1 RED NACIONAL EN COLOMBIA (CLOUDFLARE STYLE MAP & VERTICAL STATS)
          ========================================================================= -->
-    <section class="section" id="equipo" style="background: var(--bg-surface);">
+    <section class="network-map-section" id="red-nacional">
+      <div class="container">
+        <div class="network-header">
+          <div class="badge" style="margin-bottom: 1.25rem;">Cobertura Nacional</div>
+          <h2 class="network-title">
+            Una red educativa en Colombia <span class="text-gradient-red">como ninguna otra</span>
+          </h2>
+          <p class="network-subtitle">
+            Llegamos a cada departamento del país con simulacros quincenales, analítica de datos en tiempo real y mentores de las mejores universidades.
+          </p>
+        </div>
+
+        <!-- 4 Vertical Metric Columns with Top Pointer Dots (Cloudflare Style) -->
+        <div class="network-stats-grid">
+          <div class="network-stat-col">
+            <div class="network-stat-num" data-counter="+32">+32</div>
+            <div class="network-stat-desc">Departamentos de Colombia alcanzados con cobertura virtual y presencial</div>
+          </div>
+
+          <div class="network-stat-col">
+            <div class="network-stat-num" data-counter="+1.400">+1.400</div>
+            <div class="network-stat-desc">Estudiantes activos transformando sus resultados académicos este año</div>
+          </div>
+
+          <div class="network-stat-col">
+            <div class="network-stat-num" data-counter="477">477 Pts</div>
+            <div class="network-stat-desc">Puntaje récord nacional alcanzado por alumnos preparados con Seamos Genios</div>
+          </div>
+
+          <div class="network-stat-col">
+            <div class="network-stat-num" data-counter="+120">+120</div>
+            <div class="network-stat-desc">Colegios e instituciones aliadas mejorando su categoría oficial ante el ICFES</div>
+          </div>
+        </div>
+
+        <!-- Authentic Colombia Geographic Vector Map -->
+        <div class="colombia-map-wrapper">
+          <svg class="colombia-map-svg" viewBox="0 0 900 650" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa Oficial de Cobertura Nacional Seamos Genios Colombia">
+            <defs>
+              <!-- Gradients & Glows -->
+              <linearGradient id="colombiaBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1E293B"/>
+                <stop offset="60%" stop-color="#131A26"/>
+                <stop offset="100%" stop-color="#0D1117"/>
+              </linearGradient>
+              <linearGradient id="colombiaBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FF1E27"/>
+                <stop offset="50%" stop-color="#3B82F6"/>
+                <stop offset="100%" stop-color="#10B981"/>
+              </linearGradient>
+              <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="rgba(255, 30, 39, 0.4)"/>
+                <stop offset="100%" stop-color="transparent"/>
+              </radialGradient>
+              <pattern id="mapDots" width="16" height="16" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.2" fill="rgba(255,255,255,0.09)"/>
+              </pattern>
+              <clipPath id="colombiaClip">
+                <path d="
+                  M 530 25
+                  C 525 35, 505 50, 485 55
+                  C 460 62, 445 68, 435 85
+                  C 420 105, 410 125, 385 145
+                  C 365 155, 350 170, 345 195
+                  C 340 230, 335 270, 330 310
+                  C 325 345, 305 375, 290 395
+                  C 285 410, 300 420, 320 425
+                  C 340 430, 360 440, 385 450
+                  C 415 460, 450 475, 480 495
+                  C 515 520, 545 555, 570 595
+                  C 585 615, 600 610, 605 590
+                  C 615 550, 625 510, 640 475
+                  C 660 435, 690 395, 725 365
+                  C 745 345, 755 315, 750 280
+                  C 745 245, 720 210, 680 185
+                  C 645 165, 615 155, 580 150
+                  C 560 145, 545 130, 540 105
+                  C 535 75, 540 45, 530 25 Z"
+                />
+              </clipPath>
+            </defs>
+
+            <!-- Geographic Polygon of Colombia -->
+            <path class="colombia-geo-shape" d="
+              M 530 25
+              C 525 35, 505 50, 485 55
+              C 460 62, 445 68, 435 85
+              C 420 105, 410 125, 385 145
+              C 365 155, 350 170, 345 195
+              C 340 230, 335 270, 330 310
+              C 325 345, 305 375, 290 395
+              C 285 410, 300 420, 320 425
+              C 340 430, 360 440, 385 450
+              C 415 460, 450 475, 480 495
+              C 515 520, 545 555, 570 595
+              C 585 615, 600 610, 605 590
+              C 615 550, 625 510, 640 475
+              C 660 435, 690 395, 725 365
+              C 745 345, 755 315, 750 280
+              C 745 245, 720 210, 680 185
+              C 645 165, 615 155, 580 150
+              C 560 145, 545 130, 540 105
+              C 535 75, 540 45, 530 25 Z"
+              fill="url(#colombiaBgGrad)"
+              stroke="url(#colombiaBorderGrad)"
+              stroke-width="2.5"
+            />
+
+            <!-- Dot Matrix Fill inside Colombia -->
+            <rect width="900" height="650" fill="url(#mapDots)" clip-path="url(#colombiaClip)" />
+
+            <!-- Internal Regional Lines -->
+            <path d="M 320 415 Q 380 320 410 215 Q 435 150 455 65" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" fill="none" clip-path="url(#colombiaClip)"/>
+            <path d="M 350 390 Q 420 300 450 250 Q 480 200 500 170 Q 535 130 525 60" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" fill="none" clip-path="url(#colombiaClip)"/>
+
+            <!-- San Andrés & Providencia Inset Box -->
+            <g transform="translate(80, 50)">
+              <rect width="130" height="95" rx="10" fill="#131A26" stroke="var(--border-color)" stroke-width="1.2"/>
+              <circle cx="50" cy="50" r="4" fill="#FF1E27"/>
+              <circle cx="50" cy="50" r="8" fill="rgba(255,30,39,0.2)" class="city-node-glow"/>
+              <circle cx="85" cy="35" r="3" fill="#FF1E27"/>
+              <text x="12" y="24" fill="var(--text-white-muted)" font-size="9" font-weight="800" font-family="Inter, sans-serif">ARCHIPIÉLAGO</text>
+              <text x="45" y="70" class="map-city-tag" font-size="10">San Andrés</text>
+              <text x="75" y="26" class="map-city-tag" font-size="9">Providencia</text>
+            </g>
+
+            <!-- Radar Glow from Bogotá Central Hub (460, 275) -->
+            <circle cx="460" cy="275" r="140" fill="url(#hubGlow)" pointer-events="none"/>
+            <circle cx="460" cy="275" r="70" stroke="rgba(255,30,39,0.25)" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+            <circle cx="460" cy="275" r="130" stroke="rgba(255,30,39,0.18)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+            <circle cx="460" cy="275" r="200" stroke="rgba(255,30,39,0.12)" stroke-width="1" fill="none" stroke-dasharray="5 5"/>
+
+            <!-- Dynamic Tracer Arcs from Bogotá to Regional Cities -->
+            <path d="M 460 275 Q 430 160 455 65" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 400 160 430 85" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 420 230 405 205" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 400 290 375 310" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 500 210 500 170" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 525 190 535 135" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 360 350 330 395" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 500 285 510 295" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+            <path d="M 460 275 Q 540 450 575 570" stroke="rgba(255,30,39,0.3)" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+
+            <!-- Key City Nodes with Pulsing Radar Rings -->
+            <!-- 1. BOGOTÁ D.C. -->
+            <circle cx="460" cy="275" r="14" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="460" cy="275" r="7" fill="#FF1E27"/>
+            <text x="478" y="280" class="map-city-tag map-hub-tag">Bogotá D.C. (Sede Central)</text>
+
+            <!-- 2. MEDELLÍN -->
+            <circle cx="405" cy="205" r="10" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="405" cy="205" r="5.5" fill="#FF1E27"/>
+            <text x="340" y="202" class="map-city-tag">Medellín</text>
+
+            <!-- 3. CALI -->
+            <circle cx="375" cy="310" r="10" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="375" cy="310" r="5.5" fill="#FF1E27"/>
+            <text x="330" y="315" class="map-city-tag">Cali</text>
+
+            <!-- 4. BARRANQUILLA -->
+            <circle cx="455" cy="65" r="10" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="455" cy="65" r="5.5" fill="#FF1E27"/>
+            <text x="470" y="69" class="map-city-tag">Barranquilla</text>
+
+            <!-- 5. CARTAGENA -->
+            <circle cx="430" cy="85" r="9" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="430" cy="85" r="5" fill="#FF1E27"/>
+            <text x="355" y="89" class="map-city-tag">Cartagena</text>
+
+            <!-- 6. BUCARAMANGA -->
+            <circle cx="500" cy="170" r="9" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="500" cy="170" r="5" fill="#FF1E27"/>
+            <text x="515" y="174" class="map-city-tag">Bucaramanga</text>
+
+            <!-- 7. CÚCUTA -->
+            <circle cx="535" cy="135" r="8" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="535" cy="135" r="4.5" fill="#FF1E27"/>
+            <text x="550" y="139" class="map-city-tag">Cúcuta</text>
+
+            <!-- 8. EJE CAFETERO -->
+            <circle cx="400" cy="255" r="9" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="400" cy="255" r="5" fill="#FF1E27"/>
+            <text x="315" y="255" class="map-city-tag">Eje Cafetero</text>
+
+            <!-- 9. PASTO -->
+            <circle cx="330" cy="395" r="8" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="330" cy="395" r="4.5" fill="#FF1E27"/>
+            <text x="278" y="400" class="map-city-tag">Pasto</text>
+
+            <!-- 10. VILLAVICENCIO -->
+            <circle cx="510" cy="295" r="8" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="510" cy="295" r="4.5" fill="#FF1E27"/>
+            <text x="525" y="299" class="map-city-tag">Villavicencio</text>
+
+            <!-- 11. SANTA MARTA -->
+            <circle cx="478" cy="55" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="478" cy="55" r="4" fill="#FF1E27"/>
+            <text x="490" y="45" class="map-city-tag">Santa Marta</text>
+
+            <!-- 12. MONTERÍA -->
+            <circle cx="410" cy="135" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="410" cy="135" r="4" fill="#FF1E27"/>
+            <text x="345" y="139" class="map-city-tag">Montería</text>
+
+            <!-- 13. NEIVA -->
+            <circle cx="420" cy="340" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="420" cy="340" r="4" fill="#FF1E27"/>
+            <text x="432" y="344" class="map-city-tag">Neiva</text>
+
+            <!-- 14. TUNJA -->
+            <circle cx="485" cy="235" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="485" cy="235" r="4" fill="#FF1E27"/>
+            <text x="498" y="235" class="map-city-tag">Tunja</text>
+
+            <!-- 15. LETICIA -->
+            <circle cx="575" cy="570" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+            <circle cx="575" cy="570" r="4" fill="#FF1E27"/>
+            <text x="590" y="574" class="map-city-tag">Leticia</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. PROGRAMAS & TARIFAS (LIGHT SECTION - FACTUS CARD STYLE)
+         ========================================================================= -->
+    <section class="section section-surface" id="programas">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Inversión Académica</div>
+          <h2 class="section-title">Programas Diseñados para tus <span class="text-gradient-red">Metas</span></h2>
+          <p class="section-subtitle">
+            Planes flexibles para estudiantes individuales, familias, colegios e instituciones educativas en toda Colombia.
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Card 1: PreICFES Intensivo -->
+          <div class="program-card program-card-featured">
+            <div>
+              <div class="program-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+              </div>
+              <div class="program-card-head">
+                <span class="badge">Programa Completo 7 Meses</span>
+                <h3 class="program-title">Plan Calendario A</h3>
+                <p class="program-desc">
+                  El programa definitivo con clases en vivo, plataforma IA de neuroaprendizaje y tutoría continua.
+                </p>
+              </div>
+
+              <ul class="program-feature-list">
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Simulacros quincenales calibrados (24h entrega)
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Plataforma IA con dashboard de ranking nacional
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Orientación vocacional y análisis de admisión
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> 1 TB Cloud Vault con cuadernillos oficiales
+                </li>
+              </ul>
+            </div>
+
+            <div class="program-card-foot">
+              <div>
+                <span style="text-decoration: line-through; color: var(--text-light); font-size: 0.85rem;">$600.000 COP</span>
+                <div class="program-price-tag">$300.000 <span style="font-size: 0.8rem; font-weight: 600;">COP</span></div>
+                <div class="program-price-sub">50% Descuento Temporada</div>
+              </div>
+              <button class="btn btn-pill-action" data-open-modal type="button">
+                Ver Detalles →
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Simulacro Individual -->
+          <div class="program-card">
+            <div>
+              <div class="program-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div class="program-card-head">
+                <span class="badge badge-emerald">Práctica Individual</span>
+                <h3 class="program-title">Simulacro Tipo ICFES</h3>
+                <p class="program-desc">
+                  Mide tus conocimientos con una prueba idéntica a la real y recibe tu reporte analítico al día siguiente.
+                </p>
+              </div>
+
+              <ul class="program-feature-list">
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> 254 Preguntas calibradas por componentes
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Entrega garantizada en menos de 24 horas
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Posición en el Ranking Nacional en Vivo
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Explicación paso a paso de cada pregunta
+                </li>
+              </ul>
+            </div>
+
+            <div class="program-card-foot">
+              <div>
+                <div class="program-price-tag">$15.000 <span style="font-size: 0.8rem; font-weight: 600;">COP</span></div>
+                <div class="program-price-sub">Por prueba completa</div>
+              </div>
+              <button class="btn btn-pill-action" data-open-modal type="button">
+                Ver Detalles →
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Colegios e Instituciones -->
+          <div class="program-card">
+            <div>
+              <div class="program-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-3"/></svg>
+              </div>
+              <div class="program-card-head">
+                <span class="badge badge-blue">Colegios & Entidades</span>
+                <h3 class="program-title">Acompañamiento Escolar</h3>
+                <p class="program-desc">
+                  Solución corporativa para instituciones que buscan elevar su categoría oficial Saber 11 ante el ICFES.
+                </p>
+              </div>
+
+              <ul class="program-feature-list">
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Licencias masivas y panel especial para rectores
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Comparativa por salones y áreas académicas
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Capacitación y talleres para docentes
+                </li>
+                <li class="program-feature-item">
+                  <span class="check-circle-icon">✓</span> Facturación electrónica DIAN / Factus
+                </li>
+              </ul>
+            </div>
+
+            <div class="program-card-foot">
+              <div>
+                <div class="program-price-tag">A Medida</div>
+                <div class="program-price-sub">Según número de alumnos</div>
+              </div>
+              <button class="btn btn-pill-action" data-open-modal type="button">
+                Cotizar →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5.1 CARRUSEL INFINITO DE COLEGIOS ALIADOS (JSCONF STYLE FILMSTRIP RIBBON)
+         ========================================================================= -->
+    <section class="section section-dark schools-carousel-section" id="colegios">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-dark">Alianzas Institucionales</div>
+          <h2 class="section-title">Colegios que Confían en <span class="text-gradient-red">Seamos Genios</span></h2>
+          <p class="section-subtitle">
+            Instituciones educativas de excelencia en toda Colombia que potencian el desempeño Saber 11 de sus estudiantes con nuestra plataforma.
+          </p>
+        </div>
+      </div>
+
+      <!-- Infinite Marquee Track (JSConf Inspired) -->
+      <div class="carousel-marquee-wrapper">
+        <div class="carousel-marquee-track">
+          <!-- Item 1: Gimnasio Moderno -->
+          <div class="school-card-film">
+            <div class="school-logo-badge">
+              <span class="school-badge-monogram">GM</span>
+            </div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none">
+              <rect width="100%" height="100%" fill="#131A26"/>
+              <circle cx="200" cy="140" r="90" fill="rgba(255,30,39,0.15)"/>
+              <text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">BOG</text>
+            </svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info">
+              <div class="school-card-name">Gimnasio Moderno</div>
+              <div class="school-card-city">Bogotá D.C. • Categoría Muy Superior</div>
+            </div>
+          </div>
+
+          <!-- Item 2: San Bartolomé La Merced -->
+          <div class="school-card-film">
+            <div class="school-logo-badge">
+              <span class="school-badge-monogram">SBM</span>
+            </div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none">
+              <rect width="100%" height="100%" fill="#182234"/>
+              <circle cx="200" cy="140" r="90" fill="rgba(59,130,246,0.15)"/>
+              <text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">JES</text>
+            </svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info">
+              <div class="school-card-name">Colegio San Bartolomé La Merced</div>
+              <div class="school-card-city">Bogotá D.C. • Red Jesuita</div>
+            </div>
+          </div>
+
+          <!-- Item 3: Colombo Británico -->
+          <div class="school-card-film">
+            <div class="school-logo-badge">
+              <span class="school-badge-monogram">CCB</span>
+            </div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none">
+              <rect width="100%" height="100%" fill="#131A26"/>
+              <circle cx="200" cy="140" r="90" fill="rgba(16,185,129,0.15)"/>
+              <text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">CLO</text>
+            </svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info">
+              <div class="school-card-name">Colegio Colombo Británico</div>
+              <div class="school-card-city">Cali, Valle • IB World School</div>
+            </div>
+          </div>
+
+          <!-- Item 4: Colegio San José -->
+          <div class="school-card-film">
+            <div class="school-logo-badge">
+              <span class="school-badge-monogram">CSJ</span>
+            </div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none">
+              <rect width="100%" height="100%" fill="#182234"/>
+              <circle cx="200" cy="140" r="90" fill="rgba(255,30,39,0.15)"/>
+              <text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">BAQ</text>
+            </svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info">
+              <div class="school-card-name">Colegio San José</div>
+              <div class="school-card-city">Barranquilla • Atlántico</div>
+            </div>
+          </div>
+
+          <!-- Item 5: Marymount Medellín -->
+          <div class="school-card-film">
+            <div class="school-logo-badge">
+              <span class="school-badge-monogram">MM</span>
+            </div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none">
+              <rect width="100%" height="100%" fill="#131A26"/>
+              <circle cx="200" cy="140" r="90" fill="rgba(59,130,246,0.15)"/>
+              <text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">MDE</text>
+            </svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info">
+              <div class="school-card-name">Colegio Marymount</div>
+              <div class="school-card-city">Medellín, Antioquia</div>
+            </div>
+          </div>
+
+          <!-- Item 6: San Pedro Claver -->
+          <div class="school-card-film">
+            <div class="school-logo-badge">
+              <span class="school-badge-monogram">SPC</span>
+            </div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none">
+              <rect width="100%" height="100%" fill="#182234"/>
+              <circle cx="200" cy="140" r="90" fill="rgba(255,30,39,0.15)"/>
+              <text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">BGA</text>
+            </svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info">
+              <div class="school-card-name">Colegio San Pedro Claver</div>
+              <div class="school-card-city">Bucaramanga, Santander</div>
+            </div>
+          </div>
+
+          <!-- REPEATED TRACK FOR SEAMLESS 100% INFINITE LOOP -->
+          <div class="school-card-film">
+            <div class="school-logo-badge"><span class="school-badge-monogram">GM</span></div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none"><rect width="100%" height="100%" fill="#131A26"/><circle cx="200" cy="140" r="90" fill="rgba(255,30,39,0.15)"/><text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">BOG</text></svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info"><div class="school-card-name">Gimnasio Moderno</div><div class="school-card-city">Bogotá D.C. • Categoría Muy Superior</div></div>
+          </div>
+          <div class="school-card-film">
+            <div class="school-logo-badge"><span class="school-badge-monogram">SBM</span></div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none"><rect width="100%" height="100%" fill="#182234"/><circle cx="200" cy="140" r="90" fill="rgba(59,130,246,0.15)"/><text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">JES</text></svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info"><div class="school-card-name">Colegio San Bartolomé La Merced</div><div class="school-card-city">Bogotá D.C. • Red Jesuita</div></div>
+          </div>
+          <div class="school-card-film">
+            <div class="school-logo-badge"><span class="school-badge-monogram">CCB</span></div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none"><rect width="100%" height="100%" fill="#131A26"/><circle cx="200" cy="140" r="90" fill="rgba(16,185,129,0.15)"/><text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">CLO</text></svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info"><div class="school-card-name">Colegio Colombo Británico</div><div class="school-card-city">Cali, Valle • IB World School</div></div>
+          </div>
+          <div class="school-card-film">
+            <div class="school-logo-badge"><span class="school-badge-monogram">CSJ</span></div>
+            <svg class="school-card-bg" viewBox="0 0 400 280" fill="none"><rect width="100%" height="100%" fill="#182234"/><circle cx="200" cy="140" r="90" fill="rgba(255,30,39,0.15)"/><text x="200" y="145" fill="rgba(255,255,255,0.08)" font-size="70" font-weight="900" text-anchor="middle" font-family="Inter, sans-serif">BAQ</text></svg>
+            <div class="school-card-gradient"></div>
+            <div class="school-card-info"><div class="school-card-name">Colegio San José</div><div class="school-card-city">Barranquilla • Atlántico</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. RESULTADOS & TESTIMONIOS (LIGHT WALL OF LOVE)
+         ========================================================================= -->
+    <section class="section section-light" id="resultados">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Wall of Love</div>
+          <h2 class="section-title">Historias Reales de <span class="text-gradient-red">Superación</span></h2>
+          <p class="section-subtitle">
+            Estudiantes de todo el país que transformaron su futuro y lograron ingresar a la universidad de sus sueños.
+          </p>
+        </div>
+
+        <div class="testimonials-wall">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-head">
+                <div class="testimonial-avatar-box">LM</div>
+                <div class="testimonial-user-info">
+                  <span class="testimonial-username">Laura M.</span>
+                  <span class="testimonial-handle">@LauraM_Cali • Cali</span>
+                </div>
+              </div>
+              <p class="testimonial-body">
+                "El dashboard me mostró con exactitud en qué competencias de Matemáticas estaba perdiendo puntos. Subí 85 puntos en solo dos meses de práctica quincenal."
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="testimonial-tag">310 → 395 pts (+85)</span>
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-head">
+                <div class="testimonial-avatar-box">SC</div>
+                <div class="testimonial-user-info">
+                  <span class="testimonial-username">Santiago C.</span>
+                  <span class="testimonial-handle">@SantiagoC_Buc • Bucaramanga</span>
+                </div>
+              </div>
+              <p class="testimonial-body">
+                "Lo más valioso es recibir los resultados al día siguiente. El plan de IA me indicaba con precisión qué ejercicios repasar cada mañana."
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="testimonial-tag">280 → 427 pts (+147)</span>
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-head">
+                <div class="testimonial-avatar-box">JR</div>
+                <div class="testimonial-user-info">
+                  <span class="testimonial-username">Juan R.</span>
+                  <span class="testimonial-handle">@JuanR_Bogota • Bogotá</span>
+                </div>
+              </div>
+              <p class="testimonial-body">
+                "Practiqué con los 15 simulacros calibrados y el día del examen oficial del ICFES sentí que estaba resolviendo una prueba más de Seamos Genios."
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="testimonial-tag">310 → 465 pts (+155)</span>
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-head">
+                <div class="testimonial-avatar-box">VA</div>
+                <div class="testimonial-user-info">
+                  <span class="testimonial-username">Valentina A.</span>
+                  <span class="testimonial-handle">@Valentina_Palmira • Palmira</span>
+                </div>
+              </div>
+              <p class="testimonial-body">
+                "Mi familia tenía dudas con las plataformas virtuales, pero cuando vimos el desglose por componente y el ranking nacional, supimos que era de otro nivel."
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="testimonial-tag">340 → 412 pts (+72)</span>
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-head">
+                <div class="testimonial-avatar-box">CM</div>
+                <div class="testimonial-user-info">
+                  <span class="testimonial-username">Carlos M.</span>
+                  <span class="testimonial-handle">@CarlosM_Cgena • Cartagena</span>
+                </div>
+              </div>
+              <p class="testimonial-body">
+                "Pasé de 353 a 441 puntos. La metodología del equipo me enseñó a razonar las preguntas complejas de lectura crítica y ciencias sociales."
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="testimonial-tag">353 → 441 pts (+88)</span>
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-head">
+                <div class="testimonial-avatar-box">SG</div>
+                <div class="testimonial-user-info">
+                  <span class="testimonial-username">Estudiante Destacada</span>
+                  <span class="testimonial-handle">@geniesita • Medellín</span>
+                </div>
+              </div>
+              <p class="testimonial-body">
+                "100% recomendados. Plataforma intuitiva, simulacros con cronómetro real y explicaciones detalladas pregunta por pregunta."
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="testimonial-tag">Puntaje Superior 400+</span>
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. EQUIPO ACADÉMICO & MENTORES DE ÉLITE (NEUTRAL SURFACE)
+         ========================================================================= -->
+    <section class="section section-surface" id="equipo">
       <div class="container">
         <div class="section-header">
           <div class="badge">Mentores de Excelencia</div>
-          <h2 class="section-title">El Equipo Detrás de los <span style="color: var(--brand-red);">Resultados</span></h2>
-          <p style="color: var(--text-muted);">Estudiantes e investigadores de las universidades más prestigiosas del país.</p>
+          <h2 class="section-title">El Equipo Detrás de los <span class="text-gradient-red">Resultados</span></h2>
+          <p class="section-subtitle">
+            Docentes e investigadores con puntajes récord provenientes de las universidades más prestigiosas del país.
+          </p>
         </div>
 
         <!-- Leadership Highlight Split -->
         <div class="leadership-highlight">
-          <div>
-            <span class="badge">Presidente & Fundador</span>
-            <h3 style="font-size: 1.4rem; margin-top: 0.5rem;">Daniel De La Cruz</h3>
-            <p style="color: var(--brand-red); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.75rem;">Universidad del Rosario • Ciencia de Datos</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">
-              Condecorado dos veces por excelencia académica en Samsung Innovation Campus. Ganador de Hackathon de programación y autodidacta apasionado por la innovación educativa.
+          <!-- Leader 1 -->
+          <div class="leader-card">
+            <div class="leader-card-head">
+              <div class="leader-avatar-circle">DD</div>
+              <div class="leader-info">
+                <span class="badge">Fundador & Presidente</span>
+                <h3>Daniel De La Cruz</h3>
+                <div class="leader-role">Universidad del Rosario • Ciencia de Datos</div>
+              </div>
+            </div>
+            <p class="leader-bio">
+              Condecorado dos veces por excelencia académica en Samsung Innovation Campus. Ganador de Hackathons de programación e inteligencia de datos, apasionado por revolucionar la educación en Colombia.
             </p>
           </div>
 
-          <div>
-            <span class="badge">Vicepresidente (475 Puntos)</span>
-            <h3 style="font-size: 1.4rem; margin-top: 0.5rem;">Ángel Pacheco</h3>
-            <p style="color: var(--brand-red); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.75rem;">UNAL & Uniandes • Doble Titulación</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">
-              Subió de 408 a 475 puntos en el ICFES. Estudia Ingeniería Agrícola en la Universidad Nacional y Matemáticas Puras en la Universidad de los Andes de forma simultánea.
+          <!-- Leader 2 -->
+          <div class="leader-card">
+            <div class="leader-card-head">
+              <div class="leader-avatar-circle">AP</div>
+              <div class="leader-info">
+                <span class="badge">Vicepresidente (475 Puntos)</span>
+                <h3>Ángel Pacheco</h3>
+                <div class="leader-role">UNAL & Uniandes • Doble Titulación</div>
+              </div>
+            </div>
+            <p class="leader-bio">
+              Subió de 408 a 475 puntos en el examen ICFES. Cursa Ingeniería Agrícola en la Universidad Nacional y Matemáticas Puras en la Universidad de los Andes de manera simultánea.
             </p>
           </div>
         </div>
@@ -324,9 +1326,9 @@
             <thead>
               <tr>
                 <th>Mentor / Docente</th>
-                <th>Especialidad</th>
-                <th>Universidad</th>
-                <th>Destacado ICFES</th>
+                <th>Especialidad Académica</th>
+                <th>Universidad de Origen</th>
+                <th>Puntaje Destacado ICFES</th>
               </tr>
             </thead>
             <tbody>
@@ -334,31 +1336,31 @@
                 <td><strong>Daniel Cuaspoca</strong></td>
                 <td>Ciencias Exactas & Física</td>
                 <td>UIS (Medicina)</td>
-                <td><span style="color: var(--brand-red); font-weight: 700;">477 Puntos (348 → 477)</span></td>
+                <td><span style="color: var(--brand-red); font-weight: 800;">477 Puntos (348 → 477)</span></td>
               </tr>
               <tr>
                 <td><strong>Alexandra Nitiol</strong></td>
-                <td>Lectura Crítica & Idiomas</td>
+                <td>Lectura Crítica & Lenguas</td>
                 <td>UNAL (Medicina)</td>
-                <td><span style="color: var(--brand-red); font-weight: 700;">428 Puntos (C1 Oxford)</span></td>
-              </tr>
-              <tr>
-                <td><strong>Jesús Tovar</strong></td>
-                <td>Ciencias Naturales</td>
-                <td>U. Surcolombiana</td>
-                <td><span>405 Puntos</span></td>
-              </tr>
-              <tr>
-                <td><strong>Heilen Aranda</strong></td>
-                <td>Lectura Crítica & Inglés</td>
-                <td>U. del Tolima</td>
-                <td><span style="color: var(--brand-red); font-weight: 700;">424 Puntos (Récord Institucional)</span></td>
+                <td><span style="color: var(--brand-red); font-weight: 800;">428 Puntos (C1 Oxford)</span></td>
               </tr>
               <tr>
                 <td><strong>David Cardona</strong></td>
                 <td>Sociales & Ciudadanas</td>
                 <td>Universidad Icesi</td>
-                <td><span style="color: var(--brand-red); font-weight: 700;">477 Puntos (Primera presentación)</span></td>
+                <td><span style="color: var(--brand-red); font-weight: 800;">477 Puntos (Primera presentación)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Jesús Tovar</strong></td>
+                <td>Ciencias Naturales & Biología</td>
+                <td>Univ. Surcolombiana</td>
+                <td><span>405 Puntos</span></td>
+              </tr>
+              <tr>
+                <td><strong>Heilen Aranda</strong></td>
+                <td>Lectura Crítica & Filosofía</td>
+                <td>Univ. del Tolima</td>
+                <td><span style="color: var(--brand-red); font-weight: 800;">424 Puntos (Récord Institucional)</span></td>
               </tr>
               <tr>
                 <td><strong>Carlos Murillo</strong></td>
@@ -373,394 +1375,580 @@
     </section>
 
     <!-- =========================================================================
-         6. PROGRAMAS & TARIFAS
+         8. COMPARATIVA TRANSPARENTE: SEAMOS GENIOS VS TRADICIONAL
          ========================================================================= -->
-    <section class="section" id="programas">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge">Inversión Académica</div>
-          <h2 class="section-title">Programas Adaptados a tus <span style="color: var(--brand-red);">Necesidades</span></h2>
-          <p style="color: var(--text-muted);">Planes para estudiantes individuales, colegios y secretarías de educación.</p>
-        </div>
-
-        <div class="pricing-split">
-          <!-- Featured Main Plan -->
-          <div class="featured-plan">
-            <span class="badge">Programa Intensivo 7 Meses</span>
-            <h3 style="font-size: 1.75rem; margin-top: 0.5rem;">Plan Calendario A</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
-              Programa completo con clases en vivo, simulacros quincenales calibrados, plataforma IA adaptativa y soporte docente ilimitado.
-            </p>
-
-            <div style="margin: 1.5rem 0;">
-              <span style="text-decoration: line-through; color: var(--text-light); font-size: 1.1rem;">$600.000 COP</span><br>
-              <span style="font-size: 2.75rem; font-weight: 900; color: var(--brand-red);">$300.000 COP</span>
-              <span style="font-size: 0.85rem; color: var(--text-muted);"> (50% Descuento)</span>
-            </div>
-
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.75rem; font-size: 0.9rem;">
-              <li>✓ Simulacros quincenales con entrega en 24h</li>
-              <li>✓ Orientación vocacional personalizada</li>
-              <li>✓ Plataforma IA con dashboard de ranking nacional</li>
-              <li>✓ 1 TB Cloud Vault con cuadernillos y material descargable</li>
-            </ul>
-
-            <button class="btn btn-primary" data-open-modal style="width: 100%;">Inscribirme al Programa</button>
-          </div>
-
-          <!-- Side Alternative Options -->
-          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-            <div class="side-plan">
-              <span class="badge">Práctica Individual</span>
-              <h4 style="font-size: 1.2rem; margin-top: 0.3rem;">Simulacro Tipo ICFES</h4>
-              <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0.4rem 0;">254 preguntas oficial ICFES y dashboard analítico.</p>
-              <div style="font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-bottom: 1rem;">$15.000 COP</div>
-              <button class="btn btn-secondary" data-open-modal style="width: 100%;">Comprar Simulacro</button>
-            </div>
-
-            <div class="side-plan">
-              <span class="badge">Colegios & Entidades</span>
-              <h4 style="font-size: 1.2rem; margin-top: 0.3rem;">Acompañamiento Institucional</h4>
-              <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0.4rem 0;">Licencias masivas, capacitaciones y reportes para rectores.</p>
-              <div style="font-size: 1.3rem; font-weight: 700; color: var(--text-main); margin-bottom: 1rem;">Cotización a Medida</div>
-              <button class="btn btn-secondary" data-open-modal style="width: 100%;">Solicitar Propuesta</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         7. TABLA COMPARATIVA VS TRADICIONAL
-         ========================================================================= -->
-    <section class="section" id="comparativa" style="background: var(--bg-surface);">
+    <section class="section section-light" id="comparativa">
       <div class="container">
         <div class="section-header">
           <div class="badge">Comparativa de Mercado</div>
-          <h2 class="section-title">Tecnología de Clase Mundial vs <span style="color: var(--brand-red);">PreICFES Tradicional</span></h2>
-          <p style="color: var(--text-muted);">7 de 8 categorías donde Seamos Genios supera a los métodos tradicionales.</p>
+          <h2 class="section-title">Seamos Genios vs <span class="text-gradient-red">PreICFES Tradicional</span></h2>
+          <p class="section-subtitle">
+            Compara por qué nuestro modelo con neurociencia e inteligencia artificial supera ampliamente a los métodos convencionales.
+          </p>
         </div>
 
-        <div class="table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Característica / Beneficio</th>
-                <th style="color: var(--brand-red); font-size: 1rem;">Seamos Genios (IA + Neuro)</th>
-                <th>PreICFES Tradicional</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Dashboard de Analítica con IA</strong></td>
-                <td><strong style="color: var(--accent-emerald);">Sí — Análisis de rendimiento en tiempo real</strong></td>
-                <td style="color: var(--text-light);">No disponible</td>
-              </tr>
-              <tr>
-                <td><strong>Ranking Nacional en Vivo</strong></td>
-                <td><strong style="color: var(--accent-emerald);">Sí — Comparación directa con +380 alumnos</strong></td>
-                <td style="color: var(--text-light);">No existe</td>
-              </tr>
-              <tr>
-                <td><strong>Velocidad de Entrega de Resultados</strong></td>
-                <td><strong style="color: var(--brand-red);">Máximo 24 Horas Garantizadas</strong></td>
-                <td style="color: var(--text-light);">1 a 2 semanas</td>
-              </tr>
-              <tr>
-                <td><strong>Plan de Estudio Adaptativo</strong></td>
-                <td><strong style="color: var(--accent-emerald);">Personalizado con Inteligencia Artificial</strong></td>
-                <td style="color: var(--text-light);">Genérico para todos</td>
-              </tr>
-              <tr>
-                <td><strong>Formato 100% Réplica Oficial ICFES</strong></td>
-                <td><strong>254 Preguntas calibradas por edición</strong></td>
-                <td style="color: var(--text-light);">Varía según la cartilla</td>
-              </tr>
-              <tr>
-                <td><strong>Inversión por Simulacro</strong></td>
-                <td><strong style="color: var(--accent-emerald);">$15.000 COP</strong></td>
-                <td style="color: var(--text-light);">$30.000 — $80.000 COP</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Modern 2-Column Showdown Matrix (Linear / Stripe Style) -->
+        <div class="comparison-showdown-grid">
+          <!-- Card 1: PreICFES Tradicional -->
+          <div class="comp-card-traditional">
+            <div>
+              <div class="comp-card-header">
+                <span class="comp-badge-muted">Modelo Convencional</span>
+                <h3 class="comp-card-title">PreICFES Tradicional</h3>
+              </div>
+
+              <div class="comp-feature-stack">
+                <div class="comp-feature-row">
+                  <div class="comp-icon-cross">✕</div>
+                  <div class="comp-feature-text">
+                    <h4>Reporte en Fotocopias</h4>
+                    <p>Hojas impresas sin analítica ni mapa de calor de debilidades.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-cross">✕</div>
+                  <div class="comp-feature-text">
+                    <h4>Entrega en 1 a 2 Semanas</h4>
+                    <p>Procesamiento manual tardío que retrasa tu aprendizaje.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-cross">✕</div>
+                  <div class="comp-feature-text">
+                    <h4>Sin Ranking Nacional</h4>
+                    <p>No sabes cuál es tu posición real frente a los demás aspirantes.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-cross">✕</div>
+                  <div class="comp-feature-text">
+                    <h4>Clase Magistral Genérica</h4>
+                    <p>El mismo temario para 40 alumnos sin adaptación individual.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-cross">✕</div>
+                  <div class="comp-feature-text">
+                    <h4>Cartillas Desactualizadas</h4>
+                    <p>Preguntas antiguas sin calibración psicométrica real.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="comp-card-price-row">
+              <div>
+                <div class="comp-price-label">Inversión por prueba</div>
+                <div class="comp-price-value" style="color: #94A3B8; text-decoration: line-through;">$60.000 COP</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Seamos Genios (IA + Neurociencia) -->
+          <div class="comp-card-sg">
+            <div>
+              <div class="comp-card-header">
+                <span class="badge badge-emerald">Innovación EdTech</span>
+                <h3 class="comp-card-title">Seamos Genios <span class="text-gradient-red">(IA + Neuro)</span></h3>
+              </div>
+
+              <div class="comp-feature-stack">
+                <div class="comp-feature-row">
+                  <div class="comp-icon-check">✓</div>
+                  <div class="comp-feature-text">
+                    <h4>Dashboard Analítico con IA</h4>
+                    <p>Mapa de calor interactivo por componente y micro-brechas cognitivas.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-check">✓</div>
+                  <div class="comp-feature-text">
+                    <h4>Resultados en Menos de 24h</h4>
+                    <p><span class="comp-highlight-tag">Garantizado</span>: Recibes tu informe al día siguiente para corregir de inmediato.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-check">✓</div>
+                  <div class="comp-feature-text">
+                    <h4>Ranking Nacional en Vivo</h4>
+                    <p>Compara tu percentil al instante contra más de 1.400 estudiantes en Colombia.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-check">✓</div>
+                  <div class="comp-feature-text">
+                    <h4>Plan Adaptativo con Repetición Espaciada</h4>
+                    <p>Neurociencia aplicada que entrena tu memoria de trabajo y velocidad de lectura.</p>
+                  </div>
+                </div>
+
+                <div class="comp-feature-row">
+                  <div class="comp-icon-check">✓</div>
+                  <div class="comp-feature-text">
+                    <h4>254 Preguntas Calibradas Tipo ICFES</h4>
+                    <p>Estructura idéntica al examen oficial con cronómetro y cuadernillo real.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="comp-card-price-row">
+              <div>
+                <div class="comp-price-label">Inversión por prueba completa</div>
+                <div class="comp-price-value" style="color: var(--accent-emerald);">$15.000 <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">COP</span></div>
+              </div>
+              <button class="btn btn-primary" data-open-modal type="button">
+                Comenzar Ahora →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colombian Payment Gateways & DIAN Invoicing Card -->
+        <div class="payment-gateways-card">
+          <div>
+            <div class="payment-title-row">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF1E27" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              <h3>Métodos de Pago Seguros en Colombia</h3>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.55;">
+              Aceptamos los principales ecosistemas bancarios y billeteras digitales de Colombia con acreditación automática al instante y cifrado bancario de 256 bits.
+            </p>
+
+            <!-- Fintech & Banks Grid with Official Style Badges -->
+            <div class="payment-method-grid">
+              <!-- 1. Bancolombia / Wompi -->
+              <div class="bank-badge">
+                <div class="bank-icon-box" style="background: #FDDA24; color: #000000;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 18h16v2H4zM4 14h16v2H4zM4 10h16v2H4zM4 4h16v4H4z"/></svg>
+                </div>
+                <div>
+                  <div class="bank-name">Bancolombia</div>
+                  <div class="bank-sub">Wompi Gateway</div>
+                </div>
+              </div>
+
+              <!-- 2. Nequi -->
+              <div class="bank-badge">
+                <div class="bank-icon-box" style="background: #E00075; color: #FFFFFF;">
+                  <span style="font-size: 1rem; font-weight: 900; font-family: sans-serif;">N</span>
+                </div>
+                <div>
+                  <div class="bank-name">Nequi</div>
+                  <div class="bank-sub">QR & Transferencia</div>
+                </div>
+              </div>
+
+              <!-- 3. Daviplata -->
+              <div class="bank-badge">
+                <div class="bank-icon-box" style="background: #ED1C24; color: #FFFFFF;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+                </div>
+                <div>
+                  <div class="bank-name">Daviplata</div>
+                  <div class="bank-sub">Davivienda</div>
+                </div>
+              </div>
+
+              <!-- 4. PSE -->
+              <div class="bank-badge">
+                <div class="bank-icon-box" style="background: #002B49; color: #FFC72C;">
+                  <span style="font-size: 0.7rem; font-weight: 900;">PSE</span>
+                </div>
+                <div>
+                  <div class="bank-name">PSE</div>
+                  <div class="bank-sub">Débito en Línea</div>
+                </div>
+              </div>
+
+              <!-- 5. Bold -->
+              <div class="bank-badge">
+                <div class="bank-icon-box" style="background: #0F172A; color: #38BDF8;">
+                  <span style="font-size: 0.75rem; font-weight: 900;">B</span>
+                </div>
+                <div>
+                  <div class="bank-name">Bold</div>
+                  <div class="bank-sub">Link & Datafono</div>
+                </div>
+              </div>
+
+              <!-- 6. Mercado Pago -->
+              <div class="bank-badge">
+                <div class="bank-icon-box" style="background: #009EE3; color: #FFFFFF;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 11v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6M4 11l8-8 8 8"/></svg>
+                </div>
+                <div>
+                  <div class="bank-name">Mercado Pago</div>
+                  <div class="bank-sub">Tarjeta & Saldo</div>
+                </div>
+              </div>
+
+              <!-- 7. Tarjetas de Crédito -->
+              <div class="bank-badge" style="grid-column: span 3;">
+                <div class="bank-icon-box" style="background: #F1F5F9; color: #0F172A;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                </div>
+                <div>
+                  <div class="bank-name">Visa • Mastercard • American Express • Diners</div>
+                  <div class="bank-sub">Hasta 36 cuotas con acreditación inmediata y protección antifraude SSL</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certified Invoicing Card (DIAN & Factus) -->
+          <div class="invoicing-seal-card">
+            <div class="invoicing-head">
+              <span class="badge badge-emerald">Cumplimiento DIAN</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h4 class="invoicing-title">Facturación Electrónica Legal</h4>
+            <p class="invoicing-desc">
+              Emitimos factura electrónica DIAN legalmente validada para deducción de costos, personas naturales, colegios, empresas y secretarías a través de API Factus.
+            </p>
+            <div class="invoicing-compliance-tags">
+              <span class="compliance-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> XML & PDF DIAN</span>
+              <span class="compliance-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> CUFE Validado</span>
+              <span class="compliance-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Factus API</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- =========================================================================
-         8. RESULTADOS REALES & TESTIMONIOS (SUPABASE STYLE WALL OF LOVE)
+         9. FAQ CON VIDEO VISOR INTEGRADO (CURSOR/ANTIGRAVITY DARK SECTION)
          ========================================================================= -->
-    <section class="section" id="resultados">
+    <section class="section section-dark" id="faq">
       <div class="container">
         <div class="section-header">
-          <div class="badge">Wall of Love</div>
-          <h2 class="section-title">Lo que Dicen <span style="color: var(--brand-red);">Nuestros Estudiantes</span></h2>
-          <p style="color: var(--text-muted);">Historias reales de superación académica en toda Colombia.</p>
+          <div class="badge badge-dark">Inquietudes Resueltas</div>
+          <h2 class="section-title">Preguntas Frecuentes & <span class="text-gradient-red">Demo Tour</span></h2>
+          <p class="section-subtitle">
+            Conoce cómo funciona nuestra plataforma, fechas de presentación y todo lo necesario para comenzar hoy.
+          </p>
         </div>
 
-        <div class="testimonials-wall">
-          <!-- Card 1 -->
-          <div class="testimonial-card">
-            <div class="testimonial-head">
-              <div class="testimonial-avatar-box">LM</div>
-              <div class="testimonial-user-info">
-                <span class="testimonial-username">Laura M.</span>
-                <span class="testimonial-handle">@LauraM_Cali</span>
+        <div class="faq-video-layout">
+          <!-- Left: Accordion (All Items Interactive) -->
+          <div class="faq-stack">
+            <div class="faq-item active">
+              <button class="faq-btn" type="button">
+                ¿Los simulacros son virtuales o presenciales?
+                <span class="faq-icon-circle">+</span>
+              </button>
+              <div class="faq-content">
+                Nuestros simulacros son 100% virtuales a través de nuestra plataforma web interactiva, accesibles desde cualquier computador, tablet o smartphone en cualquier ciudad de Colombia.
               </div>
             </div>
-            <p class="testimonial-body">
-              "El dashboard me mostró exactamente en qué competencias de Matemáticas estaba fallando. Subí 85 puntos en solo 2 meses de práctica."
-            </p>
-            <span class="testimonial-tag">310 → 395 pts (+85 pts)</span>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button">
+                ¿Cuándo y cómo recibo los resultados de mi prueba?
+                <span class="faq-icon-circle">+</span>
+              </button>
+              <div class="faq-content">
+                Garantizamos la entrega de tu dashboard analítico completo al día siguiente de presentar el simulacro (menos de 24 horas), con desglose por componente, percentil nacional y retroalimentación interactiva.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button">
+                ¿Cuántas preguntas incluye cada simulacro calibrado?
+                <span class="faq-icon-circle">+</span>
+              </button>
+              <div class="faq-content">
+                Cada simulacro consta de 254 preguntas calibradas que replican exactamente la estructura, distribución por áreas (Lectura Crítica, Matemáticas, Ciencias Naturales, Sociales y Ciudadanas, Inglés) y tiempos oficiales del examen ICFES.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button">
+                ¿Cómo funcionan los convenios para colegios y secretarías?
+                <span class="faq-icon-circle">+</span>
+              </button>
+              <div class="faq-content">
+                Ofrecemos planes institucionales con panel de control para rectores, reportes comparativos por salón, talleres docentes y emisión de factura electrónica legal para deducción y soporte contable.
+              </div>
+            </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="testimonial-card">
-            <div class="testimonial-head">
-              <div class="testimonial-avatar-box">SC</div>
-              <div class="testimonial-user-info">
-                <span class="testimonial-username">Santiago C.</span>
-                <span class="testimonial-handle">@SantiagoC_Bucaramanga</span>
-              </div>
+          <!-- Right: Interactive Video Preview (Factus Style) -->
+          <div class="video-preview-card" id="faq-video-card" style="background: linear-gradient(135deg, #182234 0%, #131A26 100%);">
+            <div class="video-overlay-gradient"></div>
+            
+            <div class="video-center-action">
+              <button class="btn-play-circle" aria-label="Reproducir video explicativo" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <span class="video-badge-pill">Video Explicativo • Próximamente</span>
             </div>
-            <p class="testimonial-body">
-              "Lo mejor es que los resultados se entregan al día siguiente. El plan de IA me indicaba exactamente qué repasar cada jornada."
-            </p>
-            <span class="testimonial-tag">280 → 427 pts (+147 pts)</span>
-          </div>
 
-          <!-- Card 3 -->
-          <div class="testimonial-card">
-            <div class="testimonial-head">
-              <div class="testimonial-avatar-box">JR</div>
-              <div class="testimonial-user-info">
-                <span class="testimonial-username">Juan R.</span>
-                <span class="testimonial-handle">@JuanR_Bogota</span>
-              </div>
+            <div class="video-info-footer">
+              <div class="video-info-title">Tour por la Plataforma Seamos Genios</div>
+              <div class="video-info-sub">Descubre cómo interpretar tu dashboard analítico y alcanzar los 400+ puntos.</div>
             </div>
-            <p class="testimonial-body">
-              "Practiqué con los simulacros y el día del examen oficial sentí que estaba resolviendo una prueba más de Seamos Genios."
-            </p>
-            <span class="testimonial-tag">310 → 465 pts (+155 pts)</span>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="testimonial-card">
-            <div class="testimonial-head">
-              <div class="testimonial-avatar-box">G5</div>
-              <div class="testimonial-user-info">
-                <span class="testimonial-username">Geniesita</span>
-                <span class="testimonial-handle">@geniesita5</span>
-              </div>
-            </div>
-            <p class="testimonial-body">
-              "Así estudio con Seamos Genios. Plataforma 100% verificada, resultados garantizados en 24h y retroalimentación pregunta por pregunta."
-            </p>
-            <span class="testimonial-tag">Estudiante Destacada</span>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="testimonial-card">
-            <div class="testimonial-head">
-              <div class="testimonial-avatar-box">VA</div>
-              <div class="testimonial-user-info">
-                <span class="testimonial-username">Valentina A.</span>
-                <span class="testimonial-handle">@Valentina_Palmira</span>
-              </div>
-            </div>
-            <p class="testimonial-body">
-              "Mi mamá no creía en simulacros virtuales, pero cuando vio mi dashboard con el análisis por materia quedó convencida."
-            </p>
-            <span class="testimonial-tag">340 → 412 pts (+72 pts)</span>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="testimonial-card">
-            <div class="testimonial-head">
-              <div class="testimonial-avatar-box">CM</div>
-              <div class="testimonial-user-info">
-                <span class="testimonial-username">Carlos M.</span>
-                <span class="testimonial-handle">@CarlosM_Cartagena</span>
-              </div>
-            </div>
-            <p class="testimonial-body">
-              "Pasé de 353 a 441 puntos. La metodología del equipo me enseñó a razonar las preguntas de lectura crítica y sociales."
-            </p>
-            <span class="testimonial-tag">353 → 441 pts (+88 pts)</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =========================================================================
-         9. PREGUNTAS FRECUENTES
+         10. BANNER WHATSAPP & FORMULARIO DE CONTACTO (LIGHT SECTION)
          ========================================================================= -->
-    <section class="section" id="faq" style="background: var(--bg-surface);">
-      <div class="container" style="max-width: 800px;">
-        <div class="section-header">
-          <div class="badge">Preguntas Frecuentes</div>
-          <h2 class="section-title">Inquietudes <span style="color: var(--brand-red);">Habituales</span></h2>
+    <section class="section section-surface" id="contacto">
+      <div class="container">
+        <!-- WhatsApp CTA Card (Factus Style, Clean Vector Icon) -->
+        <div class="whatsapp-cta-card">
+          <div>
+            <h3 class="whatsapp-cta-title">¿Quieres una asesoría vocacional personalizada?</h3>
+            <p class="whatsapp-cta-desc">
+              Escríbenos directamente a nuestro WhatsApp oficial y uno de nuestros mentores te orientará en minutos sin costo.
+            </p>
+          </div>
+          <a href="https://wa.me/573001234567?text=Hola%20Seamos%20Genios,%20deseo%20asesoria%20personalizada" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="white-space: nowrap;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
         </div>
 
-        <div class="faq-stack">
-          <div class="faq-item">
-            <button class="faq-btn">¿El simulacro es presencial o virtual? <span>+</span></button>
-            <div class="faq-content">Los simulacros son 100% virtuales a través de nuestra plataforma interactiva, accesibles desde cualquier ciudad de Colombia.</div>
+        <div style="max-width: 680px; margin: 3.5rem auto 0 auto;">
+          <div class="section-header">
+            <div class="badge">Contacto Directo</div>
+            <h2 class="section-title">¿Listo para Elevar tu <span class="text-gradient-red">Puntaje</span>?</h2>
+            <p class="section-subtitle">
+              Déjanos tus datos y nos pondremos en contacto contigo a la mayor brevedad.
+            </p>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-btn">¿Cuándo se entregan los resultados del simulacro? <span>+</span></button>
-            <div class="faq-content">Garantizamos la entrega de tu dashboard analítico completo al día siguiente de presentar la prueba (menos de 24 horas).</div>
-          </div>
+          <form id="contact-form-main" style="display: flex; flex-direction: column; gap: 1.15rem; background: var(--bg-card); padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Nombre Completo *</label>
+              <input type="text" class="input-pill" placeholder="Ej: Carlos Rodríguez" required autocomplete="name">
+            </div>
 
-          <div class="faq-item">
-            <button class="faq-btn">¿Cuántas preguntas incluye cada simulacro? <span>+</span></button>
-            <div class="faq-content">Cada simulacro consta de 254 preguntas calibradas bajo el modelo exacto del examen oficial ICFES.</div>
-          </div>
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Correo Electrónico *</label>
+              <input type="email" class="input-pill" placeholder="tu-correo@ejemplo.com" required autocomplete="email">
+            </div>
 
-          <div class="faq-item">
-            <button class="faq-btn">¿Cómo solicitar licencias para colegios o alcaldías? <span>+</span></button>
-            <div class="faq-content">Ofrecemos planes institucionales con reportes comparativos por salón, capacitaciones docentes y atención personalizada.</div>
-          </div>
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Teléfono / WhatsApp *</label>
+              <input type="tel" class="input-pill" placeholder="+57 300 123 4567" required autocomplete="tel">
+            </div>
+
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Perfil de Usuario</label>
+              <select class="input-pill" style="appearance: auto;">
+                <option>Estudiante (PreICFES Saber 11)</option>
+                <option>Padre de Familia</option>
+                <option>Colegio / Institución Educativa</option>
+                <option>Secretaría de Educación / Alcaldía</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 0.75rem; width: 100%;">
+              Enviar Mensaje →
+            </button>
+          </form>
         </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         10. CONTACTO & FORMULARIO
-         ========================================================================= -->
-    <section class="section" id="contacto">
-      <div class="container" style="max-width: 680px;">
-        <div class="section-header">
-          <div class="badge">Contacto Directo</div>
-          <h2 class="section-title">¿Listo para Elevar tu <span style="color: var(--brand-red);">Puntaje</span>?</h2>
-          <p style="color: var(--text-muted);">Completa el formulario y te responderemos a la brevedad.</p>
-        </div>
-
-        <form id="contact-form-main" style="display: flex; flex-direction: column; gap: 1rem; background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
-          <div>
-            <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Nombre Completo *</label>
-            <input type="text" class="btn-secondary" style="width: 100%; text-align: left; padding: 0.75rem 1rem;" placeholder="Ej: Carlos Rodríguez" required>
-          </div>
-
-          <div>
-            <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Correo Electrónico *</label>
-            <input type="email" class="btn-secondary" style="width: 100%; text-align: left; padding: 0.75rem 1rem;" placeholder="correo@ejemplo.com" required>
-          </div>
-
-          <div>
-            <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Teléfono / WhatsApp *</label>
-            <input type="tel" class="btn-secondary" style="width: 100%; text-align: left; padding: 0.75rem 1rem;" placeholder="+57 300 123 4567" required>
-          </div>
-
-          <div>
-            <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Perfil de Usuario</label>
-            <select class="btn-secondary" style="width: 100%; text-align: left; padding: 0.75rem 1rem;">
-              <option>Estudiante (PreICFES Individual)</option>
-              <option>Colegio / Institución Educativa</option>
-              <option>Secretaría de Educación / Entidad Pública</option>
-              <option>Padre de Familia</option>
-            </select>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
-            Enviar Mensaje
-          </button>
-        </form>
       </div>
     </section>
   </main>
 
-  <!-- Modal Registration Form -->
-  <div class="modal-overlay" id="lead-modal" style="position: fixed; inset: 0; background: rgba(0,0,0,0.75); display: flex; align-items: center; justify-content: center; z-index: 2000; opacity: 0; pointer-events: none; transition: all 0.3s;">
-    <div style="background: var(--bg-card); width: 90%; max-width: 480px; border-radius: var(--radius-lg); padding: 2rem; position: relative; border: 1px solid var(--border-color);">
-      <button id="modal-close-btn" style="position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; color: var(--text-muted);">&times;</button>
-      <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem;">Inscripción Seamos Genios</h3>
-      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.25rem;">Completa tus datos para enviarte los accesos de inmediato.</p>
-      
-      <form id="modal-lead-form" style="display: flex; flex-direction: column; gap: 0.85rem;">
-        <input type="text" class="btn-secondary" style="text-align: left; width: 100%;" placeholder="Nombre Completo *" required>
-        <input type="email" class="btn-secondary" style="text-align: left; width: 100%;" placeholder="Correo Electrónico *" required>
-        <input type="tel" class="btn-secondary" style="text-align: left; width: 100%;" placeholder="WhatsApp *" required>
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirmar Registro</button>
-      </form>
-    </div>
-  </div>
-
   <!-- =========================================================================
-       11. FOOTER WITH BRAND LOGOS AND SOCIAL NETWORKS (SVG ICONS)
+       11. MONUMENTAL FOOTER (CURSOR/ANTIGRAVITY DARK - FACTUS STYLE)
        ========================================================================= -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
+    <!-- Big Watermark -->
+    <div class="footer-watermark">GENIOS</div>
+
     <div class="container">
-      <div class="footer-grid">
+      <!-- Call to Action Banner -->
+      <div class="footer-hero-banner">
         <div>
+          <h3 class="footer-banner-title">Comienza Hoy tu Camino al Puntaje 400+</h3>
+          <p class="footer-banner-desc">Únete a más de 1.400 estudiantes en Colombia y prepárate con simulacros calibrados y neuroaprendizaje.</p>
+        </div>
+        <button class="btn btn-white" data-open-modal style="white-space: nowrap;" type="button">
+          Inscribirme Ahora →
+        </button>
+      </div>
+
+      <!-- Footer Grid -->
+      <div class="footer-grid">
+        <div class="footer-brand-col">
           <a href="#hero" class="logo">
-            <img src="assets/logo-black.svg" alt="Seamos Genios Logo" class="brand-logo-img logo-light" style="height: 32px;">
-            <img src="assets/logo-white.svg" alt="Seamos Genios Logo" class="brand-logo-img logo-dark" style="height: 32px;">
+            <img src="assets/logo-white.svg" alt="Seamos Genios Logo" class="footer-brand-logo" width="180" height="48" loading="lazy">
           </a>
-          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.75rem; max-width: 300px;">
-            Plataforma líder en preparación inteligente para el examen ICFES en Colombia.
+          <p class="footer-brand-desc">
+            Plataforma educativa líder en Colombia que combina tecnología de IA y neurociencia para revolucionar el rendimiento en el examen ICFES Saber 11.
           </p>
 
-          <!-- Official Social Networks (SVG Icons - Zero Emojis) -->
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: 1.25rem;">
+          <!-- Circular Social Buttons (Official Clean SVGs) -->
+          <div class="footer-social-circles">
             <!-- Instagram -->
-            <a href="https://instagram.com/seamosgenios" target="_blank" aria-label="Instagram @seamosgenios" class="theme-toggle-btn" style="width: 32px; height: 32px;">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://instagram.com/seamosgenios" target="_blank" rel="noopener noreferrer" aria-label="Instagram @seamosgenios" class="footer-social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
 
             <!-- TikTok -->
-            <a href="https://tiktok.com/@seamosgenios" target="_blank" aria-label="TikTok @seamosgenios" class="theme-toggle-btn" style="width: 32px; height: 32px;">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            <a href="https://tiktok.com/@seamosgenios" target="_blank" rel="noopener noreferrer" aria-label="TikTok @seamosgenios" class="footer-social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
             </a>
 
             <!-- WhatsApp -->
-            <a href="https://wa.me/573001234567" target="_blank" aria-label="WhatsApp +57 300 123 4567" class="theme-toggle-btn" style="width: 32px; height: 32px;">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Seamos Genios" class="footer-social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
             </a>
 
             <!-- LinkedIn -->
-            <a href="https://linkedin.com/company/seamosgenios" target="_blank" aria-label="LinkedIn Seamos Genios" class="theme-toggle-btn" style="width: 32px; height: 32px;">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://linkedin.com/company/seamosgenios" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Seamos Genios" class="footer-social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/@seamosgenios" target="_blank" rel="noopener noreferrer" aria-label="YouTube Seamos Genios" class="footer-social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
             </a>
           </div>
         </div>
 
         <div>
-          <h4 style="font-size: 0.9rem; margin-bottom: 0.75rem;">Programas</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.85rem; color: var(--text-muted);">
-            <li><a href="#programas">Plan Calendario A</a></li>
-            <li><a href="#programas">Simulacros $15.000</a></li>
+          <h4 class="footer-col-title">Programas</h4>
+          <ul class="footer-links-list">
+            <li><a href="#programas">Plan Calendario A (7 Meses)</a></li>
+            <li><a href="#programas">Simulacros Individuales $15.000</a></li>
             <li><a href="#programas">Colegios e Instituciones</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 style="font-size: 0.9rem; margin-bottom: 0.75rem;">Compañía</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.85rem; color: var(--text-muted);">
+          <h4 class="footer-col-title">Ecosistema</h4>
+          <ul class="footer-links-list">
             <li><a href="#nosotros">Quiénes Somos</a></li>
-            <li><a href="#equipo">Mentores</a></li>
-            <li><a href="#comparativa">¿Por qué SG?</a></li>
+            <li><a href="#metodologia">Metodología en 4 Pasos</a></li>
+            <li><a href="#red-nacional">Cobertura Nacional</a></li>
+            <li><a href="#colegios">Colegios Aliados</a></li>
+            <li><a href="#equipo">Mentores de Élite</a></li>
+            <li><a href="#resultados">Resultados & Testimonios</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 style="font-size: 0.9rem; margin-bottom: 0.75rem;">Contacto</h4>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">contacto@seamosgenios.com</p>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">+57 300 123 4567</p>
+          <h4 class="footer-col-title">Contacto</h4>
+          <p style="font-size: 0.885rem; color: var(--text-white-muted);">contacto@seamosgenios.org</p>
+          <p style="font-size: 0.885rem; color: var(--text-white-muted); margin-top: 0.35rem;">+57 300 123 4567</p>
+          <p style="font-size: 0.885rem; color: var(--text-white-muted); margin-top: 0.35rem;">Bogotá & Cali, Colombia</p>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Seamos Genios. Todos los derechos reservados. Colombia.</div>
-        <div>
-          <a href="#" style="margin-right: 1rem;">Privacidad</a>
-          <a href="#">Términos</a>
+      <!-- Footer Bottom Bar (Factus Style Legal Row) -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Seamos Genios SAS. Todos los derechos reservados. Colombia.</div>
+        <div class="footer-legal-links">
+          <a href="#">Términos y Condiciones</a>
+          <span class="footer-legal-divider">|</span>
+          <a href="#">Política y Privacidad de Datos</a>
+          <span class="footer-legal-divider">|</span>
+          <a href="#">Acuerdo de Nivel de Servicio (SLA)</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="js/app.js"></script>
+  <!-- Floating WhatsApp Pill Button (Clean Official SVG) -->
+  <a href="https://wa.me/573001234567?text=Hola%20Seamos%20Genios,%20quiero%20informacion" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Escríbenos por WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- =========================================================================
+       12. AUTH & REGISTRATION MODAL (CAMBAS+ DUAL-COLUMN STYLE - NO EMOJIS)
+       ========================================================================= -->
+  <div class="modal-overlay" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="auth-modal-card">
+      <button class="modal-close-btn" aria-label="Cerrar ventana modal" type="button">&times;</button>
+      
+      <!-- Left Side Brand Panel -->
+      <div class="auth-brand-side">
+        <div>
+          <img src="assets/logo-white.svg" alt="Seamos Genios Logo Blanco" style="height: 36px;" width="140" height="36" loading="lazy">
+          <h2 class="auth-brand-title">Ecosistema Seamos Genios</h2>
+          <p class="auth-brand-desc">
+            Accede a tu panel interactivo, consulta tus simulacros calibrados y potencia tu aprendizaje con neurociencia e IA.
+          </p>
+        </div>
+
+        <div class="auth-stats-grid">
+          <div>
+            <div class="auth-stat-num">1.400+</div>
+            <div class="auth-stat-lbl">Alumnos</div>
+          </div>
+          <div>
+            <div class="auth-stat-num">477</div>
+            <div class="auth-stat-lbl">Puntaje Máx</div>
+          </div>
+          <div>
+            <div class="auth-stat-num">24h</div>
+            <div class="auth-stat-lbl">Reportes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Form -->
+      <div class="auth-form-side">
+        <div class="auth-form-head">
+          <!-- Role Switcher (CAMBAS+ Style - No emojis) -->
+          <div class="pill-switcher" style="margin-bottom: 1.25rem;">
+            <button type="button" class="pill-switcher-btn role-tab-btn active" data-role="estudiante">Estudiante</button>
+            <button type="button" class="pill-switcher-btn role-tab-btn" data-role="colegio">Colegio</button>
+            <button type="button" class="pill-switcher-btn role-tab-btn" data-role="padre">Padre de Familia</button>
+          </div>
+
+          <h3 id="modal-title" style="font-size: 1.45rem; font-weight: 900; color: var(--text-main);">
+            Bienvenido a Seamos Genios
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;" id="modal-role-desc">
+            Acceso a simulacros calibrados, dashboard en vivo y neuroaprendizaje con IA.
+          </p>
+        </div>
+
+        <form id="modal-lead-form" style="display: flex; flex-direction: column; gap: 0.85rem;">
+          <input type="hidden" id="modal-role-input" value="estudiante">
+          
+          <div>
+            <input type="text" class="input-pill" placeholder="Nombre Completo *" required autocomplete="name">
+          </div>
+
+          <div>
+            <input type="email" class="input-pill" placeholder="Correo Electrónico *" required autocomplete="email">
+          </div>
+
+          <div>
+            <input type="tel" class="input-pill" placeholder="WhatsApp / Teléfono *" required autocomplete="tel">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+            Ingresar / Inscribirme →
+          </button>
+
+          <p style="font-size: 0.75rem; color: var(--text-light); text-align: center; margin-top: 0.5rem;">
+            Al continuar aceptas nuestros Términos de Servicio y Política de Privacidad de Datos.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Script Initialization (Compatible locally and on server) -->
+  <script src="js/app.js" defer></script>
 </body>
 </html>

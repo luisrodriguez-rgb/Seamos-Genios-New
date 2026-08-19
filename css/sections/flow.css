@@ -1,0 +1,182 @@
+/* ==========================================================================
+   METHODOLOGY FLOW (4-STEP INTERACTIVE PATHWAY - FACTUS STYLE - v2.1)
+   ========================================================================== */
+.flow-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.flow-step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all var(--transition-smooth);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.flow-step-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-red-border);
+  box-shadow: var(--shadow-md);
+}
+
+/* Dark section adaptation for Flow */
+.section-dark .flow-step-card {
+  background: var(--bg-dark-card);
+  border-color: var(--border-dark);
+}
+
+.section-dark .flow-step-card:hover {
+  border-color: var(--brand-red);
+  box-shadow: 0 10px 30px rgba(255, 30, 39, 0.2);
+}
+
+.flow-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--brand-red-light);
+  border: 1px solid var(--brand-red-border);
+  color: var(--brand-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: transform var(--transition-bounce);
+}
+
+.flow-step-card:hover .flow-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+  background: var(--brand-red);
+  color: #FFFFFF;
+}
+
+.flow-step-badge {
+  font-size: 0.725rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--brand-red);
+  margin-bottom: 0.4rem;
+}
+
+.flow-step-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  line-height: 1.25;
+  color: #FFFFFF;
+}
+
+.flow-step-desc {
+  font-size: 0.9rem;
+  color: var(--text-white-muted);
+  line-height: 1.55;
+}
+
+/* Interactive Visual Connection Diagram (Factus Style) */
+.flow-diagram-wrapper {
+  background: var(--bg-dark-surface);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-2xl);
+  padding: 3rem 2rem 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.diagram-steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.diagram-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  position: relative;
+}
+
+.diagram-node-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px var(--brand-red-glow);
+  margin-bottom: 1.25rem;
+  z-index: 2;
+  border: 3px solid var(--bg-dark-surface);
+  transition: transform var(--transition-bounce);
+}
+
+.diagram-node:hover .diagram-node-circle {
+  transform: scale(1.15);
+  box-shadow: 0 0 35px var(--brand-red-glow);
+}
+
+.diagram-node-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 0.35rem;
+  text-align: center;
+  width: 100%;
+}
+
+.diagram-node-sub {
+  font-size: 0.8rem;
+  color: var(--text-white-muted);
+  text-align: center;
+  width: 100%;
+  line-height: 1.4;
+}
+
+/* Connecting Line - Perfectly Centered Vertically & Horizontally */
+.diagram-line-connector {
+  position: absolute;
+  top: calc(3rem + 27px); /* 3rem padding + half of 54px circle */
+  left: 12.5%;
+  right: 12.5%;
+  height: 3px;
+  background: linear-gradient(90deg, #FF1E27 0%, #3B82F6 50%, #10B981 100%);
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: var(--radius-pill);
+}
+
+@media (max-width: 1024px) {
+  .flow-grid-4, .diagram-steps-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .diagram-line-connector {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-grid-4, .diagram-steps-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

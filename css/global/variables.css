@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DESIGN TOKENS & GLOBAL CSS VARIABLES
+   SEAMOS GENIOS - DESIGN TOKENS & GLOBAL CSS VARIABLES (v2.1)
    ========================================================================== */
 :root {
   /* Color Palette - Institutional Clean Base */
@@ -7,56 +7,75 @@
   --bg-surface: #F8FAFC;
   --bg-surface-subtle: #F1F5F9;
   --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
   --border-color: #E2E8F0;
   --border-color-hover: #CBD5E1;
+  --border-subtle: rgba(0, 0, 0, 0.06);
 
-  /* Brand Primary Accent (90% Neutrals, 10% Brand Red) */
-  --brand-red: #CC0000;
-  --brand-red-hover: #A30000;
-  --brand-red-light: rgba(204, 0, 0, 0.05);
-  --brand-red-border: rgba(204, 0, 0, 0.18);
+  /* Cursor / Antigravity Elegant Dark Tones (Not harsh pitch-black) */
+  --bg-dark-obsidian: #0D1117;       /* Antigravity Deep Base */
+  --bg-dark-surface: #131A26;        /* Antigravity Elevated Surface */
+  --bg-dark-card: #182234;           /* Antigravity Card Tone */
+  --bg-dark-card-hover: #1F2C44;     /* Antigravity Hover State */
+  --border-dark: #24324A;            /* Subtle Slate Border */
+  --border-dark-hover: #374B6E;
+  --border-dark-subtle: rgba(255, 255, 255, 0.09);
 
-  /* Secondary Accents */
-  --accent-blue: #2563EB;
-  --accent-emerald: #16A34A;
-  --accent-slate: #475569;
+  /* Brand Red Primaries (Seamos Genios) */
+  --brand-red: #FF1E27;
+  --brand-red-hover: #D90F17;
+  --brand-red-dark: #B91C1C;
+  --brand-red-light: rgba(255, 30, 39, 0.08);
+  --brand-red-light-hover: rgba(255, 30, 39, 0.15);
+  --brand-red-border: rgba(255, 30, 39, 0.22);
+  --brand-red-glow: rgba(255, 30, 39, 0.35);
+
+  /* Dynamic Gradients */
+  --gradient-brand: linear-gradient(135deg, #FF1E27 0%, #E11D48 50%, #BE123C 100%);
+  --gradient-dark: linear-gradient(135deg, #0D1117 0%, #131A26 60%, #1A2438 100%);
+  --gradient-card-dark: linear-gradient(145deg, #182234 0%, #131A26 100%);
+
+  /* Functional Accents */
+  --accent-blue: #3B82F6;
+  --accent-blue-light: rgba(59, 130, 246, 0.1);
+  --accent-emerald: #10B981;
+  --accent-emerald-light: rgba(16, 185, 129, 0.12);
+  --accent-amber: #F59E0B;
+  --accent-amber-light: rgba(245, 158, 11, 0.12);
 
   /* Typography */
   --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Inter', system-ui, sans-serif;
 
   /* Text Colors */
   --text-main: #0F172A;
   --text-muted: #475569;
   --text-light: #64748B;
   --text-white: #FFFFFF;
+  --text-white-muted: #94A3B8;
 
   /* Elevation & Shadows */
-  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
-  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06);
-  --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.08);
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px -4px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 36px -6px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 25px rgba(255, 30, 39, 0.3);
 
-  /* Radius & Transitions */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  /* Pill & Rounded Radii */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 30px;
+  --radius-2xl: 38px;
+  --radius-pill: 9999px;
   --radius-full: 9999px;
-  --transition-fast: 0.18s ease;
-  --transition-smooth: 0.3s ease;
-  --max-width: 1200px;
-}
 
-/* Dark Mode Theme Overrides */
-[data-theme="dark"] {
-  --bg-body: #0A0F1D;
-  --bg-surface: #111827;
-  --bg-surface-subtle: #1F2937;
-  --bg-card: #111827;
-  --border-color: #1F2937;
-  --border-color-hover: #374151;
-  --text-main: #F8FAFC;
-  --text-muted: #94A3B8;
-  --text-light: #64748B;
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
-  --shadow-md: 0 6px 16px rgba(0,0,0,0.4);
-  --shadow-lg: 0 16px 32px rgba(0,0,0,0.5);
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Container Width */
+  --max-width: 1260px;
 }

@@ -1,0 +1,88 @@
+/* ==========================================================================
+   FAQ WITH INTEGRATED VIDEO VISOR (FACTUS INSPIRED - v2.0)
+   ========================================================================== */
+.faq-video-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+/* Video Preview Container (Factus Style) */
+.video-preview-card {
+  background: var(--bg-dark-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+}
+
+.video-preview-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-red);
+  box-shadow: 0 25px 60px rgba(255, 30, 39, 0.25);
+}
+
+.video-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 15, 29, 0.2) 0%, rgba(10, 15, 29, 0.9) 100%);
+  z-index: 1;
+}
+
+.video-center-action {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.video-badge-pill {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+}
+
+.video-info-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.video-info-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.video-info-sub {
+  font-size: 0.85rem;
+  color: var(--text-white-muted);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 1024px) {
+  .faq-video-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

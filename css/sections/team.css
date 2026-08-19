@@ -1,13 +1,78 @@
 /* ==========================================================================
-   TEAM & LEADERSHIP SECTION
+   TEAM & ACADEMIC MENTORS (ROUNDED PROFILES & PRESTIGE BADGES - v2.0)
    ========================================================================== */
 .leadership-highlight {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.leader-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.leader-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-red-border);
+  box-shadow: var(--shadow-md);
+}
+
+.leader-card-head {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.leader-avatar-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  font-weight: 900;
+  box-shadow: 0 4px 14px rgba(255, 30, 39, 0.3);
+  flex-shrink: 0;
+}
+
+.leader-info h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.leader-role {
+  color: var(--brand-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.leader-university {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 0.1rem;
+}
+
+.leader-bio {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .leadership-highlight {
+    grid-template-columns: 1fr;
+  }
 }
