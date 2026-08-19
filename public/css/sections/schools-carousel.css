@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SCHOOLS FILMSTRIP DUAL-MARQUEE & CENTERED HOVER REVEAL WITH SG LOGO (v3.7)
+   SCHOOLS FILMSTRIP DUAL-MARQUEE & RESPONSIVE REGIONAL DIRECTORY (v3.8)
    ========================================================================== */
 .schools-carousel-section {
   padding: 6.5rem 0;
@@ -332,35 +332,37 @@
   box-shadow: 0 4px 14px var(--brand-red-glow);
 }
 
-/* Schools Directory Grid */
+/* Fully Responsive Schools Directory Grid */
 .schools-directory-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
 }
 
 .school-directory-card {
-  background: rgba(24, 34, 52, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(24, 34, 52, 0.85);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-xl);
-  padding: 1.35rem;
+  padding: 1.15rem 1.25rem;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.15rem;
   transition: all var(--transition-fast);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  min-width: 0;
 }
 
 .school-directory-card:hover {
   transform: translateY(-4px);
   border-color: var(--brand-red);
   background: #182234;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 30px rgba(255, 30, 39, 0.25);
 }
 
 .school-dir-crest-box {
-  width: 76px;
-  height: 76px;
+  width: 68px;
+  height: 68px;
   border-radius: var(--radius-md);
   background: #FFFFFF;
   display: flex;
@@ -381,6 +383,7 @@
 .school-dir-info {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   overflow: hidden;
 }
 
@@ -390,23 +393,26 @@
   color: var(--brand-red);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .school-dir-name {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 800;
   color: #FFFFFF;
   line-height: 1.25;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .school-dir-loc {
-  font-size: 0.825rem;
+  font-size: 0.8rem;
   color: var(--text-white-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* Empty State */
@@ -419,12 +425,6 @@
   display: none;
 }
 
-@media (max-width: 1100px) {
-  .schools-directory-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 640px) {
   .schools-directory-grid {
     grid-template-columns: 1fr;
@@ -435,7 +435,7 @@
     padding: 1rem;
   }
   .school-dir-crest-box {
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 58px;
   }
 }

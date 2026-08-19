@@ -1,6 +1,6 @@
 [
   {
-    "name": "CC PresentacióN Buenahora",
+    "name": "CC Presentación Buenahora",
     "location": "Piedecuesta",
     "dept": "Santander",
     "region": "santanderes",
@@ -14,28 +14,28 @@
     "file": "colegio-colegio-prado-veraniego-suba-bogota-veraniego-suba-bogota.webp"
   },
   {
-    "name": "Colegio Integrado MonseñOr Evaristo Blanco",
+    "name": "Colegio Integrado MonseñOr Evaristo Blanco",
     "location": "San Miguel",
     "dept": "Santander",
     "region": "santanderes",
     "file": "colegio-integrado-monsenor-evaristo-blanco-san-miguel-santander.webp"
   },
   {
-    "name": "Colegio Integrado SimóN BolíVar",
+    "name": "Colegio Integrado SimóN BolíVar",
     "location": "Cúcuta",
     "dept": "Norte de Santander",
     "region": "santanderes",
     "file": "colegio-integrado-simon-bolivar-cucuta-n-de-santander.webp"
   },
   {
-    "name": "Colegio Nuestra SeñOra De Nazareth",
+    "name": "Colegio Nuestra SeñOra De Nazareth",
     "location": "Purificación",
     "dept": "Tolima",
     "region": "centro",
     "file": "colegio-nuestra-senora-de-nazareth-purificacion-tolima.webp"
   },
   {
-    "name": "Colegio Santa MaríA Del Rosario",
+    "name": "Colegio Santa MaríA Del Rosario",
     "location": "Medellín",
     "dept": "Antioquia",
     "region": "antioquia_eje",
@@ -77,7 +77,7 @@
     "file": "ie-alegaxu-simulacros.webp"
   },
   {
-    "name": "IE Alfonso LóPez",
+    "name": "IE Alfonso LóPez",
     "location": "La Virginia",
     "dept": "Risaralda",
     "region": "antioquia_eje",
@@ -105,7 +105,7 @@
     "file": "ie-camilo-torres-restrepo-simulacros.webp"
   },
   {
-    "name": "IE Cazucá",
+    "name": "IE Cazucá",
     "location": "Soacha",
     "dept": "Cundinamarca",
     "region": "bogota_cundinamarca",
@@ -161,7 +161,7 @@
     "file": "ie-las-villas-simulacros.webp"
   },
   {
-    "name": "IE Luis Carlos GaláN",
+    "name": "IE Luis Carlos GaláN",
     "location": "Soacha",
     "dept": "Cundinamarca",
     "region": "bogota_cundinamarca",
@@ -203,7 +203,7 @@
     "file": "ie-remedios-solano-simulacros.webp"
   },
   {
-    "name": "IE Sagrado CorazóN",
+    "name": "IE Sagrado CorazóN",
     "location": "Soacha",
     "dept": "Cundinamarca",
     "region": "bogota_cundinamarca",
@@ -224,14 +224,14 @@
     "file": "ie-san-gerardo-simulacros.webp"
   },
   {
-    "name": "IE Siglo Xxi",
+    "name": "IE Siglo XXI",
     "location": "Tauramena",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "ie-siglo-xxi-simulacros.webp"
   },
   {
-    "name": "IE SimóN BolíVar",
+    "name": "IE SimóN BolíVar",
     "location": "Cúcuta",
     "dept": "Norte de Santander",
     "region": "santanderes",
@@ -266,7 +266,7 @@
     "file": "iet-integrado-simulacros.webp"
   },
   {
-    "name": "Ietac",
+    "name": "IETAC",
     "location": "Aguazul",
     "dept": "Casanare",
     "region": "llanos_amazonia",
@@ -287,175 +287,175 @@
     "file": "institucion-educativa-tecnica-guataca-sur-margarita-bolivar.webp"
   },
   {
-    "name": "InstitucióN Educativa Alonso Carvajal Peralta",
+    "name": "InstitucióN Educativa Alonso Carvajal Peralta",
     "location": "Chitagá",
     "dept": "Norte de Santander",
     "region": "santanderes",
     "file": "institucion-educativa-alonso-carvajal-peralta-chitaga-n-de-santander.webp"
   },
   {
-    "name": "InstitucióN Educativa Bernardo Uribe LondoñO",
+    "name": "InstitucióN Educativa Bernardo Uribe LondoñO",
     "location": "La Ceja del Tambo",
     "dept": "Antioquia",
     "region": "antioquia_eje",
     "file": "institucion-educativa-bernardo-uribe-londono-la-ceja-del-tambo-antioquia.webp"
   },
   {
-    "name": "InstitucióN Educativa Bonifacio GutiéRrez",
+    "name": "InstitucióN Educativa Bonifacio GutiéRrez",
     "location": "Hato Corozal",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-bonifacio-gutierrez-hato-corozal-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa Cupiagua",
+    "name": "InstitucióN Educativa Cupiagua",
     "location": "Aguazul",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-cupiagua-aguazul-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa Custodio Garcia Rovira",
+    "name": "InstitucióN Educativa Custodio Garcia Rovira",
     "location": "Inírida",
     "dept": "Guainía",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-custodio-garcia-rovira-inirida-guainia.webp"
   },
   {
-    "name": "InstitucióN Educativa Departalmental Loma Del BáLsamo",
+    "name": "InstitucióN Educativa Departalmental Loma Del BáLsamo",
     "location": "Algarrobo",
     "dept": "Magdalena",
     "region": "caribe",
     "file": "institucion-educativa-departalmental-loma-del-balsamo-algarrobo-magdalena.webp"
   },
   {
-    "name": "InstitucióN Educativa Departamental CañO De Aguas",
+    "name": "InstitucióN Educativa Departamental CañO De Aguas",
     "location": "Caño de Aguas",
     "dept": "Magdalena",
     "region": "caribe",
     "file": "institucion-educativa-departamental-cano-de-aguas-cano-de-aguas-magdalena.webp"
   },
   {
-    "name": "InstitucióN Educativa Departamental MaríA Medina Fosca",
+    "name": "InstitucióN Educativa Departamental MaríA Medina Fosca",
     "location": "Fosca",
     "dept": "Cundinamarca",
     "region": "bogota_cundinamarca",
     "file": "institucion-educativa-departamental-maria-medina-fosca-fosca-cundinamarca.webp"
   },
   {
-    "name": "InstitucióN Educativa Departamental Rural De Palermo",
+    "name": "InstitucióN Educativa Departamental Rural De Palermo",
     "location": "Sitio Nuevo",
     "dept": "Magdalena",
     "region": "caribe",
     "file": "institucion-educativa-departamental-rural-de-palermo-sitio-nuevo-magdalena.webp"
   },
   {
-    "name": "InstitucióN Educativa El Cusiana",
+    "name": "InstitucióN Educativa El Cusiana",
     "location": "Tauramena",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-el-cusiana-tauramena-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa Enrique Olaya Herrera",
+    "name": "InstitucióN Educativa Enrique Olaya Herrera",
     "location": "Armenia",
     "dept": "Quindío",
     "region": "antioquia_eje",
     "file": "institucion-educativa-enrique-olaya-herrera-armenia-quindio.webp"
   },
   {
-    "name": "InstitucióN Educativa Horario Perdomo",
+    "name": "InstitucióN Educativa Horario Perdomo",
     "location": "Hato Corozal",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-horario-perdomo-hato-corozal-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa Jaime GarzóN",
+    "name": "InstitucióN Educativa Jaime GarzóN",
     "location": "Cúcuta",
     "dept": "Norte de Santander",
     "region": "santanderes",
     "file": "institucion-educativa-jaime-garzon-cucuta-n-de-santander.webp"
   },
   {
-    "name": "InstitucióN Educativa JéSus Bernal PinzóN",
+    "name": "InstitucióN Educativa JéSus Bernal PinzóN",
     "location": "Maní",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-jesus-bernal-pinzon-mani-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa La Inmaculada",
+    "name": "InstitucióN Educativa La Inmaculada",
     "location": "Orocué",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-la-inmaculada-orocue-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa Liceo Alegre Juventud",
+    "name": "InstitucióN Educativa Liceo Alegre Juventud",
     "location": "Malambo",
     "dept": "Atlántico",
     "region": "caribe",
     "file": "institucion-educativa-liceo-alegre-juventud-malambo-atlantico.webp"
   },
   {
-    "name": "InstitucióN Educativa Los Curos",
+    "name": "InstitucióN Educativa Los Curos",
     "location": "Piedecuesta",
     "dept": "Santander",
     "region": "santanderes",
     "file": "institucion-educativa-los-curos-piedecuesta-santander.webp"
   },
   {
-    "name": "InstitucióN Educativa Luis SáNchez Porto",
+    "name": "InstitucióN Educativa Luis SáNchez Porto",
     "location": "Soledad",
     "dept": "Atlántico",
     "region": "caribe",
     "file": "institucion-educativa-luis-sanchez-porto-soledad-atlantico.webp"
   },
   {
-    "name": "InstitucióN Educativa Sagrado CorazóN De JesúS",
+    "name": "InstitucióN Educativa Sagrado CorazóN De JesúS",
     "location": "Cúcuta",
     "dept": "Norte de Santander",
     "region": "santanderes",
     "file": "institucion-educativa-sagrado-corazon-de-jesus-cucuta-n-de-santander.webp"
   },
   {
-    "name": "InstitucióN Educativa San Agustin",
+    "name": "InstitucióN Educativa San Agustin",
     "location": "Aguazul",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-san-agustin-aguazul-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa Santa Irene",
+    "name": "InstitucióN Educativa Santa Irene",
     "location": "Trinidad",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-santa-irene-trinidad-casanare.webp"
   },
   {
-    "name": "InstitucióN Educativa Victor GóMez Corredor",
+    "name": "InstitucióN Educativa Victor GóMez Corredor",
     "location": "El Tablón",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "institucion-educativa-victor-gomez-corredor-el-tablon-casanare.webp"
   },
   {
-    "name": "InstitucióN Eucativa Departamental Pedro De Heredia",
+    "name": "InstitucióN Educativa Departamental Pedro De Heredia",
     "location": "Pedraza",
     "dept": "Magdalena",
     "region": "caribe",
     "file": "institucion-eucativa-departamental-pedro-de-heredia-pedraza-magdalena.webp"
   },
   {
-    "name": "Instituto Educativo Antonio NariñO",
+    "name": "Instituto Educativo Antonio NariñO",
     "location": "Pore",
     "dept": "Casanare",
     "region": "llanos_amazonia",
     "file": "instituto-educativo-antonio-narino-pore-casanare.webp"
   },
   {
-    "name": "Instituto TéCnico Nacional De Comercio",
+    "name": "Instituto TéCnico Nacional De Comercio",
     "location": "Cúcuta",
     "dept": "Norte de Santander",
     "region": "santanderes",
