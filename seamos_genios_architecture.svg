@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" width="100%" height="100%" style="background:#FAFAFC; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0F172A"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#FF1E27"/>
+    </marker>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Header -->
+  <text x="60" y="55" font-size="20" font-weight="800" fill="#0F172A" letter-spacing="-0.02em">SEAMOS GENIOS :: ARQUITECTURA DE EVALUACIÓN &amp; FEEDBACK LOOP</text>
+  <text x="60" y="80" font-size="12" font-weight="500" fill="#64748B">Topología de Flujo de Datos: Ingress → Engine de Evaluación 254P → Pipeline Diagnóstico IA → Ruta Adaptativa</text>
+
+  <!-- System Boundary -->
+  <rect x="370" y="290" width="860" height="240" rx="12" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="390" y="315" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.05em">DOMINIO CENTRAL :: PROCESAMIENTO &amp; DIAGNÓSTICO COGNITIVO</text>
+
+  <!-- Connectors (Orthogonal 90°) -->
+  <!-- Estudiante -> Edge CDN -->
+  <path d="M 200 190 L 200 290" stroke="#0F172A" stroke-width="1.5" fill="none" marker-end="url(#arrow-dark)"/>
+  <text x="210" y="240" font-size="10" font-weight="600" fill="#64748B">GET /</text>
+
+  <!-- Edge CDN -> Evaluador -->
+  <path d="M 320 320 L 360 320 L 360 395 L 400 395" stroke="#FF1E27" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="325" y="310" font-size="10" font-weight="700" fill="#FF1E27">POST /simulacro/start</text>
+
+  <!-- Question Bank -> Evaluador -->
+  <path d="M 525 190 L 525 360" stroke="#0F172A" stroke-width="1.5" fill="none" marker-end="url(#arrow-dark)"/>
+  <text x="535" y="255" font-size="10" font-weight="600" fill="#64748B">Inject 254 Items</text>
+
+  <!-- Evaluador -> Pipeline IA -->
+  <path d="M 720 395 L 880 395" stroke="#FF1E27" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="735" y="385" font-size="10" font-weight="700" fill="#FF1E27">Respuestas RAW + Tiempos</text>
+
+  <!-- Pipeline IA -> Dashboard -->
+  <path d="M 920 435 L 920 560 L 275 560 L 275 630" stroke="#0F172A" stroke-width="1.5" fill="none" marker-end="url(#arrow-dark)"/>
+  <text x="480" y="552" font-size="10" font-weight="600" fill="#64748B">Score Global 0-500 + Percentil</text>
+
+  <!-- Pipeline IA -> Ruta Adaptativa -->
+  <path d="M 1040 435 L 1040 580 L 800 580 L 800 630" stroke="#0F172A" stroke-width="1.5" fill="none" marker-end="url(#arrow-dark)"/>
+  <text x="860" y="572" font-size="10" font-weight="600" fill="#64748B">Mapeo de Brechas por Materia</text>
+
+  <!-- Ruta Adaptativa -> Outcome 400+ -->
+  <path d="M 800 690 L 800 790" stroke="#FF1E27" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="810" y="740" font-size="10" font-weight="700" fill="#FF1E27">Práctica Deliberada</text>
+
+  <!-- Rector -> Lead Funnel -->
+  <path d="M 1400 190 L 1400 290" stroke="#0F172A" stroke-width="1.5" fill="none" marker-end="url(#arrow-dark)"/>
+  <text x="1410" y="240" font-size="10" font-weight="600" fill="#64748B">Convenio +60</text>
+
+  <!-- Schools Dataset -> Lead Funnel -->
+  <path d="M 1075 190 L 1075 250 L 1320 250 L 1320 290" stroke="#0F172A" stroke-width="1.5" fill="none" marker-end="url(#arrow-dark)"/>
+  <text x="1140" y="242" font-size="10" font-weight="600" fill="#64748B">Filtro Regional</text>
+
+  <!-- Lead Funnel -> Factus -->
+  <path d="M 1400 350 L 1400 580 L 1325 580 L 1325 630" stroke="#0F172A" stroke-width="1.5" fill="none" marker-end="url(#arrow-dark)"/>
+  <text x="1335" y="562" font-size="10" font-weight="600" fill="#64748B">Emitir Factura DIAN</text>
+
+  <!-- Nodes (Ingress Tier) -->
+  <g filter="url(#card-shadow)">
+    <!-- Estudiante -->
+    <rect x="80" y="130" width="240" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="96" y="152" font-size="12" font-weight="700" fill="#0F172A">[CLIENT] Estudiante (Web/Móvil)</text>
+    <text x="96" y="172" font-size="10" font-weight="500" fill="#64748B">HTTPS TLS 1.3 · Safari / Chrome</text>
+
+    <!-- Rector -->
+    <rect x="1280" y="130" width="240" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="1296" y="152" font-size="12" font-weight="700" fill="#0F172A">[CLIENT] Colegio / Rector</text>
+    <text x="1296" y="172" font-size="10" font-weight="500" fill="#64748B">Convenios Institucionales B2B</text>
+
+    <!-- Edge CDN -->
+    <rect x="80" y="290" width="240" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="96" y="312" font-size="12" font-weight="700" fill="#0F172A">[INGRESS] Vercel Global Edge CDN</text>
+    <text x="96" y="332" font-size="10" font-weight="500" fill="#64748B">Zero-Config Routing · TTFB &lt; 25ms</text>
+
+    <!-- Lead Funnel -->
+    <rect x="1280" y="290" width="240" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="1296" y="312" font-size="12" font-weight="700" fill="#0F172A">[GATEWAY] Lead &amp; WhatsApp Funnel</text>
+    <text x="1296" y="332" font-size="10" font-weight="500" fill="#64748B">Webhook API · Validación Cliente</text>
+
+    <!-- Question Bank -->
+    <rect x="400" y="130" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="416" y="152" font-size="12" font-weight="700" fill="#0F172A">[DATASET] Banco 254 Preguntas</text>
+    <text x="416" y="172" font-size="10" font-weight="500" fill="#64748B">JSON Oficial · 5 Áreas Saber 11</text>
+
+    <!-- Schools Dataset -->
+    <rect x="950" y="130" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="966" y="152" font-size="12" font-weight="700" fill="#0F172A">[DATASET] Catálogo 66 Colegios</text>
+    <text x="966" y="172" font-size="10" font-weight="500" fill="#64748B">Dataset Regional · 12 Departamentos</text>
+
+    <!-- Core Engine (Hero Red) -->
+    <rect x="400" y="360" width="320" height="75" rx="8" fill="#FFFFFF" stroke="#FF1E27" stroke-width="2"/>
+    <text x="416" y="385" font-size="13" font-weight="800" fill="#0F172A">[CORE] Engine de Evaluación Saber 11</text>
+    <text x="416" y="412" font-size="10.5" font-weight="600" fill="#FF1E27">Timer 4h 30m · Ponderación Oficial · SLA &lt; 50ms</text>
+
+    <!-- Pipeline IA (Hero Red) -->
+    <rect x="880" y="360" width="320" height="75" rx="8" fill="#FFFFFF" stroke="#FF1E27" stroke-width="2"/>
+    <text x="896" y="385" font-size="13" font-weight="800" fill="#0F172A">[PIPELINE] Algoritmo Diagnóstico IA</text>
+    <text x="896" y="412" font-size="10.5" font-weight="600" fill="#FF1E27">Mapeo de Brechas Cognitivas · Entrega en 24h</text>
+
+    <!-- Dashboard -->
+    <rect x="140" y="630" width="270" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="156" y="652" font-size="12" font-weight="700" fill="#0F172A">[UI WIDGET] Dashboard de Progreso</text>
+    <text x="156" y="672" font-size="10" font-weight="500" fill="#64748B">Puntaje 324/500 · Sparkline SVG</text>
+
+    <!-- Ruta Adaptativa -->
+    <rect x="640" y="630" width="320" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="656" y="652" font-size="12" font-weight="700" fill="#0F172A">[REMEDIATION] Ruta de Estudio Adaptativa</text>
+    <text x="656" y="672" font-size="10" font-weight="500" fill="#64748B">Micro-cápsulas · Repetición Espaciada</text>
+
+    <!-- Factus -->
+    <rect x="1190" y="630" width="270" height="60" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+    <text x="1206" y="652" font-size="12" font-weight="700" fill="#0F172A">[BILLING] Factus Gateway (DIAN)</text>
+    <text x="1206" y="672" font-size="10" font-weight="500" fill="#64748B">Facturación Electrónica Legal</text>
+
+    <!-- Outcome 400+ -->
+    <rect x="640" y="790" width="320" height="65" rx="8" fill="#FFFFFF" stroke="#FF1E27" stroke-width="2"/>
+    <text x="656" y="815" font-size="13" font-weight="800" fill="#0F172A">[OUTCOME] Meta Puntaje 400+ &amp; Beca</text>
+    <text x="656" y="838" font-size="10.5" font-weight="600" fill="#FF1E27">Percentil Nacional Top 1% · Certificación</text>
+  </g>
+</svg>
