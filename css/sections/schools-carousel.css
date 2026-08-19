@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SCHOOLS FILMSTRIP DUAL-MARQUEE & CENTERED HOVER REVEAL WITH SG LOGO (v3.6)
+   SCHOOLS FILMSTRIP DUAL-MARQUEE & CENTERED HOVER REVEAL WITH SG LOGO (v3.7)
    ========================================================================== */
 .schools-carousel-section {
   padding: 6.5rem 0;
@@ -26,6 +26,8 @@
   gap: 1.75rem;
   margin-top: 3.5rem;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Filmstrip Ribbon Track with Accent Border (JSConf Inspired) */
@@ -39,22 +41,28 @@
   background: rgba(13, 17, 23, 0.7);
   mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-track-left,
+.marquee-track-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1.75rem;
+  width: max-content;
+  flex-shrink: 0;
+  will-change: transform;
 }
 
 .marquee-track-left {
-  display: flex;
-  gap: 1.75rem;
-  width: max-content;
   animation: marquee-scroll-left 65s linear infinite;
-  will-change: transform;
 }
 
 .marquee-track-right {
-  display: flex;
-  gap: 1.75rem;
-  width: max-content;
   animation: marquee-scroll-right 65s linear infinite;
-  will-change: transform;
 }
 
 .marquee-row-wrapper:hover .marquee-track-left,
@@ -89,6 +97,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   transition: all var(--transition-bounce);
   cursor: pointer;
+  white-space: normal;
 }
 
 .school-film-card:hover {
