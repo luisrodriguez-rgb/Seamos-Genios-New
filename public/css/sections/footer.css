@@ -1,0 +1,195 @@
+/* ==========================================================================
+   MONUMENTAL FOOTER (FACTUS INSPIRED HIGH-IMPACT DESIGN - v2.0)
+   ========================================================================== */
+.footer {
+  background: #060911;
+  color: #FFFFFF;
+  padding: 6rem 0 2.5rem 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border-dark);
+}
+
+/* Background Watermark (Factus Style Large Typography) */
+.footer-watermark {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  font-size: clamp(8rem, 16vw, 15rem);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.02);
+  line-height: 0.8;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-heading);
+  letter-spacing: -0.05em;
+}
+
+.footer-hero-banner {
+  background: var(--gradient-brand);
+  border-radius: var(--radius-2xl);
+  padding: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(255, 30, 39, 0.35);
+}
+
+.footer-banner-title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.15;
+}
+
+.footer-banner-desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0.5rem;
+  max-width: 520px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 1.25rem;
+}
+
+.footer-brand-desc {
+  color: var(--text-white-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 320px;
+  margin-bottom: 1.75rem;
+}
+
+.footer-social-circles {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.footer-social-btn:hover {
+  background: var(--brand-red);
+  border-color: var(--brand-red);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px var(--brand-red-glow);
+}
+
+.footer-col-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.footer-links-list a {
+  color: var(--text-white-muted);
+  font-size: 0.885rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links-list a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-white-muted);
+  font-size: 0.85rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-legal-links a {
+  color: var(--text-white-muted);
+  transition: color var(--transition-fast);
+}
+
+.footer-legal-links a:hover {
+  color: #FFFFFF;
+}
+
+.footer-legal-divider {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .footer-hero-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+  .footer-legal-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

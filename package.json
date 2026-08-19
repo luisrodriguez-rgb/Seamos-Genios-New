@@ -1,5 +1,10 @@
 {
   "name": "seamos-genios",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve .",
+    "build": "mkdir -p public/css public/js public/assets public/public && cp -r css/* public/css/ && cp -r js/* public/js/ && cp -r assets/* public/assets/ && cp index.html public/index.html && cp 404.html public/404.html && cp favicon.ico favicon.png public/ && cp public/*.webp public/public/ 2>/dev/null || true"
+  }
 }

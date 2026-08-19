@@ -1,0 +1,27 @@
+/* ==========================================================================
+   SEAMOS GENIOS - MASTER CSS ENTRY POINT (v2.4)
+   ========================================================================== */
+
+/* 1. Global Tokens & Base Utilities */
+@import './global/variables.css';
+@import './global/reset.css';
+
+/* 2. Components */
+@import './components/buttons.css';
+@import './components/navbar.css';
+@import './components/modal.css';
+@import './components/tables.css';
+
+/* 3. Layout & Intercalated Sections */
+@import './sections/hero.css';
+@import './sections/alliances.css';
+@import './sections/purpose-story.css';
+@import './sections/flow.css';
+@import './sections/network-map.css';
+@import './sections/features.css';
+@import './sections/schools-carousel.css';
+@import './sections/testimonials.css';
+@import './sections/team.css';
+@import './sections/pricing.css';
+@import './sections/faq-video.css';
+@import './sections/footer.css';

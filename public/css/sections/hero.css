@@ -1,0 +1,240 @@
+/* ==========================================================================
+   HERO SECTION (DYNAMIC LIGHT BASE WITH LIVE PERFORMANCE WIDGET - v2.3)
+   ========================================================================== */
+.hero {
+  padding-top: 8rem;
+  padding-bottom: 5.5rem;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 10% 20%, rgba(255, 30, 39, 0.05) 0%, transparent 45%),
+              radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.04) 0%, transparent 45%),
+              var(--bg-body);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+  margin: 1.25rem 0;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 580px;
+  line-height: 1.65;
+}
+
+/* Pill Shaped Countdown Strip */
+.countdown-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  padding: 0.65rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.countdown-strip:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand-red-border);
+}
+
+.countdown-digits {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.digit-box {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+}
+
+.digit-val {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--brand-red);
+  font-family: monospace;
+}
+
+.digit-lbl {
+  font-size: 0.7rem;
+  color: var(--text-light);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.digit-separator {
+  color: var(--border-color-hover);
+  font-weight: 700;
+}
+
+/* Hero CTA Button Group */
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Hero UI Live Dashboard Widget (CAMBAS+ & Factus Inspired) */
+.hero-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem 2rem;
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.1);
+  position: relative;
+  transition: all var(--transition-smooth);
+}
+
+.hero-panel:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-red-border);
+  box-shadow: 0 25px 50px -10px rgba(255, 30, 39, 0.15);
+}
+
+.hero-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Live Status Indicator (CAMBAS+ style) */
+.live-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: var(--accent-emerald-light);
+  color: var(--accent-emerald);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.live-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+.hero-score-badge {
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: var(--brand-red);
+  line-height: 1;
+  font-family: monospace;
+}
+
+/* Subject Progress Bars with Interactive Hover Highlight */
+.subject-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.subject-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast);
+}
+
+.subject-row:hover {
+  background: var(--bg-surface-subtle);
+}
+
+.subject-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.subject-progress-bg {
+  height: 8px;
+  background: var(--bg-surface-subtle);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  position: relative;
+}
+
+.subject-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--gradient-brand);
+  transition: width 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 10px rgba(255, 30, 39, 0.4);
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.stat-box-inner {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.stat-box-inner:hover {
+  border-color: var(--brand-red-border);
+  transform: translateY(-2px);
+  background: #FFFFFF;
+}
+
+.stat-item-num {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--text-main);
+}
+
+.stat-item-lbl {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

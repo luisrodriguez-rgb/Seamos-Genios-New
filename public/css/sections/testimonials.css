@@ -1,0 +1,102 @@
+/* ==========================================================================
+   TESTIMONIALS & WALL OF LOVE (CIRCULAR AVATARS & PILL TAGS - v2.0)
+   ========================================================================== */
+.testimonials-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card:hover {
+  border-color: var(--brand-red-border);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.testimonial-avatar-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--brand-red-light);
+  border: 2px solid var(--brand-red-border);
+  color: var(--brand-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.testimonial-user-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.testimonial-username {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.testimonial-handle {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 0.15rem;
+}
+
+.testimonial-body {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  font-style: normal;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.testimonial-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand-red-light);
+  color: var(--brand-red);
+  font-weight: 800;
+  font-size: 0.785rem;
+}
+
+.testimonial-stars {
+  color: #F59E0B;
+  display: flex;
+  gap: 2px;
+  font-size: 0.85rem;
+}
