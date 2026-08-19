@@ -1,5 +1,5 @@
 /* ==========================================================================
-   METHODOLOGY FLOW (BRAND RED BACKGROUND SECTION - v3.0)
+   METHODOLOGY FLOW (BRAND RED BACKGROUND SECTION WITH DARK TIMELINE - v3.1)
    ========================================================================== */
 .section-flow-red {
   padding: 6.5rem 0;
@@ -148,17 +148,17 @@
   color: #475569;
 }
 
-/* Interactive Visual Connection Diagram */
+/* ==========================================================================
+   INTERACTIVE TIMELINE PIPELINE (CLEAN OBSIDIAN BLACK CONTAINER)
+   ========================================================================== */
 .flow-diagram-wrapper {
-  background: rgba(0, 0, 0, 0.22);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: #0D1117;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-2xl);
   padding: 3rem 2rem 2.5rem 2rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
   z-index: 2;
 }
 
@@ -183,25 +183,24 @@
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background: #FFFFFF;
-  color: var(--brand-red);
+  background: var(--brand-red);
+  color: #FFFFFF;
   font-weight: 900;
   font-size: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 25px var(--brand-red-glow), 0 4px 15px rgba(0, 0, 0, 0.4);
   margin-bottom: 1.25rem;
   z-index: 2;
-  border: 3px solid rgba(255, 255, 255, 0.4);
+  border: 3px solid #0D1117;
   transition: all var(--transition-bounce);
 }
 
 .diagram-node:hover .diagram-node-circle {
   transform: scale(1.15);
-  box-shadow: 0 0 35px #FFFFFF, 0 6px 20px rgba(0, 0, 0, 0.4);
-  background: #FFFFFF;
-  color: var(--brand-red);
+  box-shadow: 0 0 35px var(--brand-red-glow), 0 6px 20px rgba(0, 0, 0, 0.5);
+  background: #E01019;
 }
 
 .diagram-node-title {
@@ -215,7 +214,7 @@
 
 .diagram-node-sub {
   font-size: 0.825rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: #94A3B8;
   text-align: center;
   width: 100%;
   line-height: 1.4;
@@ -228,7 +227,7 @@
   left: 12.5%;
   right: 12.5%;
   height: 3px;
-  background: rgba(255, 255, 255, 0.35);
+  background: linear-gradient(90deg, #FF1E27 0%, #3B82F6 50%, #10B981 100%);
   transform: translateY(-50%);
   z-index: 1;
   border-radius: var(--radius-pill);
