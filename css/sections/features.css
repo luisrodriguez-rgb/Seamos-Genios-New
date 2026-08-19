@@ -1,18 +1,19 @@
 /* ==========================================================================
-   PROGRAMS & FEATURE CARDS (SPOTLIGHT HOVER & UNCLIPPED BADGES - v2.5)
+   PROGRAMS & FEATURE CARDS (RED FEATURED CENTER CARD - v3.2)
    ========================================================================== */
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.25rem;
+  gap: 2rem;
   margin-top: 2.5rem;
+  align-items: stretch;
 }
 
 .program-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 2.5rem 2rem;
+  border-radius: var(--radius-2xl);
+  padding: 2.75rem 2.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,7 +30,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
   background: var(--gradient-brand);
   opacity: 0;
   transition: opacity var(--transition-fast);
@@ -45,28 +46,99 @@
   opacity: 1;
 }
 
-.program-card-featured {
-  border: 2px solid var(--brand-red);
-  box-shadow: 0 15px 35px rgba(255, 30, 39, 0.15);
+/* ==========================================================================
+   FEATURED CENTER CARD WITH RED BACKGROUND (MÁS POPULAR)
+   ========================================================================== */
+.program-card-featured-red {
+  background: linear-gradient(145deg, #FF1E27 0%, #E01019 100%);
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 22px 50px -10px rgba(255, 30, 39, 0.45);
+  transform: translateY(-8px);
+  position: relative;
+  z-index: 5;
 }
 
-.program-card-featured::before {
+.program-card-featured-red::before {
   content: 'MÁS POPULAR';
   position: absolute;
-  top: -14px;
-  right: 24px;
-  background: var(--brand-red);
-  color: #FFFFFF;
-  font-size: 0.725rem;
+  top: -15px;
+  right: 28px;
+  background: #FFFFFF;
+  color: var(--brand-red);
+  font-size: 0.75rem;
   font-weight: 900;
-  padding: 0.35rem 0.95rem;
+  padding: 0.4rem 1.1rem;
   border-radius: var(--radius-pill);
-  letter-spacing: 0.05em;
-  box-shadow: 0 4px 14px rgba(255, 30, 39, 0.45);
+  letter-spacing: 0.06em;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
   z-index: 10;
   line-height: 1;
 }
 
+.program-card-featured-red:hover {
+  transform: translateY(-14px) scale(1.02);
+  box-shadow: 0 30px 65px -10px rgba(255, 30, 39, 0.6);
+  border-color: #FFFFFF;
+}
+
+.program-card-featured-red .program-title {
+  color: #FFFFFF;
+}
+
+.program-card-featured-red .program-desc {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.program-card-featured-red .program-feature-item {
+  color: #FFFFFF;
+}
+
+.program-card-featured-red .check-circle-icon {
+  background: #FFFFFF;
+  color: var(--brand-red);
+  font-weight: 900;
+}
+
+.program-card-featured-red .program-card-foot {
+  border-top-color: rgba(255, 255, 255, 0.22);
+}
+
+.program-card-featured-red .program-price-tag {
+  color: #FFFFFF;
+}
+
+.program-card-featured-red .program-price-sub {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.program-card-featured-red .badge-featured-white {
+  background: rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-featured-white {
+  background: #FFFFFF;
+  color: var(--brand-red);
+  font-weight: 800;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-fast);
+  border-radius: var(--radius-pill);
+  padding: 0.65rem 1.45rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-featured-white:hover {
+  background: #0F172A;
+  color: #FFFFFF;
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Standard Program Elements */
 .program-icon-box {
   width: 60px;
   height: 60px;
@@ -81,6 +153,12 @@
   transition: all var(--transition-bounce);
 }
 
+.program-card-featured-red .program-icon-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+}
+
 .program-card:hover .program-icon-box {
   transform: scale(1.12) rotate(4deg);
   background: var(--brand-red);
@@ -88,20 +166,26 @@
   box-shadow: 0 6px 20px rgba(255, 30, 39, 0.35);
 }
 
+.program-card-featured-red:hover .program-icon-box {
+  background: #FFFFFF;
+  color: var(--brand-red);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
 .program-card-head {
   margin-bottom: 1.25rem;
 }
 
 .program-title {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-weight: 900;
-  margin-top: 0.6rem;
+  margin-top: 0.65rem;
   color: var(--text-main);
   line-height: 1.25;
 }
 
 .program-desc {
-  font-size: 0.925rem;
+  font-size: 0.935rem;
   color: var(--text-muted);
   line-height: 1.6;
   margin-top: 0.6rem;
@@ -121,7 +205,7 @@
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  font-size: 0.885rem;
+  font-size: 0.9rem;
   color: var(--text-main);
   font-weight: 600;
   transition: transform var(--transition-fast);
@@ -132,15 +216,15 @@
 }
 
 .check-circle-icon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: var(--accent-emerald-light);
   color: var(--accent-emerald);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 900;
   flex-shrink: 0;
 }
@@ -152,10 +236,11 @@
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-color);
   gap: 1rem;
+  margin-top: auto;
 }
 
 .program-price-tag {
-  font-size: 1.45rem;
+  font-size: 1.55rem;
   font-weight: 900;
   color: var(--text-main);
   line-height: 1.1;
@@ -163,7 +248,7 @@
 }
 
 .program-price-sub {
-  font-size: 0.75rem;
+  font-size: 0.785rem;
   color: var(--text-muted);
   font-weight: 600;
 }
@@ -172,5 +257,8 @@
   .programs-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+  .program-card-featured-red {
+    transform: none;
   }
 }

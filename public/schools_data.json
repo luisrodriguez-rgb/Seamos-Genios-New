@@ -1,0 +1,464 @@
+[
+  {
+    "name": "CC PRESENTACIÓN BUENAHORA",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "CC PRESENTACIÓN BUENAHORA - SIMULACROS.webp"
+  },
+  {
+    "name": "COLEGIO PRADO VERANIEGO",
+    "location": "SUBA",
+    "dept": "BOGOTÁ VERANIEGO",
+    "region": "bogota_cundinamarca",
+    "file": "COLEGIO COLEGIO PRADO VERANIEGO - SUBA, BOGOTÁ VERANIEGO - SUBA, BOGOTÁ.webp"
+  },
+  {
+    "name": "COLEGIO INTEGRADO MONSEÑOR EVARISTO BLANCO",
+    "location": "SAN MIGUEL",
+    "dept": "SANTANDER",
+    "region": "santanderes",
+    "file": "COLEGIO INTEGRADO MONSEÑOR EVARISTO BLANCO - SAN MIGUEL, SANTANDER.webp"
+  },
+  {
+    "name": "COLEGIO INTEGRADO SIMÓN BOLÍVAR",
+    "location": "CÚCUTA",
+    "dept": "N. DE SANTANDER",
+    "region": "santanderes",
+    "file": "COLEGIO INTEGRADO SIMÓN BOLÍVAR - CÚCUTA, N. DE SANTANDER.webp"
+  },
+  {
+    "name": "COLEGIO NUESTRA SEÑORA DE NAZARETH",
+    "location": "PURIFICACIÓN",
+    "dept": "TOLIMA",
+    "region": "centro",
+    "file": "COLEGIO NUESTRA SEÑORA DE NAZARETH - PURIFICACIÓN, TOLIMA.webp"
+  },
+  {
+    "name": "COLEGIO SANTA MARÍA DEL ROSARIO",
+    "location": "MEDELLÍN",
+    "dept": "ANTIOQUIA",
+    "region": "antioquia_eje",
+    "file": "COLEGIO SANTA MARÍA DEL ROSARIO - MEDELLÍN, ANTIOQUIA.webp"
+  },
+  {
+    "name": "COLEGIO VILLEMAR DEL CARMEN",
+    "location": "FONTIBÓN",
+    "dept": "BOGOTÁ",
+    "region": "bogota_cundinamarca",
+    "file": "COLEGIO VILLEMAR DEL CARMEN - FONTIBÓN, BOGOTÁ.webp"
+  },
+  {
+    "name": "CORPORACION EDUCATIVA COLEGIO COMUNAL MIXTO",
+    "location": "BARRANQUILLA",
+    "dept": "ATLÁNTICO",
+    "region": "caribe",
+    "file": "CORPORACION EDUCATIVA COLEGIO COMUNAL MIXTO - BARRANQUILLA, ATLÁNTICO.webp"
+  },
+  {
+    "name": "ESCUELA NORMAL SUPERIOR DE PIEDECUESTA",
+    "location": "PIEDECUESTA",
+    "dept": "SANTANDER",
+    "region": "santanderes",
+    "file": "ESCUELA NORMAL SUPERIOR DE PIEDECUESTA - PIEDECUESTA, SANTANDER.webp"
+  },
+  {
+    "name": "ESCUELA SUPERIOR MONTERREY",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "ESCUELA SUPERIOR MONTERREY - SIMULACROS.webp"
+  },
+  {
+    "name": "IE ALEGAXU",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE ALEGAXU - SIMULACROS.webp"
+  },
+  {
+    "name": "IE ALFONSO LÓPEZ",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE ALFONSO LÓPEZ  - SIMULACROS.webp"
+  },
+  {
+    "name": "IE ANTONIO MARTINEZ DELGADO",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE ANTONIO MARTINEZ DELGADO - SIMULACROS.webp"
+  },
+  {
+    "name": "IE BUENOS AIRES",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE BUENOS AIRES - SIMULACROS.webp"
+  },
+  {
+    "name": "IE CAMILO TORRES RESTREPO",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE CAMILO TORRES RESTREPO - SIMULACROS.webp"
+  },
+  {
+    "name": "IE CAZUCÁ",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE CAZUCÁ - SIMULACROS.webp"
+  },
+  {
+    "name": "IE CIUDAD LATINA",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE CIUDAD LATINA - SIMULACROS.webp"
+  },
+  {
+    "name": "IE CIUDADELA SUCRE",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE CIUDADELA SUCRE - SIMULACROS.webp"
+  },
+  {
+    "name": "IE GABRIEL GARCIA MARQUEZ",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE GABRIEL GARCIA MARQUEZ - SIMULACROS.webp"
+  },
+  {
+    "name": "IE GAVIOTAS",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE GAVIOTAS - SIMULACROS.webp"
+  },
+  {
+    "name": "IE JORGE GAITAN",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE JORGE GAITAN - SIMULACROS.webp"
+  },
+  {
+    "name": "IE LA DESPENSA",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE LA DESPENSA - SIMULACROS.webp"
+  },
+  {
+    "name": "IE LAS VILLAS",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE LAS VILLAS - SIMULACROS.webp"
+  },
+  {
+    "name": "IE LUIS CARLOS GALÁN",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE LUIS CARLOS GALÁN - SIMULACROS.webp"
+  },
+  {
+    "name": "IE LUIS HERNANDEZ VARGAS",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE LUIS HERNANDEZ VARGAS - SIMULACROS.webp"
+  },
+  {
+    "name": "IE LUIS MARIA JIMENEZ",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE LUIS MARIA JIMENEZ - SIMULACROS.webp"
+  },
+  {
+    "name": "IE PEDRO DE HEREDIA",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE PEDRO DE HEREDIA - SIMULACROS.webp"
+  },
+  {
+    "name": "IE RAFAEL URIBE URIBE",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE RAFAEL URIBE URIBE - SIMULACROS.webp"
+  },
+  {
+    "name": "IE REMEDIOS SOLANO",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE REMEDIOS SOLANO - SIMULACROS.webp"
+  },
+  {
+    "name": "IE SAGRADO CORAZÓN",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE SAGRADO CORAZÓN - SIMULACROS.webp"
+  },
+  {
+    "name": "IE SALVADOR CAMACHO",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE SALVADOR CAMACHO - SIMULACROS.webp"
+  },
+  {
+    "name": "IE SAN GERARDO",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE SAN GERARDO - SIMULACROS.webp"
+  },
+  {
+    "name": "IE SIGLO XXI",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE SIGLO XXI - SIMULACROS.webp"
+  },
+  {
+    "name": "IE SIMÓN BOLÍVAR",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE SIMÓN BOLÍVAR - SIMULACROS.webp"
+  },
+  {
+    "name": "IE lUIS GABRIEL CARLOS",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IE lUIS GABRIEL CARLOS - SIMULACROS.webp"
+  },
+  {
+    "name": "IED REINO DE HOLANDA",
+    "location": "TUENJELITO",
+    "dept": "BOGOTÁ",
+    "region": "bogota_cundinamarca",
+    "file": "IED REINO DE HOLANDA - TUENJELITO, BOGOTÁ.webp"
+  },
+  {
+    "name": "IERD LA FUENTE",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IERD LA FUENTE - SIMULACROS.webp"
+  },
+  {
+    "name": "IET INTEGRADO",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IET INTEGRADO - SIMULACROS.webp"
+  },
+  {
+    "name": "IETAC",
+    "location": "Sede Institucional",
+    "dept": "Alianza Nacional",
+    "region": "nacional",
+    "file": "IETAC - SIMULACROS.webp"
+  },
+  {
+    "name": "INSTITUCION EDUCATIVA DEPARTAMENTAL DE DESARROLLO RURAL",
+    "location": "FOSCA",
+    "dept": "CUNDINAMARCA",
+    "region": "bogota_cundinamarca",
+    "file": "INSTITUCION EDUCATIVA DEPARTAMENTAL DE DESARROLLO RURAL - FOSCA, CUNDINAMARCA.webp"
+  },
+  {
+    "name": "INSTITUCION EDUCATIVA TECNICA GUATACA SUR",
+    "location": "MARGARITA",
+    "dept": "BOLÍVAR",
+    "region": "caribe",
+    "file": "INSTITUCION EDUCATIVA TECNICA GUATACA SUR - MARGARITA, BOLÍVAR.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA ALONSO CARVAJAL PERALTA",
+    "location": "CHITAGÁ",
+    "dept": "N. DE SANTANDER",
+    "region": "santanderes",
+    "file": "INSTITUCIÓN EDUCATIVA ALONSO CARVAJAL PERALTA - CHITAGÁ, N. DE SANTANDER.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA BERNARDO URIBE LONDOÑO",
+    "location": "LA CEJA DEL TAMBO",
+    "dept": "ANTIOQUIA",
+    "region": "antioquia_eje",
+    "file": "INSTITUCIÓN EDUCATIVA BERNARDO URIBE LONDOÑO - LA CEJA DEL TAMBO, ANTIOQUIA.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA BONIFACIO GUTIÉRREZ",
+    "location": "HATO COROZAL",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA BONIFACIO GUTIÉRREZ - HATO COROZAL, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA CUPIAGUA",
+    "location": "AGUAZUL",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA CUPIAGUA - AGUAZUL, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA CUSTODIO GARCIA ROVIRA",
+    "location": "INÍRIDA",
+    "dept": "GUAINÍA",
+    "region": "nacional",
+    "file": "INSTITUCIÓN EDUCATIVA CUSTODIO GARCIA ROVIRA - INÍRIDA, GUAINÍA.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA DEPARTALMENTAL LOMA DEL BÁLSAMO",
+    "location": "ALGARROBO",
+    "dept": "MAGDALENA",
+    "region": "caribe",
+    "file": "INSTITUCIÓN EDUCATIVA DEPARTALMENTAL LOMA DEL BÁLSAMO - ALGARROBO, MAGDALENA.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA DEPARTAMENTAL CAÑO DE AGUAS",
+    "location": "CAÑO DE AGUAS",
+    "dept": "MAGDALENA",
+    "region": "caribe",
+    "file": "INSTITUCIÓN EDUCATIVA DEPARTAMENTAL CAÑO DE AGUAS - CAÑO DE AGUAS, MAGDALENA.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA DEPARTAMENTAL MARÍA MEDINA FOSCA",
+    "location": "FOSCA",
+    "dept": "CUNDINAMARCA",
+    "region": "bogota_cundinamarca",
+    "file": "INSTITUCIÓN EDUCATIVA DEPARTAMENTAL MARÍA MEDINA FOSCA - FOSCA, CUNDINAMARCA.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA DEPARTAMENTAL RURAL DE PALERMO",
+    "location": "SITIO NUEVO",
+    "dept": "MAGDALENA",
+    "region": "caribe",
+    "file": "INSTITUCIÓN EDUCATIVA DEPARTAMENTAL RURAL DE PALERMO - SITIO NUEVO, MAGDALENA.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA EL CUSIANA",
+    "location": "TAURAMENA",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA EL CUSIANA - TAURAMENA, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA ENRIQUE OLAYA HERRERA",
+    "location": "ARMENIA",
+    "dept": "QUINDÍO",
+    "region": "antioquia_eje",
+    "file": "INSTITUCIÓN EDUCATIVA ENRIQUE OLAYA HERRERA - ARMENIA, QUINDÍO.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA HORARIO PERDOMO",
+    "location": "HATO COROZAL",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA HORARIO PERDOMO - HATO COROZAL, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA JAIME GARZÓN",
+    "location": "CÚCUTA",
+    "dept": "N. DE SANTANDER",
+    "region": "santanderes",
+    "file": "INSTITUCIÓN EDUCATIVA JAIME GARZÓN - CÚCUTA, N. DE SANTANDER.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA JÉSUS BERNAL PINZÓN",
+    "location": "MANÍ",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA JÉSUS BERNAL PINZÓN - MANÍ, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA LA INMACULADA",
+    "location": "OROCUÉ",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA LA INMACULADA - OROCUÉ, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA LICEO ALEGRE JUVENTUD",
+    "location": "MALAMBO",
+    "dept": "ATLÁNTICO",
+    "region": "caribe",
+    "file": "INSTITUCIÓN EDUCATIVA LICEO ALEGRE JUVENTUD - MALAMBO, ATLÁNTICO.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA LOS CUROS",
+    "location": "PIEDECUESTA",
+    "dept": "SANTANDER",
+    "region": "santanderes",
+    "file": "INSTITUCIÓN EDUCATIVA LOS CUROS - PIEDECUESTA, SANTANDER.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA LUIS SÁNCHEZ PORTO",
+    "location": "SOLEDAD",
+    "dept": "ATLÁNTICO",
+    "region": "caribe",
+    "file": "INSTITUCIÓN EDUCATIVA LUIS SÁNCHEZ PORTO - SOLEDAD, ATLÁNTICO.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA SAGRADO CORAZÓN DE JESÚS",
+    "location": "CÚCUTA",
+    "dept": "N. DE SANTANDER",
+    "region": "santanderes",
+    "file": "INSTITUCIÓN EDUCATIVA SAGRADO CORAZÓN DE JESÚS - CÚCUTA, N. DE SANTANDER.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA SAN AGUSTIN",
+    "location": "AGUAZUL",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA SAN AGUSTIN - AGUAZUL, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA SANTA IRENE",
+    "location": "TRINIDAD",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA SANTA IRENE - TRINIDAD, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EDUCATIVA VICTOR GÓMEZ CORREDOR",
+    "location": "EL TABLON",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUCIÓN EDUCATIVA VICTOR GÓMEZ CORREDOR - EL TABLON, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUCIÓN EUCATIVA DEPARTAMENTAL PEDRO DE HEREDIA",
+    "location": "PEDRAZA",
+    "dept": "MAGDALENA",
+    "region": "caribe",
+    "file": "INSTITUCIÓN EUCATIVA DEPARTAMENTAL PEDRO DE HEREDIA - PEDRAZA, MAGDALENA.webp"
+  },
+  {
+    "name": "INSTITUTO EDUCATIVO ANTONIO NARIÑO",
+    "location": "PORE",
+    "dept": "CASANARE",
+    "region": "llanos_amazonia",
+    "file": "INSTITUTO EDUCATIVO ANTONIO NARIÑO - PORE, CASANARE.webp"
+  },
+  {
+    "name": "INSTITUTO TÉCNICO NACIONAL DE COMERCIO",
+    "location": "CÚCUTA",
+    "dept": "NORTE DE SANTANDER",
+    "region": "santanderes",
+    "file": "INSTITUTO TÉCNICO NACIONAL DE COMERCIO - CÚCUTA, NORTE DE SANTANDER.webp"
+  }
+]
