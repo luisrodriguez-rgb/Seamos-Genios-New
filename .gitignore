@@ -41,3 +41,5 @@ temp/
 # Antigravity / AI Agent Workspace Cache
 .agents/skills/*/temp/
 .agents/skills/*/.git/
+.agents/
+.arquitectura
