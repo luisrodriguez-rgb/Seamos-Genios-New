@@ -1,10 +1,5 @@
 {
   "name": "seamos-genios",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "serve .",
-    "start": "serve .",
-    "build": "echo 'Static build ready'"
-  }
+  "private": true
 }
