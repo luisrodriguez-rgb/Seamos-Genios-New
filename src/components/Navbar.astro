@@ -1,0 +1,72 @@
+---
+---
+
+<header class="navbar" role="banner">
+  <div class="container navbar-container">
+    <!-- Brand Logo -->
+    <a href="#hero" class="logo" aria-label="Seamos Genios - Inicio">
+      <img src="/assets/logo-black.svg" alt="Seamos Genios Logo" class="brand-logo-img" width="180" height="48" />
+    </a>
+
+    <!-- Desktop Nav Menu (Single-Line Centered) -->
+    <nav class="nav-center" aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#nosotros">Quiénes Somos</a></li>
+        <li><a href="#experiencia-roles">Tu Perfil</a></li>
+        <li><a href="#metodologia">Metodología</a></li>
+        <li><a href="#red-nacional">Cobertura</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#colegios">Colegios</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#equipo">Mentores</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Nav Actions Right (Pill Buttons) -->
+    <div class="nav-actions">
+      <!-- E-Commerce Cart Button -->
+      <button class="nav-cart-btn" data-open-cart type="button" aria-label="Abrir Carrito de Compras">
+        <svg class="nav-cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="nav-cart-badge">0</span>
+      </button>
+
+      <button class="btn btn-secondary" data-open-modal data-modal-mode="login" id="btn-login-desktop" type="button">
+        Iniciar Sesión
+      </button>
+      
+      <button class="btn btn-primary" data-open-modal data-modal-mode="register" type="button">
+        Inscribirme
+      </button>
+
+      <button class="nav-mobile-toggle" id="mobile-menu-btn" aria-label="Abrir Menú de Navegación" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Menú móvil">
+    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; padding: 0; margin: 0;">
+      <li><a href="#nosotros" class="mobile-nav-link">Quiénes Somos</a></li>
+      <li><a href="#experiencia-roles" class="mobile-nav-link">Tu Perfil</a></li>
+      <li><a href="#metodologia" class="mobile-nav-link">Metodología</a></li>
+      <li><a href="#red-nacional" class="mobile-nav-link">Cobertura Nacional</a></li>
+      <li><a href="#programas" class="mobile-nav-link">Programas & Tarifas</a></li>
+      <li><a href="#colegios" class="mobile-nav-link">Colegios Aliados</a></li>
+      <li><a href="#resultados" class="mobile-nav-link">Resultados</a></li>
+      <li><a href="#equipo" class="mobile-nav-link">Mentores de Élite</a></li>
+      <li><a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a></li>
+      <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+      <li style="padding-top: 0.75rem; border-top: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 0.6rem;">
+        <button class="btn btn-secondary" data-open-modal data-modal-mode="login" style="width: 100%;" type="button">Iniciar Sesión</button>
+        <button class="btn btn-primary" data-open-modal data-modal-mode="register" style="width: 100%;" type="button">Inscribirme</button>
+      </li>
+    </ul>
+  </div>
+</header>

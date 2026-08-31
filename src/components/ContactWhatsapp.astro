@@ -1,0 +1,62 @@
+---
+import WhatsappIcon from './icons/WhatsappIcon.astro';
+---
+
+<section class="section section-surface" id="contacto">
+  <div class="container">
+    <!-- WhatsApp CTA Card (Factus Style, Clean Vector Icon) -->
+    <div class="whatsapp-cta-card">
+      <div>
+        <h3 class="whatsapp-cta-title">¿Quieres una asesoría vocacional personalizada?</h3>
+        <p class="whatsapp-cta-desc">
+          Escríbenos directamente a nuestro WhatsApp oficial y uno de nuestros mentores te orientará en minutos sin costo.
+        </p>
+      </div>
+      <a href="https://wa.me/573001234567?text=Hola%20Seamos%20Genios,%20deseo%20asesoria%20personalizada" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="white-space: nowrap;" aria-label="Escríbenos por WhatsApp">
+        <WhatsappIcon width={22} height={22} color="#FFFFFF" />
+        <span>Escríbenos por WhatsApp</span>
+      </a>
+    </div>
+
+    <div style="max-width: 680px; margin: 3.5rem auto 0 auto;">
+      <div class="section-header">
+        <div class="badge">Contacto Directo</div>
+        <h2 class="section-title">¿Listo para Elevar tu <span class="text-gradient-red">Puntaje</span>?</h2>
+        <p class="section-subtitle">
+          Déjanos tus datos y un mentor pedagógico se comunicará contigo hoy mismo.
+        </p>
+      </div>
+
+      <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.15rem;">
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Nombre Completo *</label>
+          <input type="text" class="input-pill" placeholder="Ej: Carlos Rodríguez" required autocomplete="name" />
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Correo Electrónico *</label>
+          <input type="email" class="input-pill" placeholder="tu-correo@ejemplo.com" required autocomplete="email" />
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Teléfono / WhatsApp *</label>
+          <input type="tel" class="input-pill" placeholder="+57 300 123 4567" required autocomplete="tel" />
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.4rem;">Perfil de Usuario</label>
+          <select class="input-pill" style="appearance: auto;">
+            <option>Estudiante (PreICFES Saber 11)</option>
+            <option>Padre de Familia</option>
+            <option>Colegio / Institución Educativa</option>
+            <option>Secretaría de Educación / Alcaldía</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top: 0.75rem; width: 100%;">
+          Enviar Mensaje →
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

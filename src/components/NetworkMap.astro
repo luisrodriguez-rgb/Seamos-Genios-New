@@ -1,0 +1,237 @@
+---
+---
+
+<section class="network-map-section" id="red-nacional">
+  <div class="container">
+    <div class="network-header">
+      <div class="badge" style="margin-bottom: 1.25rem;">Cobertura Nacional</div>
+      <h2 class="network-title">
+        Una red educativa en Colombia <span class="text-gradient-red">como ninguna otra</span>
+      </h2>
+      <p class="network-subtitle">
+        Llegamos a cada departamento del país con simulacros quincenales, analítica de datos en tiempo real y mentores de las mejores universidades.
+      </p>
+    </div>
+
+    <!-- 4 Vertical Metric Columns with Top Pointer Dots (Cloudflare Style) -->
+    <div class="network-stats-grid">
+      <div class="network-stat-col">
+        <div class="network-stat-num" data-counter="+32">+32</div>
+        <div class="network-stat-head">Departamentos Conectados</div>
+        <p class="network-stat-desc">
+          Desde La Guajira hasta el Amazonas, estudiantes y colegios acceden a simulacros estandarizados.
+        </p>
+      </div>
+
+      <div class="network-stat-col">
+        <div class="network-stat-num" data-counter="+60">+60</div>
+        <div class="network-stat-head">Colegios e Instituciones</div>
+        <p class="network-stat-desc">
+          Convenios activos con colegios oficiales y privados que auditan el progreso de sus bachilleres.
+        </p>
+      </div>
+
+      <div class="network-stat-col">
+        <div class="network-stat-num" data-counter="+1.400">+1.400</div>
+        <div class="network-stat-head">Estudiantes Evaluados</div>
+        <p class="network-stat-desc">
+          Más de 1.400 jóvenes han presentado nuestros simulacros de 254 preguntas con entrega en 24h.
+        </p>
+      </div>
+
+      <div class="network-stat-col">
+        <div class="network-stat-num" data-counter="24h">24h</div>
+        <div class="network-stat-head">Garantía de Analítica</div>
+        <p class="network-stat-desc">
+          Procesamiento de resultados ultra rápido para que el estudiante corrija sus errores inmediatamente.
+        </p>
+      </div>
+    </div>
+
+    <!-- Interactive Topographic SVG Map of Colombia -->
+    <div class="network-map-wrapper">
+      <svg class="colombia-svg-map" viewBox="0 0 900 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="colombiaBgGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0F172A" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#05080E" stop-opacity="0.98"/>
+          </linearGradient>
+          <linearGradient id="colombiaBorderGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FF1E27" stop-opacity="0.6"/>
+            <stop offset="50%" stop-color="#FF4D55" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#FF1E27" stop-opacity="0.6"/>
+          </linearGradient>
+          <radialGradient id="hubGlow" cx="460" cy="275" r="150" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FF1E27" stop-opacity="0.35"/>
+            <stop offset="50%" stop-color="#FF1E27" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#FF1E27" stop-opacity="0"/>
+          </radialGradient>
+          <pattern id="mapDots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.07)"/>
+          </pattern>
+          <clipPath id="colombiaClip">
+            <path d="
+              M 530 25
+              C 525 35, 505 50, 485 55
+              C 460 62, 445 68, 435 85
+              C 420 105, 410 125, 385 145
+              C 365 155, 350 170, 345 195
+              C 340 230, 335 270, 330 310
+              C 325 345, 305 375, 290 395
+              C 285 410, 300 420, 320 425
+              C 340 430, 360 440, 385 450
+              C 415 460, 450 475, 480 495
+              C 515 520, 545 555, 570 595
+              C 585 615, 600 610, 605 590
+              C 615 550, 625 510, 640 475
+              C 660 435, 690 395, 725 365
+              C 745 345, 755 315, 750 280
+              C 745 245, 720 210, 680 185
+              C 645 165, 615 155, 580 150
+              C 560 145, 545 130, 540 105
+              C 535 75, 540 45, 530 25 Z
+            "/>
+          </clipPath>
+        </defs>
+
+        <!-- Main Colombia Contour Shape -->
+        <path
+          d="
+          M 530 25
+          C 525 35, 505 50, 485 55
+          C 460 62, 445 68, 435 85
+          C 420 105, 410 125, 385 145
+          C 365 155, 350 170, 345 195
+          C 340 230, 335 270, 330 310
+          C 325 345, 305 375, 290 395
+          C 285 410, 300 420, 320 425
+          C 340 430, 360 440, 385 450
+          C 415 460, 450 475, 480 495
+          C 515 520, 545 555, 570 595
+          C 585 615, 600 610, 605 590
+          C 615 550, 625 510, 640 475
+          C 660 435, 690 395, 725 365
+          C 745 345, 755 315, 750 280
+          C 745 245, 720 210, 680 185
+          C 645 165, 615 155, 580 150
+          C 560 145, 545 130, 540 105
+          C 535 75, 540 45, 530 25 Z"
+          fill="url(#colombiaBgGrad)"
+          stroke="url(#colombiaBorderGrad)"
+          stroke-width="2.5"
+        />
+
+        <!-- Dot Matrix Fill inside Colombia -->
+        <rect width="900" height="650" fill="url(#mapDots)" clip-path="url(#colombiaClip)" />
+
+        <!-- Internal Regional Lines -->
+        <path d="M 320 415 Q 380 320 410 215 Q 435 150 455 65" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" fill="none" clip-path="url(#colombiaClip)"/>
+        <path d="M 350 390 Q 420 300 450 250 Q 480 200 500 170 Q 535 130 525 60" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" fill="none" clip-path="url(#colombiaClip)"/>
+
+        <!-- San Andrés & Providencia Inset Box -->
+        <g transform="translate(80, 50)">
+          <rect width="130" height="95" rx="10" fill="#131A26" stroke="var(--border-color)" stroke-width="1.2"/>
+          <circle cx="50" cy="50" r="4" fill="#FF1E27"/>
+          <circle cx="50" cy="50" r="8" fill="rgba(255,30,39,0.2)" class="city-node-glow"/>
+          <circle cx="85" cy="35" r="3" fill="#FF1E27"/>
+          <text x="12" y="24" fill="var(--text-white-muted)" font-size="9" font-weight="800" font-family="Inter, sans-serif">ARCHIPIÉLAGO</text>
+          <text x="45" y="70" class="map-city-tag" font-size="10">San Andrés</text>
+          <text x="75" y="26" class="map-city-tag" font-size="9">Providencia</text>
+        </g>
+
+        <!-- Radar Glow from Bogotá Central Hub (460, 275) -->
+        <circle cx="460" cy="275" r="140" fill="url(#hubGlow)" pointer-events="none"/>
+        <circle cx="460" cy="275" r="70" stroke="rgba(255,30,39,0.25)" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+        <circle cx="460" cy="275" r="130" stroke="rgba(255,30,39,0.18)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+        <circle cx="460" cy="275" r="200" stroke="rgba(255,30,39,0.12)" stroke-width="1" fill="none" stroke-dasharray="5 5"/>
+
+        <!-- Dynamic Tracer Arcs from Bogotá to Regional Cities -->
+        <path d="M 460 275 Q 430 160 455 65" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 400 160 430 85" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 420 230 405 205" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 400 290 375 310" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 500 210 500 170" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 525 190 535 135" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 360 350 330 395" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 500 285 510 295" stroke="rgba(255,30,39,0.45)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/>
+        <path d="M 460 275 Q 540 450 575 570" stroke="rgba(255,30,39,0.3)" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+
+        <!-- Key City Nodes with Pulsing Radar Rings -->
+        <!-- 1. BOGOTÁ D.C. -->
+        <circle cx="460" cy="275" r="14" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="460" cy="275" r="7" fill="#FF1E27"/>
+        <text x="478" y="280" class="map-city-tag map-hub-tag">Bogotá D.C. (Sede Central)</text>
+
+        <!-- 2. MEDELLÍN -->
+        <circle cx="405" cy="205" r="10" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="405" cy="205" r="5.5" fill="#FF1E27"/>
+        <text x="340" y="202" class="map-city-tag">Medellín</text>
+
+        <!-- 3. CALI -->
+        <circle cx="375" cy="310" r="10" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="375" cy="310" r="5.5" fill="#FF1E27"/>
+        <text x="330" y="315" class="map-city-tag">Cali</text>
+
+        <!-- 4. BARRANQUILLA -->
+        <circle cx="455" cy="65" r="10" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="455" cy="65" r="5.5" fill="#FF1E27"/>
+        <text x="470" y="69" class="map-city-tag">Barranquilla</text>
+
+        <!-- 5. CARTAGENA -->
+        <circle cx="430" cy="85" r="9" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="430" cy="85" r="5" fill="#FF1E27"/>
+        <text x="355" y="89" class="map-city-tag">Cartagena</text>
+
+        <!-- 6. BUCARAMANGA -->
+        <circle cx="500" cy="170" r="9" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="500" cy="170" r="5" fill="#FF1E27"/>
+        <text x="515" y="174" class="map-city-tag">Bucaramanga</text>
+
+        <!-- 7. CÚCUTA -->
+        <circle cx="535" cy="135" r="8" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="535" cy="135" r="4.5" fill="#FF1E27"/>
+        <text x="550" y="139" class="map-city-tag">Cúcuta</text>
+
+        <!-- 8. EJE CAFETERO -->
+        <circle cx="400" cy="255" r="9" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="400" cy="255" r="5" fill="#FF1E27"/>
+        <text x="315" y="255" class="map-city-tag">Eje Cafetero</text>
+
+        <!-- 9. PASTO -->
+        <circle cx="330" cy="395" r="8" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="330" cy="395" r="4.5" fill="#FF1E27"/>
+        <text x="278" y="400" class="map-city-tag">Pasto</text>
+
+        <!-- 10. VILLAVICENCIO -->
+        <circle cx="510" cy="295" r="8" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="510" cy="295" r="4.5" fill="#FF1E27"/>
+        <text x="525" y="299" class="map-city-tag">Villavicencio</text>
+
+        <!-- 11. SANTA MARTA -->
+        <circle cx="478" cy="55" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="478" cy="55" r="4" fill="#FF1E27"/>
+        <text x="490" y="45" class="map-city-tag">Santa Marta</text>
+
+        <!-- 12. MONTERÍA -->
+        <circle cx="410" cy="135" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="410" cy="135" r="4" fill="#FF1E27"/>
+        <text x="345" y="139" class="map-city-tag">Montería</text>
+
+        <!-- 13. NEIVA -->
+        <circle cx="420" cy="340" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="420" cy="340" r="4" fill="#FF1E27"/>
+        <text x="432" y="344" class="map-city-tag">Neiva</text>
+
+        <!-- 14. TUNJA -->
+        <circle cx="485" cy="235" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="485" cy="235" r="4" fill="#FF1E27"/>
+        <text x="498" y="235" class="map-city-tag">Tunja</text>
+
+        <!-- 15. LETICIA -->
+        <circle cx="575" cy="570" r="7" fill="rgba(255,30,39,0.25)" class="city-node-glow"/>
+        <circle cx="575" cy="570" r="4" fill="#FF1E27"/>
+        <text x="590" y="574" class="map-city-tag">Leticia</text>
+      </svg>
+    </div>
+  </div>
+</section>

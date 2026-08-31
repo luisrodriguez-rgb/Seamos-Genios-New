@@ -1,0 +1,76 @@
+---
+import schoolsData from '../../public/schools_catalog.json';
+
+const halfLength = Math.ceil(schoolsData.length / 2);
+const track1 = schoolsData.slice(0, halfLength);
+const track2 = schoolsData.slice(halfLength);
+---
+
+<section class="section section-dark schools-carousel-section" id="colegios">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge badge-dark">Alianzas & Cobertura Institucional</div>
+      <h2 class="section-title">Más de <span class="text-gradient-red">+60 Colegios e Instituciones</span> Confían en Seamos Genios</h2>
+      <p class="section-subtitle">
+        Instituciones educativas oficiales y privadas en más de 12 departamentos potencian el rendimiento Saber 11 de sus estudiantes con nuestra plataforma.
+      </p>
+    </div>
+  </div>
+
+  <!-- Dual Continuous Infinite Marquee Tracks (JSConf Filmstrip Style) -->
+  <div class="dual-marquee-container">
+    <!-- Track 1 (Scrolls Left) -->
+    <div class="marquee-row-wrapper">
+      <div class="marquee-track-left">
+        {track1.concat(track1).map(school => (
+          <div class="school-film-card" data-region={school.region}>
+            <div class="school-film-crest-wrap">
+              <img src={`/${school.file}`} alt={school.name} class="school-film-img" loading="lazy" decoding="async" />
+            </div>
+            <div class="school-film-hover-overlay">
+              <div class="school-film-sg-badge">
+                <img src="/assets/logo-red.svg" alt="Seamos Genios" class="school-film-sg-logo" />
+              </div>
+              <span class="school-film-tag">{school.dept}</span>
+              <h4 class="school-film-name">{school.name}</h4>
+              <span class="school-film-loc">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline-block; vertical-align:-1px; margin-right:3px;">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg> 
+                {school.location}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Track 2 (Scrolls Right) -->
+    <div class="marquee-row-wrapper" style="margin-top: 1.25rem;">
+      <div class="marquee-track-right">
+        {track2.concat(track2).map(school => (
+          <div class="school-film-card" data-region={school.region}>
+            <div class="school-film-crest-wrap">
+              <img src={`/${school.file}`} alt={school.name} class="school-film-img" loading="lazy" decoding="async" />
+            </div>
+            <div class="school-film-hover-overlay">
+              <div class="school-film-sg-badge">
+                <img src="/assets/logo-red.svg" alt="Seamos Genios" class="school-film-sg-logo" />
+              </div>
+              <span class="school-film-tag">{school.dept}</span>
+              <h4 class="school-film-name">{school.name}</h4>
+              <span class="school-film-loc">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline-block; vertical-align:-1px; margin-right:3px;">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg> 
+                {school.location}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

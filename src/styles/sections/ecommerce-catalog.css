@@ -1,0 +1,196 @@
+/* ==========================================================================
+   SEAMOS GENIOS - E-COMMERCE PRODUCTS CATALOG & PRICING (v3.0)
+   Multi-Role Product Cards (Estudiantes, Familias, Colegios, Docentes)
+   ========================================================================== */
+
+.catalog-section {
+  padding: 5rem 0;
+  background: var(--bg-body);
+  position: relative;
+}
+
+.catalog-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.catalog-filter-btn {
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.catalog-filter-btn:hover {
+  background: var(--bg-surface-subtle);
+  border-color: var(--brand-red);
+  color: var(--brand-red);
+}
+
+.catalog-filter-btn.active {
+  background: var(--brand-red);
+  color: #FFFFFF;
+  border-color: var(--brand-red);
+  box-shadow: 0 4px 14px var(--brand-red-glow);
+}
+
+/* Products Grid (Spacious Auto-Fit with min 340px) */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.25rem;
+  align-items: stretch;
+  margin-top: 1rem;
+}
+
+/* Product Article Card */
+.product-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  padding: 2.5rem 2rem 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+  overflow: visible;
+  min-height: 520px;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--brand-red-border);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
+}
+
+/* Red Featured Card */
+.product-card.program-card-featured-red {
+  background: linear-gradient(145deg, #FF1E27 0%, #E01019 100%);
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 50px -10px rgba(255, 30, 39, 0.4);
+  transform: translateY(-4px);
+  position: relative;
+  z-index: 5;
+}
+
+.product-card.program-card-featured-red::before {
+  content: 'MÁS POPULAR';
+  position: absolute;
+  top: -14px;
+  right: 28px;
+  background: #FFFFFF;
+  color: var(--brand-red);
+  font-size: 0.725rem;
+  font-weight: 900;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.06em;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  line-height: 1;
+}
+
+.product-card.program-card-featured-red:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 28px 60px -10px rgba(255, 30, 39, 0.55);
+}
+
+.product-card.program-card-featured-red .program-title {
+  color: #FFFFFF;
+}
+
+.product-card.program-card-featured-red .program-desc {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.product-card.program-card-featured-red .program-feature-item {
+  color: #FFFFFF;
+}
+
+.product-card.program-card-featured-red .program-card-foot {
+  border-top-color: rgba(255, 255, 255, 0.22);
+}
+
+.product-card.program-card-featured-red .program-price-tag {
+  color: #FFFFFF;
+}
+
+.product-card.program-card-featured-red .program-price-sub {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Feature bullets */
+.product-card .program-feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 1.5rem 0 2rem 0;
+  padding: 0;
+}
+
+.product-card .program-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.885rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.product-card .program-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  gap: 0.85rem;
+  margin-top: auto;
+}
+
+.product-card .program-price-tag {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+.product-card .program-price-sub {
+  font-size: 0.785rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .product-card {
+    padding: 2rem 1.5rem;
+    min-height: auto;
+  }
+  .catalog-filter-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+  }
+  .catalog-filter-btn {
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CartDrawer from '../components/CartDrawer.astro';
+import AuthModal from '../components/AuthModal.astro';
+---
+
+<Layout title="Página No Encontrada (404) | Seamos Genios" description="La página que buscas no existe o ha sido movida.">
+  <Navbar />
+  
+  <main style="min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6rem 1.5rem;">
+    <div style="max-width: 540px;">
+      <div style="font-size: 5rem; font-weight: 900; color: var(--brand-red); line-height: 1; margin-bottom: 1rem;">404</div>
+      <h1 style="font-size: 2rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.75rem;">
+        Página no encontrada
+      </h1>
+      <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">
+        La página que estás buscando no existe o fue trasladada. Regresa al inicio para consultar nuestros programas o simulacros.
+      </p>
+      <a href="/" class="btn btn-primary" style="display: inline-flex; padding: 0.85rem 2rem; font-size: 1rem;">
+        Volver a la Página Principal →
+      </a>
+    </div>
+  </main>
+
+  <Footer />
+  <CartDrawer />
+  <AuthModal />
+</Layout>

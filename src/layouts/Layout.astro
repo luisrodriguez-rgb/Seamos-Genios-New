@@ -1,0 +1,110 @@
+---
+import '../styles/main.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Seamos Genios | Preparación Inteligente ICFES Saber 11, IA & Neurociencia en Colombia",
+  description = "Plataforma educativa líder en Colombia que combina inteligencia artificial y neurociencia para revolucionar el rendimiento en el examen ICFES Saber 11. Simulacros calibrados de 254 preguntas y entrega en 24 horas."
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Primary Meta Tags -->
+  <title>{title}</title>
+  <meta name="title" content={title} />
+  <meta name="description" content={description} />
+  <meta name="keywords" content="PreICFES, ICFES Saber 11, ICFES 2026, Simulacros ICFES, Neurociencia Educativa, Seamos Genios, Preparación ICFES Colombia, Puntaje 400 ICFES, Becas Universitarias" />
+  <meta name="author" content="Seamos Genios SAS" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://seamosgenios.org/" />
+
+  <!-- Theme & Mobile Appearance -->
+  <meta name="theme-color" content="#0D1117" />
+  <meta name="msapplication-TileColor" content="#0D1117" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-red.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.png" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:site_name" content="Seamos Genios" />
+  <meta property="og:url" content="https://seamosgenios.org/" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content="https://seamosgenios.org/assets/logo-red.svg" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content="https://seamosgenios.org/assets/logo-red.svg" />
+
+  <!-- Fonts Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://seamosgenios.org/#organization",
+        "name": "Seamos Genios",
+        "url": "https://seamosgenios.org",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://seamosgenios.org/assets/logo-red.svg"
+        },
+        "description": "Plataforma educativa líder en Colombia que combina inteligencia artificial y neurociencia para maximizar el rendimiento en el examen ICFES Saber 11.",
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Daniel De La Cruz",
+            "jobTitle": "Presidente & Fundador"
+          },
+          {
+            "@type": "Person",
+            "name": "Ángel Pacheco",
+            "jobTitle": "Vicepresidente (475 Puntos ICFES)"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://seamosgenios.org/#website",
+        "url": "https://seamosgenios.org",
+        "name": "Seamos Genios"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <slot />
+
+  <!-- Client Script Bundle -->
+  <script>
+    import '../scripts/app.js';
+  </script>
+</body>
+</html>

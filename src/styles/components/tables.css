@@ -1,0 +1,331 @@
+/* ==========================================================================
+   SEAMOS GENIOS - SHOWDOWN MATRIX & TABLES (PREMIUM VERCEL/LINEAR STYLE - v3.0)
+   ========================================================================== */
+
+/* Modern 2-Column Showdown Matrix */
+.comparison-showdown-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.25rem;
+  max-width: 1120px;
+  margin: 0 auto 3.5rem auto;
+  align-items: stretch;
+}
+
+/* Card 1: PreICFES Tradicional (The Outdated Past) */
+.comp-card-traditional {
+  background: #F8FAFC;
+  border: 1.5px solid #E2E8F0;
+  border-radius: var(--radius-2xl);
+  padding: 2.75rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.comp-card-traditional:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.comp-card-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.75rem;
+}
+
+.comp-header-badge-grey {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: #E2E8F0;
+  color: #64748B;
+  font-size: 0.725rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comp-card-title {
+  font-size: 1.55rem;
+  font-weight: 900;
+  color: var(--text-main);
+  margin-top: 0.65rem;
+  line-height: 1.2;
+}
+
+.comp-card-sub {
+  font-size: 0.885rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 0.35rem;
+}
+
+/* Card 2: Seamos Genios (Winner Obsidian Dark Card with Red Accent) */
+.comp-card-seamos,
+.comp-card-sg {
+  background: linear-gradient(145deg, #0D1117 0%, #131A26 55%, #1A2438 100%);
+  color: #FFFFFF;
+  border: 2px solid var(--brand-red);
+  border-radius: var(--radius-2xl);
+  padding: 2.75rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 50px -10px rgba(255, 30, 39, 0.35);
+  position: relative;
+  transform: translateY(-8px);
+  overflow: visible;
+  transition: all var(--transition-smooth);
+}
+
+.comp-card-seamos::before,
+.comp-card-sg::before {
+  content: 'ESTÁNDAR 2026 • MÉTODO RECOMENDADO';
+  position: absolute;
+  top: -14px;
+  right: 28px;
+  background: var(--brand-red);
+  color: #FFFFFF;
+  font-size: 0.725rem;
+  font-weight: 900;
+  padding: 0.4rem 1.1rem;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.06em;
+  box-shadow: 0 4px 18px var(--brand-red-glow);
+  z-index: 10;
+  line-height: 1;
+}
+
+.comp-card-seamos:hover,
+.comp-card-sg:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 28px 65px -10px rgba(255, 30, 39, 0.5);
+}
+
+.comp-card-seamos .comp-card-header,
+.comp-card-sg .comp-card-header {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.comp-header-badge-red {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 30, 39, 0.2);
+  border: 1px solid rgba(255, 30, 39, 0.4);
+  color: #FF6B72;
+  font-size: 0.725rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comp-card-seamos .comp-card-title,
+.comp-card-sg .comp-card-title {
+  color: #FFFFFF;
+}
+
+.comp-card-seamos .comp-card-sub,
+.comp-card-sg .comp-card-sub {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Feature Stack & Rows */
+.comp-feature-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.comp-feature-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-lg);
+  transition: background var(--transition-fast);
+}
+
+.comp-card-traditional .comp-feature-row:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.comp-card-seamos .comp-feature-row,
+.comp-card-sg .comp-feature-row {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.comp-card-seamos .comp-feature-row:hover,
+.comp-card-sg .comp-feature-row:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 30, 39, 0.35);
+}
+
+.comp-icon-cross {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FEE2E2;
+  color: #DC2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.comp-icon-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  color: #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.comp-feature-text h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.comp-card-traditional .comp-feature-text h4 {
+  color: var(--text-main);
+}
+
+.comp-card-seamos .comp-feature-text h4,
+.comp-card-sg .comp-feature-text h4 {
+  color: #FFFFFF;
+}
+
+.comp-feature-text p {
+  font-size: 0.835rem;
+  line-height: 1.5;
+}
+
+.comp-card-traditional .comp-feature-text p {
+  color: var(--text-muted);
+}
+
+.comp-card-seamos .comp-feature-text p,
+.comp-card-sg .comp-feature-text p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.comp-highlight-tag {
+  display: inline-block;
+  font-weight: 800;
+  color: #FF4D55;
+  background: rgba(255, 30, 39, 0.15);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+}
+
+/* Card Price Footer */
+.comp-card-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+  gap: 1rem;
+}
+
+.comp-card-seamos .comp-card-price-row,
+.comp-card-sg .comp-card-price-row {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.comp-price-label {
+  font-size: 0.785rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.comp-card-seamos .comp-price-label,
+.comp-card-sg .comp-price-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.comp-price-value {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.1;
+  font-family: monospace;
+}
+
+.comp-card-seamos .comp-price-value,
+.comp-card-sg .comp-price-value {
+  color: #10B981;
+}
+
+/* Mentors Structured Table */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  background: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+  margin-top: 2rem;
+}
+
+.mentors-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.mentors-table th, .mentors-table td {
+  padding: 1.15rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.mentors-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mentors-table th {
+  background: #F8FAFC;
+  font-weight: 800;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mentors-table tbody tr:hover {
+  background: #F8FAFC;
+}
+
+@media (max-width: 900px) {
+  .comparison-showdown-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .comp-card-seamos, .comp-card-sg {
+    transform: none;
+  }
+}

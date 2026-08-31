@@ -1,86 +1,126 @@
-# Seamos Genios - Plataforma Educativa PreICFES (SG-2026-2)
+# Seamos Genios - Plataforma Educativa PreICFES & E-Commerce (SG-2026-2)
 
-Plataforma web pública de alta conversión e impacto institucional diseñada para la preparación del examen ICFES en Colombia, combinando tecnología de Inteligencia Artificial y neurociencia aplicada al aprendizaje.
+Plataforma digital de alta conversion e impacto institucional para la preparacion del examen de estado ICFES Saber 11 en Colombia, combinando tecnologia de Inteligencia Artificial y neurociencia aplicada al aprendizaje.
+
+Construida sobre **Astro 5+**, con arquitectura modular de componentes, sistema de diseno CSS optimizado con tokens y motor de E-Commerce integrado.
 
 ---
 
-## 1. Visión General del Proyecto
+## 1. Vision General del Proyecto
 
-Seamos Genios transforma la preparación académica para estudiantes de bachillerato, colegios, universidades y entidades públicas mediante una experiencia digital de alto rendimiento. 
+Seamos Genios transforma la preparacion academica para estudiantes de bachillerato, colegios, universidades y entidades publicas mediante una experiencia digital de alto rendimiento.
 
-- **Enfoque de Diseño:** 90% neutros institucionales (estilo Stripe / Notion / Supabase) y 10% color corporativo (#CC0000).
-- **Rendimiento y Accesibilidad:** Estructura HTML5 semántica, tiempo de carga inferior a 1.5 segundos y compatibilidad fluida en dispositivos móviles, tablets y escritorio.
-- **Sin Dependencias Pesadas:** Construido con HTML5, CSS3 modular (Patrón 7-1) y JavaScript ES6 nativo.
+- **Arquitectura Tecnologica:** Astro 5+ con Server-Side Generation (SSG), TypeScript y CSS Vanilla modular.
+- **Enfoque de Diseno:** Neutros institucionales de alta gama (estilo Obsidian Dark `#0D1117` y superficie clara `#F8FAFC`) con rojo corporativo (`#FF1E27`). Cero emojis; iconografia SVG profesional uniforme.
+- **Rendimiento y Accesibilidad:** Tiempo de carga inferior a 1 segundo, Lighthouse 100 en SEO y accesibilidad plena en dispositivos moviles y escritorio.
+- **E-Commerce y Multi-Rol Integrado:** Carrito de compras reactivo (Slide-over Cart Drawer) con persistencia, calculo de cupones y checkout directo por pasarelas (PSE, Nequi, Tarjetas) y WhatsApp.
 
 ---
 
 ## 2. Arquitectura de Archivos y Directorios
 
-```
+```text
 SG-2026-2/
-├── README.md                     # Documentación principal del proyecto
-├── index.html                    # Estructura HTML5 principal del sitio
-├── css/                          # Sistema de diseño CSS modular (Patrón 7-1)
-│   ├── main.css                  # Punto de entrada CSS maestro (@import)
-│   ├── global/
-│   │   ├── variables.css         # Tokens de diseño, paleta HSL y modo oscuro
-│   │   └── reset.css             # Reset de estilos y tipografía base
-│   ├── components/
-│   │   ├── buttons.css           # Botones e insignias
-│   │   ├── navbar.css            # Navegación fija y menú móvil
-│   │   ├── modal.css             # Ventanas modales de inscripción
-│   │   └── tables.css            # Tablas comparativas y de mentores
-│   └── sections/
-│       ├── hero.css              # Sección Hero y reloj regresivo ICFES
-│       ├── features.css          # Filas divididas de características
-│       ├── pricing.css           # Tarifas horizontales e inversión
-│       ├── team.css              # Mentores y cuadro directivo
-│       └── footer.css            # Pie de página y responsive queries
-├── js/                           # Motor JavaScript Modular (ES6)
-│   ├── app.js                    # Inicializador maestro (Punto de entrada)
-│   └── modules/
-│       ├── theme.js              # Control de modo Claro / Oscuro
-│       ├── countdown.js          # Reloj regresivo hacia ICFES Calendario A
-│       ├── accordion.js          # Acordeón interactivo de preguntas frecuentes
-│       ├── modal.js              # Manejo de modales y navegación móvil
-│       └── forms.js              # Procesamiento de formularios y notificaciones
-└── docs/                         # Especificaciones técnicas y plan de trabajo
-    ├── aquitectura.md
-    └── plan_1.md
+├── README.md                        # Documentacion principal del proyecto
+├── astro.config.mjs                 # Configuracion del framework Astro
+├── tsconfig.json                    # Configuracion TypeScript
+├── package.json                     # Scripts y dependencias
+├── vercel.json                      # Configuracion de despliegue en Vercel
+├── docs/                            # Especificaciones tecnicas de arquitectura
+│   └── arquitectura.md
+├── public/                          # Recursos estaticos publicos
+│   ├── assets/                      # Logos vectoriales SVG e imagenes institucionales
+│   ├── favicon.ico
+│   ├── favicon.png
+│   └── schools_catalog.json         # Base de datos de +60 colegios aliados
+└── src/
+    ├── layouts/
+    │   └── Layout.astro             # Layout maestro con SEO, OpenGraph, JSON-LD y CSS
+    ├── pages/
+    │   ├── index.astro              # Landing Page y tienda principal
+    │   └── 404.astro                # Pagina 404 personalizada
+    ├── components/
+    │   ├── Navbar.astro             # Barra de navegacion superior con boton de carrito
+    │   ├── Hero.astro               # Hero principal, selector de rol y widget analitico
+    │   ├── RoleHub.astro            # Hub interactivo de experiencia por rol
+    │   ├── EcommerceCatalog.astro   # Catalogo de productos, simulacros y paquetes
+    │   ├── CartDrawer.astro         # Drawer deslizable de carrito de compras
+    │   ├── CheckoutModal.astro      # Modal de seleccion de pasarelas de pago
+    │   ├── AuthModal.astro          # Modal redisenado de registro e inicio de sesion
+    │   ├── Alliances.astro          # Estadisticas y respaldo institucional
+    │   ├── PurposeStory.astro       # Neuroaprendizaje y proposito educativo
+    │   ├── FlowSteps.astro          # Metodologia en 4 pasos (De Cero a Genio)
+    │   ├── SchoolsCarousel.astro    # Directorio interactivo de +60 colegios
+    │   ├── Testimonials.astro       # Casos de exito y testimonios reales
+    │   ├── TeamMentors.astro        # Equipo directivo y tabla de mentores
+    │   ├── FaqVideo.astro           # Preguntas frecuentes y video modal
+    │   ├── Footer.astro             # Pie de pagina y cumplimiento legal DIAN
+    │   └── FloatingWhatsApp.astro   # Boton flotante de atencion en vivo
+    ├── scripts/
+    │   ├── app.js                   # Inicializador maestro del cliente
+    │   ├── cart.js                  # Motor de carrito en localStorage y WhatsApp checkout
+    │   ├── role-guide.js            # Controlador de navegacion y seleccion de rol
+    │   ├── catalog-filter.js        # Filtros de categorias de productos
+    │   ├── modal.js                 # Manejo del modal de registro/login
+    │   ├── checkout-modal.js        # Logica del modal de pasarelas de pago
+    │   ├── countdown.js             # Reloj regresivo hacia el ICFES 2026
+    │   ├── accordion.js             # Acordeon interactivo de preguntas frecuentes
+    │   ├── video-player.js          # Reproductor modal de video institucional
+    │   └── schools-directory.js     # Buscador y filtro regional de instituciones
+    └── styles/                      # Sistema de estilos CSS modular
+        ├── main.css                 # Punto de entrada maestro de estilos
+        ├── global/                  # Variables, reset y tipografia
+        ├── components/              # Estilos de botones, navbar, modales, carrito, tablas
+        └── sections/                # Estilos de cada seccion de la plataforma
 ```
 
 ---
 
 ## 3. Funcionalidades Principales
 
-1. **Reloj Regresivo en Tiempo Real:** Cuenta regresiva automatizada hacia el Examen ICFES Calendario A (26 de Julio de 2026).
-2. **Navegación Móvil Adaptativa:** Menú tipo Drawer para pantallas móviles (< 1024px) y navegación fija con desenfoque de fondo en escritorio.
-3. **Interruptor de Tema (Claro / Oscuro):** Selector de modo de color sin emojis con persistencia en `localStorage`.
-4. **Filas Divididas de Características (Split Rows):** Layout limpio numerado (01, 02, 03, 04) para presentar los pilares metodológicos sin saturar la interfaz de tarjetas.
-5. **Directorio y Tabla de Mentores:** Presentación del equipo directivo (Daniel De La Cruz y Ángel Pacheco) seguida de un cuadro estructurado con puntajes e instituciones del equipo docente.
-6. **Estructura de Precios Horizontal:** Presentación destacada del Plan Calendario A (50% Descuento) junto a opciones individuales e institucionales.
-7. **Formulario y Ventana Modal:** Sistema de captación de prospectos para estudiantes, colegios y entidades públicas.
+1. **Carrito de Compras E-Commerce (Cart Drawer):** Drawer lateral deslizable con control de cantidades, soporte de cupones de descuento, persistencia en `localStorage`, pasarelas de pago y generacion automatica de pedidos por WhatsApp.
+2. **Navegacion Multi-Rol Inteligente (Anti "Pagina Infinita"):** Asistente interactivo en el Hero y Hub segmentado para Estudiantes, Colegios, Familias y Docentes con informacion especifica y llamadas a la accion personalizadas.
+3. **Catalogo de Productos y Precios:** Simulacros individuales ($15.000 COP), Plan Completo Calendario A ($300.000 COP), Kit de Cuadernillos Oficiales ($65.000 COP), Sesion 1 a 1 de Mentoria ($80.000 COP) y Cotizador Institucional para Colegios.
+4. **Modal de Autenticacion / Registro Redisenado:** Estetica Obsidian Dark Slate con sutil resplandor rojo institucional, logo integrado, tarjetas flotantes de metricas (+1.500 Alumnos, 477 Puntaje Max, 24h Reportes), toggle Login/Inscripcion y prefijo telefonico +57.
+5. **Directorio y Buscador de +60 Colegios:** Filtro interactivo por departamento (Bogota & Cundinamarca, Santanderes, Caribe, Antioquia & Eje, Llanos & Amazonia, Centro & Sur) y buscador en tiempo real.
+6. **Cumplimiento Legal DIAN:** Informacion legal y validacion electronica con Factus SAS para colegios e instituciones publicas.
 
 ---
 
-## 4. Instrucciones de Ejecución Local
+## 4. Instrucciones de Ejecucion Local
 
-Para visualizar la plataforma en un entorno local, ejecuta cualquiera de los siguientes comandos dentro del directorio del proyecto:
+Dentro del directorio del proyecto, ejecuta:
 
-### Opción 1: Con Node.js (Recomendado)
+### 1. Instalacion de dependencias
+
 ```bash
-npx serve .
+npm install
 ```
 
-### Opción 2: Con Python 3
+### 2. Modo Desarrollo
+
 ```bash
-python3 -m http.server 8080
+npm run dev
 ```
 
-Luego abre tu navegador e ingresa a `http://localhost:3000` o `http://localhost:8080`.
+Abre en tu navegador `http://localhost:4321`.
+
+### 3. Compilacion para Produccion
+
+```bash
+npm run build
+```
+
+Genera la distribucion estatica ultra-optimizada en la carpeta `dist/`.
+
+### 4. Vista Previa de Produccion
+
+```bash
+npm run preview
+```
 
 ---
 
 ## 5. Licencia y Derechos
 
-© 2026 Seamos Genios. Todos los derechos reservados. Colombia.
+(c) 2026 Seamos Genios SAS. Todos los derechos reservados. Colombia.

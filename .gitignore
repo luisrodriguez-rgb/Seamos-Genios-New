@@ -42,4 +42,6 @@ temp/
 .agents/skills/*/temp/
 .agents/skills/*/.git/
 .agents/
-.arquitectura
+# Astro Build Cache
+.astro/
+
