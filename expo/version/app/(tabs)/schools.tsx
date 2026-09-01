@@ -44,7 +44,7 @@ export default function SchoolsScreen() {
       contentContainerStyle={styles.contentContainer}
       showsVerticalScrollIndicator={false}
     >
-      {/* Header */}
+      {/* Header with Dark Hero Surface */}
       <View style={styles.headerSection}>
         <View style={styles.badge}>
           <Building2 size={13} color="#FF3B42" />
@@ -103,47 +103,49 @@ export default function SchoolsScreen() {
         </ScrollView>
       </View>
 
-      {/* Schools Results Grid */}
-      <View style={styles.schoolsSection}>
-        <View style={styles.resultsCountRow}>
-          <Text style={styles.resultsCountText}>
-            Mostrando {filteredSchools.length} instituciones encontradas
-          </Text>
-        </View>
+      {/* Schools Results Grid on Clean Light Surface */}
+      <View style={styles.schoolsSectionWrapper}>
+        <View style={styles.schoolsSection}>
+          <View style={styles.resultsCountRow}>
+            <Text style={styles.resultsCountText}>
+              Mostrando {filteredSchools.length} instituciones encontradas
+            </Text>
+          </View>
 
-        <View
-          style={[
-            styles.grid,
-            isDesktop ? styles.gridDesktop : isTablet ? styles.gridTablet : styles.gridMobile,
-          ]}
-        >
-          {filteredSchools.map((school, index) => (
-            <View key={index} style={styles.schoolCard}>
-              <View style={styles.schoolIconCircle}>
-                <Building2 size={20} color="#FF3B42" />
-              </View>
-              <View style={styles.schoolInfo}>
-                <Text style={styles.schoolName}>{school.name}</Text>
-                <View style={styles.locationRow}>
-                  <MapPin size={13} color="#94A3B8" />
-                  <Text style={styles.locationText}>
-                    {school.location}, {school.dept}
-                  </Text>
+          <View
+            style={[
+              styles.grid,
+              isDesktop ? styles.gridDesktop : isTablet ? styles.gridTablet : styles.gridMobile,
+            ]}
+          >
+            {filteredSchools.map((school, index) => (
+              <View key={index} style={styles.schoolCard}>
+                <View style={styles.schoolIconCircle}>
+                  <Building2 size={20} color="#FF1E27" />
+                </View>
+                <View style={styles.schoolInfo}>
+                  <Text style={styles.schoolName}>{school.name}</Text>
+                  <View style={styles.locationRow}>
+                    <MapPin size={13} color="#64748B" />
+                    <Text style={styles.locationText}>
+                      {school.location}, {school.dept}
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.verifiedTag}>
+                  <ShieldCheck size={12} color="#059669" />
+                  <Text style={styles.verifiedText}>Aliado</Text>
                 </View>
               </View>
-              <View style={styles.verifiedTag}>
-                <ShieldCheck size={12} color="#10B981" />
-                <Text style={styles.verifiedText}>Aliado</Text>
-              </View>
-            </View>
-          ))}
+            ))}
+          </View>
         </View>
       </View>
 
-      {/* Institutional CTA Box */}
+      {/* Institutional CTA Box with Corporate Red Accent */}
       <View style={styles.ctaSection}>
         <View style={styles.ctaCard}>
-          <Sparkles size={28} color="#FF1E27" />
+          <Sparkles size={28} color="#FFFFFF" />
           <View style={styles.ctaInfo}>
             <Text style={styles.ctaTitle}>¿Deseas vincular a tu institución educativa?</Text>
             <Text style={styles.ctaDesc}>
@@ -153,7 +155,7 @@ export default function SchoolsScreen() {
           <Button
             title="Solicitar Convenio"
             onPress={() => setAuthModalOpen(true, 'register')}
-            variant="primary"
+            variant="secondary"
             size="md"
           />
         </View>
@@ -167,7 +169,7 @@ export default function SchoolsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.dark.background,
+    backgroundColor: '#0D1117',
   },
   contentContainer: {
     flexGrow: 1,
@@ -177,8 +179,8 @@ const styles = StyleSheet.create({
     width: '100%',
     marginHorizontal: 'auto',
     paddingHorizontal: 20,
-    paddingTop: 40,
-    paddingBottom: 20,
+    paddingTop: 44,
+    paddingBottom: 28,
     alignItems: 'center',
   },
   badge: {
@@ -188,10 +190,10 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255, 30, 39, 0.35)',
     borderWidth: 1,
     paddingHorizontal: 12,
-    paddingVertical: 4,
+    paddingVertical: 5,
     borderRadius: 9999,
     gap: 6,
-    marginBottom: 12,
+    marginBottom: 14,
   },
   badgeText: {
     color: '#FF3B42',
@@ -211,7 +213,7 @@ const styles = StyleSheet.create({
     color: '#94A3B8',
     fontSize: 15,
     textAlign: 'center',
-    maxWidth: 620,
+    maxWidth: 640,
     lineHeight: 24,
     marginBottom: 24,
   },
@@ -219,13 +221,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#161B22',
-    borderColor: 'rgba(255, 255, 255, 0.1)',
-    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.12)',
+    borderWidth: 1.5,
     borderRadius: 14,
     paddingHorizontal: 16,
     width: '100%',
     maxWidth: 680,
-    height: 48,
+    height: 50,
     marginBottom: 20,
   },
   searchInput: {
@@ -272,20 +274,27 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: '800',
   },
+  schoolsSectionWrapper: {
+    backgroundColor: '#F8FAFC',
+    borderTopWidth: 1,
+    borderTopColor: '#E2E8F0',
+    borderBottomWidth: 1,
+    borderBottomColor: '#E2E8F0',
+    paddingVertical: 36,
+  },
   schoolsSection: {
     maxWidth: 1240,
     width: '100%',
     marginHorizontal: 'auto',
     paddingHorizontal: 20,
-    paddingVertical: 16,
   },
   resultsCountRow: {
     marginBottom: 16,
   },
   resultsCountText: {
-    color: '#64748B',
+    color: '#475569',
     fontSize: 13,
-    fontWeight: '600',
+    fontWeight: '700',
   },
   grid: {
     gap: 14,
@@ -305,19 +314,26 @@ const styles = StyleSheet.create({
     flex: 1,
     minWidth: 280,
     maxWidth: 390,
-    backgroundColor: '#161B22',
-    borderColor: 'rgba(255, 255, 255, 0.08)',
-    borderWidth: 1,
-    borderRadius: 14,
+    backgroundColor: '#FFFFFF',
+    borderColor: '#E2E8F0',
+    borderWidth: 1.5,
+    borderRadius: 16,
     padding: 16,
     flexDirection: 'row',
     alignItems: 'center',
+    shadowColor: '#0F172A',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.04,
+    shadowRadius: 8,
+    elevation: 2,
   },
   schoolIconCircle: {
-    width: 40,
-    height: 40,
-    borderRadius: 10,
-    backgroundColor: 'rgba(255, 30, 39, 0.1)',
+    width: 42,
+    height: 42,
+    borderRadius: 12,
+    backgroundColor: '#FFF5F5',
+    borderWidth: 1,
+    borderColor: '#FECACA',
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 12,
@@ -326,7 +342,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   schoolName: {
-    color: '#FFFFFF',
+    color: '#0F172A',
     fontSize: 14,
     fontWeight: '800',
     marginBottom: 4,
@@ -338,40 +354,45 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   locationText: {
-    color: '#94A3B8',
+    color: '#64748B',
     fontSize: 12,
   },
   verifiedTag: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'rgba(16, 185, 129, 0.1)',
-    paddingHorizontal: 6,
+    backgroundColor: '#ECFDF5',
+    borderColor: '#A7F3D0',
+    borderWidth: 1,
+    paddingHorizontal: 7,
     paddingVertical: 3,
     borderRadius: 6,
     gap: 3,
   },
   verifiedText: {
-    color: '#10B981',
+    color: '#059669',
     fontSize: 10,
-    fontWeight: '700',
+    fontWeight: '800',
   },
   ctaSection: {
     maxWidth: 1240,
     width: '100%',
     marginHorizontal: 'auto',
     paddingHorizontal: 20,
-    paddingVertical: 30,
+    paddingVertical: 36,
   },
   ctaCard: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
-    backgroundColor: '#161B22',
-    borderColor: 'rgba(255, 30, 39, 0.3)',
-    borderWidth: 1,
-    borderRadius: 18,
-    padding: 24,
+    backgroundColor: '#FF1E27',
+    borderRadius: 20,
+    padding: 26,
     gap: 16,
+    shadowColor: '#FF1E27',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.25,
+    shadowRadius: 16,
+    elevation: 4,
   },
   ctaInfo: {
     flex: 1,
@@ -379,13 +400,14 @@ const styles = StyleSheet.create({
   },
   ctaTitle: {
     color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '800',
+    fontSize: 18,
+    fontWeight: '900',
     marginBottom: 4,
   },
   ctaDesc: {
-    color: '#94A3B8',
+    color: '#FFFFFF',
     fontSize: 13,
     lineHeight: 19,
+    opacity: 0.92,
   },
 });

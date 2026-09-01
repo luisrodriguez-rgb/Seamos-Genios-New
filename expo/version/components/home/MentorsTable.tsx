@@ -3,12 +3,10 @@ import {
   View,
   Text,
   StyleSheet,
-  Platform,
   useWindowDimensions,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Shield, Award, CheckCircle, GraduationCap, Sparkles } from 'lucide-react-native';
-import { Colors } from '../../constants/Colors';
+import { Award, CheckCircle, GraduationCap } from 'lucide-react-native';
 import { DIRECTORS, MENTORS } from '../../constants/TeamData';
 
 export const MentorsTable: React.FC = () => {
@@ -20,7 +18,7 @@ export const MentorsTable: React.FC = () => {
       <View style={styles.innerContainer}>
         <View style={styles.header}>
           <View style={styles.badge}>
-            <GraduationCap size={13} color="#FFFFFF" />
+            <GraduationCap size={13} color="#FF1E27" />
             <Text style={styles.badgeText}>EQUIPO DOCENTE DE ÉLITE</Text>
           </View>
           <Text style={styles.title}>Directores y Mentores Récord Nacional</Text>
@@ -29,23 +27,26 @@ export const MentorsTable: React.FC = () => {
           </Text>
         </View>
 
-        {/* Directors Cards with Rich Gradients */}
+        {/* Directors Cards with Crisp White/Light Gradients */}
         <View style={[styles.directorsGrid, isDesktop ? styles.directorsDesktop : styles.directorsMobile]}>
           {DIRECTORS.map((director, idx) => (
             <LinearGradient
               key={idx}
-              colors={idx === 0 ? ['#280C10', '#161B22'] : ['#10221E', '#161B22']}
+              colors={idx === 0 ? ['#FFF5F5', '#FFFFFF'] : ['#ECFDF5', '#FFFFFF']}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}
-              style={styles.directorCard}
+              style={[
+                styles.directorCard,
+                { borderColor: idx === 0 ? '#FECACA' : '#A7F3D0' },
+              ]}
             >
               <View style={styles.directorHeader}>
-                <View style={[styles.directorAvatar, { backgroundColor: idx === 0 ? '#FF1E27' : '#10B981' }]}>
+                <View style={[styles.directorAvatar, { backgroundColor: idx === 0 ? '#FF1E27' : '#059669' }]}>
                   <Text style={styles.directorAvatarText}>{director.name.charAt(0)}</Text>
                 </View>
                 <View style={styles.directorMeta}>
                   <View style={styles.badgeRow}>
-                    <Text style={[styles.founderBadge, { color: idx === 0 ? '#FF4D4D' : '#34D399' }]}>
+                    <Text style={[styles.founderBadge, { color: idx === 0 ? '#DC2626' : '#059669', backgroundColor: idx === 0 ? '#FEE2E2' : '#D1FAE5' }]}>
                       {director.badge}
                     </Text>
                     <Text style={styles.scoreBadge}>Puntaje {director.score}</Text>
@@ -58,7 +59,7 @@ export const MentorsTable: React.FC = () => {
               <View style={styles.credentialsList}>
                 {director.credentials.map((cred, c) => (
                   <View key={c} style={styles.credItem}>
-                    <CheckCircle size={15} color="#10B981" style={{ marginTop: 2, marginRight: 8 }} />
+                    <CheckCircle size={15} color="#059669" style={{ marginTop: 2, marginRight: 8 }} />
                     <Text style={styles.credText}>{cred}</Text>
                   </View>
                 ))}
@@ -67,7 +68,7 @@ export const MentorsTable: React.FC = () => {
           ))}
         </View>
 
-        {/* Mentors Table */}
+        {/* Mentors Table with Crisp Light Lines */}
         <View style={styles.tableCard}>
           <Text style={styles.tableTitle}>Tabla de Mentores Especialistas por Área</Text>
           <View style={styles.tableWrapper}>
@@ -95,10 +96,10 @@ export const MentorsTable: React.FC = () => {
 
 const styles = StyleSheet.create({
   section: {
-    backgroundColor: '#0D1117',
-    paddingVertical: 60,
+    backgroundColor: '#FFFFFF',
+    paddingVertical: 64,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
+    borderBottomColor: '#E2E8F0',
   },
   innerContainer: {
     maxWidth: 1240,
@@ -113,30 +114,31 @@ const styles = StyleSheet.create({
   badge: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FF1E27',
+    backgroundColor: 'rgba(255, 30, 39, 0.08)',
+    borderColor: 'rgba(255, 30, 39, 0.25)',
+    borderWidth: 1,
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 9999,
     gap: 6,
     marginBottom: 12,
-    ...Colors.shadows.redGlow,
   },
   badgeText: {
-    color: '#FFFFFF',
+    color: '#FF1E27',
     fontSize: 11,
     fontWeight: '900',
     letterSpacing: 0.5,
   },
   title: {
-    color: '#FFFFFF',
-    fontSize: 29,
+    color: '#0F172A',
+    fontSize: 30,
     fontWeight: '900',
     textAlign: 'center',
     letterSpacing: -0.5,
     marginBottom: 10,
   },
   subtitle: {
-    color: '#94A3B8',
+    color: '#475569',
     fontSize: 15,
     textAlign: 'center',
     maxWidth: 640,
@@ -154,11 +156,14 @@ const styles = StyleSheet.create({
   },
   directorCard: {
     flex: 1,
-    borderColor: 'rgba(255, 255, 255, 0.12)',
     borderWidth: 1.5,
     borderRadius: 20,
     padding: 24,
-    ...Colors.shadows.md,
+    shadowColor: '#0F172A',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.06,
+    shadowRadius: 14,
+    elevation: 3,
   },
   directorHeader: {
     flexDirection: 'row',
@@ -172,7 +177,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 14,
-    ...Colors.shadows.md,
+    shadowColor: '#000000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.15,
+    shadowRadius: 6,
   },
   directorAvatarText: {
     color: '#FFFFFF',
@@ -189,29 +197,28 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   founderBadge: {
-    backgroundColor: 'rgba(255, 255, 255, 0.08)',
     fontSize: 10,
     fontWeight: '800',
-    paddingHorizontal: 6,
+    paddingHorizontal: 7,
     paddingVertical: 2,
     borderRadius: 4,
   },
   scoreBadge: {
-    backgroundColor: 'rgba(16, 185, 129, 0.18)',
-    color: '#34D399',
+    backgroundColor: '#ECFDF5',
+    color: '#059669',
     fontSize: 10,
     fontWeight: '900',
-    paddingHorizontal: 6,
+    paddingHorizontal: 7,
     paddingVertical: 2,
     borderRadius: 4,
   },
   directorName: {
-    color: '#FFFFFF',
+    color: '#0F172A',
     fontSize: 18,
     fontWeight: '900',
   },
   directorRole: {
-    color: '#94A3B8',
+    color: '#64748B',
     fontSize: 12,
     marginTop: 2,
   },
@@ -223,29 +230,33 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   credText: {
-    color: '#E2E8F0',
+    color: '#334155',
     fontSize: 13,
     lineHeight: 19,
     flex: 1,
   },
   tableCard: {
-    backgroundColor: '#161B22',
-    borderColor: 'rgba(255, 255, 255, 0.1)',
-    borderWidth: 1,
+    backgroundColor: '#F8FAFC',
+    borderColor: '#E2E8F0',
+    borderWidth: 1.5,
     borderRadius: 20,
     padding: 24,
+    shadowColor: '#000000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.03,
+    shadowRadius: 8,
   },
   tableTitle: {
-    color: '#FFFFFF',
+    color: '#0F172A',
     fontSize: 16,
-    fontWeight: '800',
+    fontWeight: '900',
     marginBottom: 16,
   },
   tableWrapper: {
     borderRadius: 12,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.08)',
+    borderColor: '#E2E8F0',
   },
   tableRow: {
     flexDirection: 'row',
@@ -254,12 +265,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 14,
     paddingHorizontal: 16,
-    backgroundColor: '#0D1117',
+    backgroundColor: '#FFFFFF',
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.06)',
+    borderBottomColor: '#E2E8F0',
   },
   tableRowAlt: {
-    backgroundColor: '#111620',
+    backgroundColor: '#F8FAFC',
   },
   tableColMain: {
     minWidth: 200,
@@ -267,12 +278,12 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   mentorName: {
-    color: '#FFFFFF',
+    color: '#0F172A',
     fontWeight: '800',
     fontSize: 14,
   },
   mentorRole: {
-    color: '#94A3B8',
+    color: '#64748B',
     fontSize: 12,
   },
   tableColMeta: {
@@ -281,22 +292,22 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   mentorInst: {
-    color: '#E2E8F0',
+    color: '#334155',
     fontSize: 12,
     fontWeight: '600',
   },
   mentorSpecialty: {
-    color: '#64748B',
+    color: '#94A3B8',
     fontSize: 11,
   },
   tableColScore: {
     alignItems: 'flex-end',
   },
   mentorScoreText: {
-    backgroundColor: 'rgba(16, 185, 129, 0.12)',
-    borderColor: 'rgba(16, 185, 129, 0.3)',
+    backgroundColor: '#ECFDF5',
+    borderColor: '#A7F3D0',
     borderWidth: 1,
-    color: '#10B981',
+    color: '#059669',
     fontWeight: '800',
     fontSize: 11,
     paddingHorizontal: 8,
