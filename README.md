@@ -1,86 +1,95 @@
-# Seamos Genios - Plataforma Educativa PreICFES (SG-2026-2)
+# Seamos Genios (SG-2026-2) - Ecosistema Digital PreICFES
 
-Plataforma web pública de alta conversión e impacto institucional diseñada para la preparación del examen ICFES en Colombia, combinando tecnología de Inteligencia Artificial y neurociencia aplicada al aprendizaje.
-
----
-
-## 1. Visión General del Proyecto
-
-Seamos Genios transforma la preparación académica para estudiantes de bachillerato, colegios, universidades y entidades públicas mediante una experiencia digital de alto rendimiento. 
-
-- **Enfoque de Diseño:** 90% neutros institucionales (estilo Stripe / Notion / Supabase) y 10% color corporativo (#CC0000).
-- **Rendimiento y Accesibilidad:** Estructura HTML5 semántica, tiempo de carga inferior a 1.5 segundos y compatibilidad fluida en dispositivos móviles, tablets y escritorio.
-- **Sin Dependencias Pesadas:** Construido con HTML5, CSS3 modular (Patrón 7-1) y JavaScript ES6 nativo.
+Plataforma educativa y e-commerce de alto impacto para la preparación del examen de estado **ICFES Saber 11** en Colombia, integrando neuroaprendizaje cognitivo, algoritmos de Inteligencia Artificial adaptativa y mentoría con puntajes récord nacionales (477/500).
 
 ---
 
-## 2. Arquitectura de Archivos y Directorios
+## 1. Demostraciones en Vivo (Despliegues en Vercel)
 
-```
-SG-2026-2/
-├── README.md                     # Documentación principal del proyecto
-├── index.html                    # Estructura HTML5 principal del sitio
-├── css/                          # Sistema de diseño CSS modular (Patrón 7-1)
-│   ├── main.css                  # Punto de entrada CSS maestro (@import)
-│   ├── global/
-│   │   ├── variables.css         # Tokens de diseño, paleta HSL y modo oscuro
-│   │   └── reset.css             # Reset de estilos y tipografía base
-│   ├── components/
-│   │   ├── buttons.css           # Botones e insignias
-│   │   ├── navbar.css            # Navegación fija y menú móvil
-│   │   ├── modal.css             # Ventanas modales de inscripción
-│   │   └── tables.css            # Tablas comparativas y de mentores
-│   └── sections/
-│       ├── hero.css              # Sección Hero y reloj regresivo ICFES
-│       ├── features.css          # Filas divididas de características
-│       ├── pricing.css           # Tarifas horizontales e inversión
-│       ├── team.css              # Mentores y cuadro directivo
-│       └── footer.css            # Pie de página y responsive queries
-├── js/                           # Motor JavaScript Modular (ES6)
-│   ├── app.js                    # Inicializador maestro (Punto de entrada)
-│   └── modules/
-│       ├── theme.js              # Control de modo Claro / Oscuro
-│       ├── countdown.js          # Reloj regresivo hacia ICFES Calendario A
-│       ├── accordion.js          # Acordeón interactivo de preguntas frecuentes
-│       ├── modal.js              # Manejo de modales y navegación móvil
-│       └── forms.js              # Procesamiento de formularios y notificaciones
-└── docs/                         # Especificaciones técnicas y plan de trabajo
-    ├── aquitectura.md
-    └── plan_1.md
+| Rama / Versión | Enlace en Vivo (Vercel) | Stack Tecnológico | Propósito |
+| :--- | :--- | :--- | :--- |
+| **`feat/astro-version`** | 🚀 **[seamos-genios-astro.vercel.app](https://seamos-genios-astro.vercel.app)** | Astro 5+, TypeScript, Modular CSS | Máximo rendimiento web, SEO ultra rápido (<1s) y SSR/SSG. |
+| **`feat/expo-version`** | 📱 **[seamos-genios-expo.vercel.app](https://seamos-genios-expo.vercel.app)** | Expo SDK 52, Expo Router v4, React Native Universal | Aplicación universal para Web, Android y iOS desde un solo código. |
+| **`main`** | 🏛️ **Rama Base** | Vanilla HTML5, CSS3 Modular, JS ES6+ | Arquitectura nativa sin dependencias de compiladores pesados. |
+
+---
+
+## 2. Estructura y Estrategia de Ramas
+
+El repositorio está organizado en tres ramas aisladas según el caso de uso técnico:
+
+```text
+Seamos-Genios-New/
+├── main                  # Versión nativa en HTML5/CSS3/JS modular
+├── feat/astro-version    # Versión basada en Astro 5+ para máxima velocidad web y SEO
+└── feat/expo-version     # Versión universal móvil y web basada en Expo.dev (SDK 52)
 ```
 
 ---
 
-## 3. Funcionalidades Principales
+## 3. Comparativa de Arquitectura Técnica
 
-1. **Reloj Regresivo en Tiempo Real:** Cuenta regresiva automatizada hacia el Examen ICFES Calendario A (26 de Julio de 2026).
-2. **Navegación Móvil Adaptativa:** Menú tipo Drawer para pantallas móviles (< 1024px) y navegación fija con desenfoque de fondo en escritorio.
-3. **Interruptor de Tema (Claro / Oscuro):** Selector de modo de color sin emojis con persistencia en `localStorage`.
-4. **Filas Divididas de Características (Split Rows):** Layout limpio numerado (01, 02, 03, 04) para presentar los pilares metodológicos sin saturar la interfaz de tarjetas.
-5. **Directorio y Tabla de Mentores:** Presentación del equipo directivo (Daniel De La Cruz y Ángel Pacheco) seguida de un cuadro estructurado con puntajes e instituciones del equipo docente.
-6. **Estructura de Precios Horizontal:** Presentación destacada del Plan Calendario A (50% Descuento) junto a opciones individuales e institucionales.
-7. **Formulario y Ventana Modal:** Sistema de captación de prospectos para estudiantes, colegios y entidades públicas.
+| Característica | `main` (Vanilla) | `feat/astro-version` (Astro 5) | `feat/expo-version` (Expo Universal) |
+| :--- | :--- | :--- | :--- |
+| **Ecosistema** | Navegador Web nativo | Astro / Vite / Node.js | Expo / React Native / Metro |
+| **Plataformas** | Web (Desktop/Mobile) | Web (Desktop/Mobile) | **Web + Android (APK/AAB) + iOS (App Store)** |
+| **Estado Global** | `localStorage` + Vanilla JS | `localStorage` + Vanilla JS | **Zustand + AsyncStorage** |
+| **Simulador ICFES** | Interactivo en DOM | Interactivo en DOM | **Motor Reactivo en Tiempo Real** |
+| **Carrito E-Commerce** | Slide-over Drawer | Slide-over Drawer | **Slide-over Drawer + WhatsApp Checkout** |
+| **Estilos** | CSS Modular | CSS Modular / Tokens | **StyleSheet + Expo Linear Gradient** |
+| **Despliegue Web** | Vercel / Netlify / CDN | Vercel (`npm run build`) | Vercel (`dist/` vía `vercel.json`) |
 
 ---
 
-## 4. Instrucciones de Ejecución Local
+## 4. Guía de Ejecución Local por Rama
 
-Para visualizar la plataforma en un entorno local, ejecuta cualquiera de los siguientes comandos dentro del directorio del proyecto:
-
-### Opción 1: Con Node.js (Recomendado)
+### Opción A: Probar la versión Expo Universal (`feat/expo-version`)
 ```bash
+git checkout feat/expo-version
+cd expo/version
+
+# Instalar dependencias
+npm install
+
+# Iniciar en Web:
+npm run web
+
+# Iniciar en Celular (Expo Go):
+npm run start
+```
+
+### Opción B: Probar la versión Astro 5+ (`feat/astro-version`)
+```bash
+git checkout feat/astro-version
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo:
+npm run dev
+# Abre en el navegador: http://localhost:4321
+```
+
+### Opción C: Probar la versión Vanilla (`main`)
+```bash
+git checkout main
+
+# Servir con cualquier servidor estático (ej: Live Server o npx serve):
 npx serve .
 ```
 
-### Opción 2: Con Python 3
-```bash
-python3 -m http.server 8080
-```
+---
 
-Luego abre tu navegador e ingresa a `http://localhost:3000` o `http://localhost:8080`.
+## 5. Módulos y Funcionalidades Principales
+
+1. **Navegación Multi-Rol Anti "Página Infinita":** Selector interactivo y Hub con rutas personalizadas para *Estudiantes*, *Colegios/Rectores*, *Padres de Familia* y *Docentes*.
+2. **E-Commerce & Carrito Persistente:** Catálogo de 5 planes formativos con validación de cupones (`GENIO2026`, `ICFES400`), cálculo de descuentos y checkout dual por pasarela y WhatsApp oficial.
+3. **Simulador Diagnóstico ICFES en Vivo:** 5 preguntas calibradas en las 5 áreas oficiales (Lectura Crítica, Matemáticas, Sociales, Ciencias Naturales, Inglés) con temporizador y reporte de puntaje.
+4. **Directorio Interactivo de +60 Colegios:** Buscador predictivo en tiempo real y filtrado por 7 regiones geográficas de Colombia.
+5. **Cumplimiento Legal DIAN:** Facturación electrónica formal respaldada por Factus SAS para convenios con colegios e instituciones públicas.
 
 ---
 
-## 5. Licencia y Derechos
+## 6. Licencia y Derechos
 
-© 2026 Seamos Genios. Todos los derechos reservados. Colombia.
+© 2026 Seamos Genios SAS. Todos los derechos reservados. Colombia.

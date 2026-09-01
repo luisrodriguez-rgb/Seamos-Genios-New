@@ -31,6 +31,7 @@ dist/
 build/
 coverage/
 .cache/
+.vercel/
 
 # Temporary & Log Files
 *.log
@@ -43,3 +44,8 @@ temp/
 .agents/skills/*/.git/
 .agents/
 .arquitectura
+
+# Multi-Branch Isolation
+.astro/
+expo/
+.expo/
