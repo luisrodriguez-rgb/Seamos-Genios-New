@@ -44,4 +44,5 @@ temp/
 .agents/
 # Astro Build Cache
 .astro/
+expo/
 
