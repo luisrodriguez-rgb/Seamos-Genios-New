@@ -1,6 +1,6 @@
-# Seamos Genios - Versión Astro 5+ (Rama: `feat/astro-version`)
+# Seamos Genios - Versión Next.js 15+ (Rama: `feat/nextjs-version`)
 
-Plataforma educativa y e-commerce de alto rendimiento para la preparación del examen de estado **ICFES Saber 11** en Colombia, combinando neuroaprendizaje cognitivo, tutor con Inteligencia Artificial y arquitectura Server-Side Generation (SSG).
+Plataforma educativa y e-commerce de alto rendimiento para la preparación del examen de estado **ICFES Saber 11** en Colombia, combinando neuroaprendizaje cognitivo, tutor con Inteligencia Artificial, arquitectura Next.js App Router y sistema de diseño modular.
 
 🌐 **Enlace en Producción (Vercel):** [https://seamos-genios-astro.vercel.app](https://seamos-genios-astro.vercel.app)
 
@@ -8,25 +8,29 @@ Plataforma educativa y e-commerce de alto rendimiento para la preparación del e
 
 ## 1. Visión General & Stack Técnico
 
-Esta rama contiene la versión web construida sobre **Astro 5+**, diseñada para máxima velocidad de carga (<1s), SEO de nivel mundial (Lighthouse 100) y cero peso de JavaScript innecesario en el cliente.
+Esta rama contiene la versión web migrada a **Next.js 15+ (App Router)** y **React 19**, optimizada para rendimiento, SEO con OpenGraph + Schema JSON-LD, tipado estricto con TypeScript y gestión reactiva de estado para comercio electrónico.
 
-- **Framework:** Astro 5.x (SSG estático)
-- **Lenguaje:** TypeScript + JavaScript ES6+
-- **Estilos:** Vanilla CSS modular con variables y tokens de diseño (Obsidian Dark `#0D1117`, Superficie Clara `#F8FAFC`, Rojo Corporativo `#FF1E27`)
-- **Iconografía:** SVG vectoriales limpios (0 emojis)
-- **E-Commerce:** Slide-over Cart Drawer reactivo con persistencia en `localStorage`, cálculo de cupones y checkout dual (WhatsApp + Pasarela PSE/Nequi/Tarjetas)
+- **Framework:** Next.js 15.x (App Router, Server Components + Client Components reactivos)
+- **UI Library:** React 19
+- **Lenguaje:** TypeScript 5.x
+- **Estilos:** Vanilla CSS modular con tokens de diseño globales (Obsidian Dark `#0D1117`, Superficie Clara `#F8FAFC`, Rojo Corporativo `#FF1E27`)
+- **Iconografía:** SVG vectoriales limpios
+- **E-Commerce:** Slide-over Cart Drawer reactivo con `CartContext`, persistencia en `localStorage`, cupones (`GENIO10`, `ICFES2026`, `COLEGIO50`) y checkout dual (WhatsApp + Pasarela PSE / Nequi / Tarjetas)
 
 ---
 
 ## 2. Estructura del Código
 
 ```text
-SG-2026-2/ (feat/astro-version)
-├── README.md                        # Este documento
-├── astro.config.mjs                 # Configuración de Astro
-├── tsconfig.json                    # Configuración TypeScript
-├── package.json                     # Scripts y dependencias
+SG-2026-2/ (feat/nextjs-version)
+├── README.md                        # Documentación principal
+├── next.config.mjs                  # Configuración oficial de Next.js
+├── tsconfig.json                    # Configuración TypeScript para Next.js
+├── package.json                     # Scripts y dependencias (Next.js, React, TypeScript)
 ├── vercel.json                      # Configuración de despliegue en Vercel
+├── docs/
+│   ├── arquitectura.md              # Especificación técnica y arquitectura
+│   └── diagrams/                    # Diagramas de arquitectura y ecosistema
 ├── public/                          # Recursos estáticos (Logos SVG, imágenes WebP, colegios)
 │   ├── assets/
 │   │   ├── logo-red.svg             # Favicon y logo oficial rojo
@@ -36,30 +40,36 @@ SG-2026-2/ (feat/astro-version)
 │   ├── sg-preifces-bogota.webp      # Banner OpenGraph para redes
 │   └── schools_catalog.json         # Directorio de +60 colegios aliados
 └── src/
-    ├── layouts/
-    │   └── Layout.astro             # Layout maestro con SEO, OpenGraph, JSON-LD y CSS
-    ├── pages/
-    │   ├── index.astro              # Landing Page y tienda principal
-    │   └── 404.astro                # Página 404 personalizada
+    ├── app/
+    │   ├── layout.tsx               # RootLayout con SEO, OpenGraph, JSON-LD, fuentes y CartProvider
+    │   ├── page.tsx                 # Landing Page y catálogo principal con Scroll Reveal
+    │   └── not-found.tsx            # Página 404 personalizada con diseño institucional
+    ├── context/
+    │   └── CartContext.tsx          # Estado global de carrito, cupones, modales y WhatsApp
     ├── components/
-    │   ├── Navbar.astro             # Barra de navegación con contador reactivo
-    │   ├── Hero.astro               # Hero interactivo, reloj ICFES 2026 y comparador
-    │   ├── RoleHub.astro            # Hub guiado por rol (Estudiante, Colegio, Familia, Docente)
-    │   ├── EcommerceCatalog.astro   # Catálogo oficial de 5 productos
-    │   ├── CartDrawer.astro         # Drawer de carrito con cupones
-    │   ├── CheckoutModal.astro      # Modal de pasarelas de pago
-    │   ├── AuthModal.astro          # Modal de registro Obsidian Dark (+57)
-    │   ├── Alliances.astro          # Estadísticas y métricas
-    │   ├── PurposeStory.astro       # Neuroaprendizaje y propósito
-    │   ├── FlowSteps.astro          # Metodología en 4 fases
-    │   ├── SchoolsCarousel.astro    # Directorio de +60 colegios
-    │   ├── Testimonials.astro       # Casos de éxito y puntajes 400+
-    │   ├── TeamMentors.astro        # Directores fundadores y mentores
-    │   ├── FaqVideo.astro           # Preguntas frecuentes y video
-    │   ├── Footer.astro             # Pie de página y DIAN Factus SAS
-    │   └── FloatingWhatsApp.astro   # Botón flotante de WhatsApp
-    ├── scripts/                     # Controladores cliente (cart, role-guide, etc.)
-    └── styles/                      # Sistema de diseño CSS modular
+    │   ├── Navbar.tsx               # Barra de navegación con contador reactivo
+    │   ├── Hero.tsx                 # Hero interactivo, reloj ICFES 2026 y comparador
+    │   ├── RoleHub.tsx              # Hub guiado por rol (Estudiante, Colegio, Familia, Docente)
+    │   ├── EcommerceCatalog.tsx     # Catálogo oficial de 6 productos y filtros de categoría
+    │   ├── CartDrawer.tsx           # Slide-over Cart Drawer reactivo con cupones
+    │   ├── CheckoutModal.tsx        # Modal de pasarelas de pago (PSE, Nequi, Tarjetas)
+    │   ├── AuthModal.tsx            # Modal de registro / inicio de sesión Obsidian Dark (+57)
+    │   ├── CartToast.tsx            # Notificaciones toast flotantes de carrito
+    │   ├── Alliances.tsx            # Estadísticas dinámicas con contadores y universidades
+    │   ├── PurposeStory.tsx         # Neuroaprendizaje y propósito (tarjeta flotante)
+    │   ├── FlowSteps.tsx            # Metodología en 4 fases y diagrama visual
+    │   ├── NetworkMap.tsx           # Mapa topográfico SVG interactivo de Colombia y nodos
+    │   ├── SchoolsCarousel.tsx      # Doble marquesina continua de +60 colegios aliados
+    │   ├── Testimonials.tsx         # Wall of Love con casos de éxito y puntajes 400+
+    │   ├── TeamMentors.tsx          # Directores fundadores y tabla de mentores
+    │   ├── Comparison.tsx           # Tabla comparativa y pasarelas con sello DIAN Factus SAS
+    │   ├── FaqVideo.tsx             # Preguntas frecuentes en acordeón y demo video tour
+    │   ├── ContactWhatsapp.tsx      # Formulario de contacto directo y banner de WhatsApp
+    │   ├── Footer.tsx               # Pie de página monumental y aviso legal DIAN
+    │   ├── FloatingWhatsApp.tsx     # Botón flotante de WhatsApp
+    │   └── icons/
+    │       └── WhatsappIcon.tsx     # Ícono SVG oficial de WhatsApp
+    └── styles/                      # Sistema de diseño CSS modular (tokens, componentes, secciones)
 ```
 
 ---
@@ -70,16 +80,16 @@ SG-2026-2/ (feat/astro-version)
 # 1. Instalar dependencias
 npm install
 
-# 2. Iniciar servidor de desarrollo
+# 2. Iniciar servidor de desarrollo (Next.js)
 npm run dev
 
-# Abre en tu navegador: http://localhost:4321
+# Abre en tu navegador: http://localhost:3000
 
 # 3. Compilar para producción
 npm run build
 
-# 4. Previsualizar la compilación de producción
-npm run preview
+# 4. Iniciar el servidor de producción
+npm start
 ```
 
 ---
