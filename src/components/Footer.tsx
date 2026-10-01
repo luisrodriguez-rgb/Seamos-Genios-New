@@ -1,0 +1,170 @@
+'use client';
+
+import React from 'react';
+import WhatsappIcon from './icons/WhatsappIcon';
+import { useCart } from '@/context/CartContext';
+
+export default function Footer() {
+  const { openAuth } = useCart();
+
+  return (
+    <footer className="footer" role="contentinfo">
+      {/* Big Watermark */}
+      <div className="footer-watermark">GENIOS</div>
+
+      <div className="container">
+        {/* Call to Action Banner */}
+        <div className="footer-hero-banner">
+          <div>
+            <h3 className="footer-banner-title">Comienza Hoy tu Camino al Puntaje 400+</h3>
+            <p className="footer-banner-desc">
+              Únete a más de 1.400 estudiantes en Colombia y prepárate con simulacros calibrados y neuroaprendizaje.
+            </p>
+          </div>
+          <button
+            className="btn btn-white"
+            onClick={() => openAuth('register')}
+            style={{ whiteSpace: 'nowrap' }}
+            type="button"
+          >
+            Inscribirme Ahora →
+          </button>
+        </div>
+
+        {/* Footer Grid */}
+        <div className="footer-grid">
+          <div className="footer-brand-col">
+            <a href="#hero" className="logo" aria-label="Ir al inicio Seamos Genios">
+              <img
+                src="/assets/logo-white.svg"
+                alt="Seamos Genios Logo"
+                className="footer-brand-logo"
+                width="180"
+                height="48"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <p className="footer-brand-desc">
+              Plataforma educativa líder en Colombia que combina tecnología de IA y neurociencia para revolucionar el rendimiento en el examen ICFES Saber 11.
+            </p>
+
+            {/* Circular Social Buttons */}
+            <div className="footer-social-circles">
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/seamosgenios"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram @seamosgenios"
+                className="footer-social-btn"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+
+              {/* TikTok */}
+              <a
+                href="https://tiktok.com/@seamosgenios"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok @seamosgenios"
+                className="footer-social-btn"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/573001234567"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Seamos Genios"
+                className="footer-social-btn"
+              >
+                <WhatsappIcon width={18} height={18} color="#FFFFFF" />
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://linkedin.com/company/seamosgenios"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Seamos Genios"
+                className="footer-social-btn"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              {/* YouTube */}
+              <a
+                href="https://youtube.com/@seamosgenios"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube Seamos Genios"
+                className="footer-social-btn"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="footer-col-title">Programas</h4>
+            <ul className="footer-links-list">
+              <li><a href="#programas">Plan Calendario A (7 Meses)</a></li>
+              <li><a href="#programas">Simulacros Individuales $15.000</a></li>
+              <li><a href="#programas">Pack 5 Simulacros $60.000</a></li>
+              <li><a href="#programas">Plan Familiar VIP $450.000</a></li>
+              <li><a href="#programas">Colegios e Instituciones</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="footer-col-title">Ecosistema</h4>
+            <ul className="footer-links-list">
+              <li><a href="#nosotros">Quiénes Somos</a></li>
+              <li><a href="#experiencia-roles">Tu Perfil</a></li>
+              <li><a href="#metodologia">Metodología en 4 Pasos</a></li>
+              <li><a href="#red-nacional">Cobertura Nacional</a></li>
+              <li><a href="#colegios">Colegios Aliados</a></li>
+              <li><a href="#equipo">Mentores de Élite</a></li>
+              <li><a href="#resultados">Resultados & Testimonios</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="footer-col-title">Contacto</h4>
+            <p style={{ fontSize: '0.885rem', color: 'var(--text-white-muted)' }}>contacto@seamosgenios.org</p>
+            <p style={{ fontSize: '0.885rem', color: 'var(--text-white-muted)', marginTop: '0.35rem' }}>+57 300 123 4567</p>
+            <p style={{ fontSize: '0.885rem', color: 'var(--text-white-muted)', marginTop: '0.35rem' }}>Bogotá & Cali, Colombia</p>
+          </div>
+        </div>
+
+        {/* Footer Bottom Bar */}
+        <div className="footer-bottom-bar">
+          <div>&copy; 2026 Seamos Genios SAS. Todos los derechos reservados. Colombia.</div>
+          <div className="footer-legal-links">
+            <a href="#">Términos y Condiciones</a>
+            <span className="footer-legal-divider">|</span>
+            <a href="#">Política y Privacidad de Datos</a>
+            <span className="footer-legal-divider">|</span>
+            <a href="#">Acuerdo de Nivel de Servicio (SLA)</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
