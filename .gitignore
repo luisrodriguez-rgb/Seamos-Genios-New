@@ -23,14 +23,25 @@ yarn-error.log*
 pnpm-debug.log*
 .pnpm-debug.log*
 
-# Environment & Build Outputs
-.env
-.env.local
-.env.*.local
-dist/
+# Next.js & Build Outputs
+.next/
+out/
 build/
+dist/
 coverage/
 .cache/
+*.tsbuildinfo
+
+# Deployment & Hosting
+.vercel/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
 
 # Temporary & Log Files
 *.log
@@ -38,12 +49,12 @@ tmp/
 temp/
 .temp/
 
+# Legacy Framework / Cache Directories
+.astro/
+expo/
+
 # Antigravity / AI Agent Workspace Cache
 .agents/skills/*/temp/
 .agents/skills/*/.git/
 .agents/
-# Astro Build Cache
-.astro/
-expo/
-
-.vercel
+.kilo/
