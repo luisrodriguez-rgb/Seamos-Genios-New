@@ -3,12 +3,12 @@
    ========================================================================== */
 .schools-carousel-section {
   padding: 6.5rem 0;
-  background: var(--bg-dark-obsidian);
+  background: radial-gradient(ellipse at 50% 0%, #1E293B 0%, #0F172A 100%);
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid var(--border-dark);
-  border-bottom: 1px solid var(--border-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .schools-carousel-section .section-title {
@@ -16,7 +16,7 @@
 }
 
 .schools-carousel-section .section-subtitle {
-  color: var(--text-white-muted) !important;
+  color: #94A3B8 !important;
 }
 
 /* Dual Marquee Container */
@@ -30,17 +30,17 @@
   overflow: hidden;
 }
 
-/* Filmstrip Ribbon Track with Accent Border (JSConf Inspired) */
+/* Filmstrip Ribbon Track with Accent Border */
 .marquee-row-wrapper {
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 1rem 0;
-  border-top: 2.5px solid rgba(255, 30, 39, 0.45);
-  border-bottom: 2.5px solid rgba(255, 30, 39, 0.45);
-  background: rgba(13, 17, 23, 0.7);
-  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.45);
+  mask-image: linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%);
   display: flex;
   white-space: nowrap;
 }
@@ -58,11 +58,11 @@
 }
 
 .marquee-track-left {
-  animation: marquee-scroll-left 65s linear infinite;
+  animation: marquee-scroll-left 115s linear infinite;
 }
 
 .marquee-track-right {
-  animation: marquee-scroll-right 65s linear infinite;
+  animation: marquee-scroll-right 115s linear infinite;
 }
 
 .marquee-row-wrapper:hover .marquee-track-left,
@@ -86,7 +86,7 @@
   height: 200px;
   border-radius: var(--radius-2xl);
   background: #FFFFFF;
-  border: 2.5px solid rgba(255, 30, 39, 0.35);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
@@ -94,16 +94,16 @@
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
   transition: all var(--transition-bounce);
   cursor: pointer;
   white-space: normal;
 }
 
 .school-film-card:hover {
-  transform: translateY(-6px) scale(1.04);
+  transform: translateY(-5px) scale(1.03);
   border-color: var(--brand-red);
-  box-shadow: 0 18px 45px rgba(255, 30, 39, 0.4);
+  box-shadow: 0 16px 40px rgba(255, 30, 39, 0.35);
 }
 
 /* Full-Area Logo Wrapper */
