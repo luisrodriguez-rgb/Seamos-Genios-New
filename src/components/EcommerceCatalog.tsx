@@ -1,13 +1,59 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useCart } from '@/context/CartContext';
 
 type FilterCategory = 'all' | 'estudiante' | 'familia' | 'colegio' | 'docente';
+type RoleType = 'estudiante' | 'colegio' | 'padre' | 'docente';
 
-export default function EcommerceCatalog() {
-  const [filter, setFilter] = useState<FilterCategory>('all');
+interface EcommerceCatalogProps {
+  selectedRole?: RoleType;
+  onRoleChange?: (role: RoleType) => void;
+}
+
+const roleToCategory = (role?: RoleType): FilterCategory => {
+  if (role === 'padre') return 'familia';
+  if (role === 'colegio') return 'colegio';
+  if (role === 'docente') return 'docente';
+  if (role === 'estudiante') return 'estudiante';
+  return 'all';
+};
+
+const categoryToRole = (cat: FilterCategory): RoleType | undefined => {
+  if (cat === 'familia') return 'padre';
+  if (cat === 'colegio') return 'colegio';
+  if (cat === 'docente') return 'docente';
+  if (cat === 'estudiante') return 'estudiante';
+  return undefined;
+};
+
+const roleLabelMap: Record<FilterCategory, string> = {
+  all: 'Todos los Planes',
+  estudiante: 'Estudiantes & Bachilleres',
+  familia: 'Padres y Familias',
+  colegio: 'Colegios & Convenios Institucionales',
+  docente: 'Docentes & Mentores',
+};
+
+export default function EcommerceCatalog({ selectedRole, onRoleChange }: EcommerceCatalogProps) {
+  const [filter, setFilter] = useState<FilterCategory>(
+    selectedRole ? roleToCategory(selectedRole) : 'all'
+  );
   const { addToCart, openAuth } = useCart();
+
+  useEffect(() => {
+    if (selectedRole) {
+      setFilter(roleToCategory(selectedRole));
+    }
+  }, [selectedRole]);
+
+  const handleFilterClick = (cat: FilterCategory) => {
+    setFilter(cat);
+    const mapped = categoryToRole(cat);
+    if (mapped && onRoleChange) {
+      onRoleChange(mapped);
+    }
+  };
 
   const isVisible = (cat: string) => filter === 'all' || filter === cat;
 
@@ -25,12 +71,30 @@ export default function EcommerceCatalog() {
           </p>
         </div>
 
+        {/* Sync Profile Context Banner */}
+        {filter !== 'all' && (
+          <div className="catalog-sync-banner">
+            <span className="sync-dot-live"></span>
+            <span>
+              Mostrando planes optimizados para:{' '}
+              <strong>{roleLabelMap[filter]}</strong>
+            </span>
+            <button
+              type="button"
+              className="sync-clear-btn"
+              onClick={() => setFilter('all')}
+            >
+              Ver catálogo completo (6 planes)
+            </button>
+          </div>
+        )}
+
         {/* Category / Role Filter Pills */}
         <div className="catalog-filter-bar" role="tablist" aria-label="Filtrar catálogo de productos">
           <button
             type="button"
             className={`catalog-filter-btn ${filter === 'all' ? 'active' : ''}`}
-            onClick={() => setFilter('all')}
+            onClick={() => handleFilterClick('all')}
             role="tab"
             aria-selected={filter === 'all'}
           >
@@ -39,7 +103,7 @@ export default function EcommerceCatalog() {
           <button
             type="button"
             className={`catalog-filter-btn ${filter === 'estudiante' ? 'active' : ''}`}
-            onClick={() => setFilter('estudiante')}
+            onClick={() => handleFilterClick('estudiante')}
             role="tab"
             aria-selected={filter === 'estudiante'}
           >
@@ -48,7 +112,7 @@ export default function EcommerceCatalog() {
           <button
             type="button"
             className={`catalog-filter-btn ${filter === 'familia' ? 'active' : ''}`}
-            onClick={() => setFilter('familia')}
+            onClick={() => handleFilterClick('familia')}
             role="tab"
             aria-selected={filter === 'familia'}
           >
@@ -57,7 +121,7 @@ export default function EcommerceCatalog() {
           <button
             type="button"
             className={`catalog-filter-btn ${filter === 'colegio' ? 'active' : ''}`}
-            onClick={() => setFilter('colegio')}
+            onClick={() => handleFilterClick('colegio')}
             role="tab"
             aria-selected={filter === 'colegio'}
           >
@@ -66,7 +130,7 @@ export default function EcommerceCatalog() {
           <button
             type="button"
             className={`catalog-filter-btn ${filter === 'docente' ? 'active' : ''}`}
-            onClick={() => setFilter('docente')}
+            onClick={() => handleFilterClick('docente')}
             role="tab"
             aria-selected={filter === 'docente'}
           >

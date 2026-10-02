@@ -76,7 +76,7 @@ export default function HomePage() {
         <NetworkMap />
 
         {/* 8. Academic Programs & E-Commerce Catalog */}
-        <EcommerceCatalog />
+        <EcommerceCatalog selectedRole={activeRole} onRoleChange={setActiveRole} />
 
         {/* 9. Continuous Infinite Marquee of +60 Schools */}
         <SchoolsCarousel />

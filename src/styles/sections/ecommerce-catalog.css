@@ -9,6 +9,55 @@
   position: relative;
 }
 
+.catalog-sync-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background: #FFF1F2;
+  border: 1px solid #FFE4E6;
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 1.15rem;
+  margin: 1.25rem auto 0.75rem auto;
+  width: fit-content;
+  max-width: 90%;
+  font-size: 0.825rem;
+  color: #0F172A;
+  box-shadow: 0 2px 6px rgba(255, 30, 39, 0.05);
+  animation: fadeInBanner 0.3s ease-out;
+}
+
+@keyframes fadeInBanner {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sync-dot-live {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  box-shadow: 0 0 6px rgba(255, 30, 39, 0.6);
+  flex-shrink: 0;
+}
+
+.sync-clear-btn {
+  background: transparent;
+  border: none;
+  color: var(--brand-red);
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 0.35rem;
+  padding: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.sync-clear-btn:hover {
+  opacity: 0.8;
+}
+
 .catalog-filter-bar {
   display: flex;
   align-items: center;
