@@ -10,6 +10,9 @@ interface HeroProps {
 export default function Hero({ onSelectRole }: HeroProps) {
   const { openAuth } = useCart();
   const [daysRemaining, setDaysRemaining] = useState<number>(155);
+  const [displayScore, setDisplayScore] = useState<number>(0);
+  const [displayAreas, setDisplayAreas] = useState({ lc: 0, mat: 0, cn: 0, soc: 0 });
+  const [isChartReady, setIsChartReady] = useState(false);
 
   const rotatingWords = [
     'aquí.',
@@ -25,6 +28,41 @@ export default function Hero({ onSelectRole }: HeroProps) {
     }, 2800);
     return () => clearInterval(interval);
   }, [rotatingWords.length]);
+
+  useEffect(() => {
+    // Animate score counter (0 -> 324) and subject area percentages
+    const duration = 1600;
+    const startTime = performance.now();
+    const targetScore = 324;
+    const targetAreas = { lc: 84, mat: 78, cn: 71, soc: 76 };
+
+    const animateCounters = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // easeOutCubic curve for smooth decelerating stop
+      const ease = 1 - Math.pow(1 - progress, 3);
+
+      setDisplayScore(Math.round(ease * targetScore));
+      setDisplayAreas({
+        lc: Math.round(ease * targetAreas.lc),
+        mat: Math.round(ease * targetAreas.mat),
+        cn: Math.round(ease * targetAreas.cn),
+        soc: Math.round(ease * targetAreas.soc),
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(animateCounters);
+      } else {
+        setIsChartReady(true);
+      }
+    };
+
+    const timer = setTimeout(() => {
+      requestAnimationFrame(animateCounters);
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const targetDate = new Date('July 26, 2026 07:00:00 GMT-0500').getTime();
@@ -255,7 +293,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
             <div className="dash-score-meta">
               <span className="dash-score-lbl">Puntaje Global</span>
               <div className="dash-score-num">
-                <span className="score-red">324</span> <span className="score-total">/ 500</span>
+                <span className="score-red">{displayScore}</span> <span className="score-total">/ 500</span>
               </div>
               <div className="dash-score-delta">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth="3">
@@ -269,14 +307,24 @@ export default function Hero({ onSelectRole }: HeroProps) {
               <svg className="dash-sparkline" viewBox="0 0 200 90" fill="none" aria-hidden="true">
                 <defs>
                   <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#FF1E27" stopOpacity="0.25" />
+                    <stop offset="0%" stopColor="#FF1E27" stopOpacity="0.35" />
                     <stop offset="100%" stopColor="#FF1E27" stopOpacity="0.0" />
                   </linearGradient>
                 </defs>
-                <path d="M 10 75 Q 40 68, 70 52 T 130 45 T 160 38 T 190 12 L 190 85 L 10 85 Z" fill="url(#chartGrad)" />
-                <path d="M 10 75 Q 40 68, 70 52 T 130 45 T 160 38 T 190 12" stroke="#FF1E27" strokeWidth="3" strokeLinecap="round" />
-                <circle cx="190" cy="12" r="5" fill="#FF1E27" />
-                <circle cx="190" cy="12" r="8" fill="#FF1E27" fillOpacity="0.3" />
+                <path
+                  className="dash-sparkline-area"
+                  d="M 10 75 Q 40 68, 70 52 T 130 45 T 160 38 T 190 12 L 190 85 L 10 85 Z"
+                  fill="url(#chartGrad)"
+                />
+                <path
+                  className="dash-sparkline-stroke"
+                  d="M 10 75 Q 40 68, 70 52 T 130 45 T 160 38 T 190 12"
+                  stroke="#FF1E27"
+                  strokeWidth="3.2"
+                  strokeLinecap="round"
+                />
+                <circle className="dash-sparkline-ping" cx="190" cy="12" r="8" fill="#FF1E27" />
+                <circle cx="190" cy="12" r="4.5" fill="#FF1E27" />
               </svg>
             </div>
           </div>
@@ -291,53 +339,53 @@ export default function Hero({ onSelectRole }: HeroProps) {
           <div className="dash-areas-grid">
             {/* Area 1: Lectura Crítica */}
             <div className="area-card">
-              <div className="area-icon-wrap icon-purple">
+              <div className="area-icon-wrap icon-purple area-icon-pulse">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                 </svg>
               </div>
               <div className="area-name">Lectura Crítica</div>
-              <div className="area-percent">84%</div>
-              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: '84%' }}></div></div>
+              <div className="area-percent">{displayAreas.lc}%</div>
+              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: `${displayAreas.lc}%` }}></div></div>
             </div>
 
             {/* Area 2: Matemáticas */}
             <div className="area-card">
-              <div className="area-icon-wrap icon-blue">
+              <div className="area-icon-wrap icon-blue area-icon-pulse" style={{ animationDelay: '0.4s' }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
               <div className="area-name">Matemáticas</div>
-              <div className="area-percent">78%</div>
-              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: '78%' }}></div></div>
+              <div className="area-percent">{displayAreas.mat}%</div>
+              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: `${displayAreas.mat}%` }}></div></div>
             </div>
 
             {/* Area 3: Ciencias Naturales */}
             <div className="area-card">
-              <div className="area-icon-wrap icon-green">
+              <div className="area-icon-wrap icon-green area-icon-pulse" style={{ animationDelay: '0.8s' }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0" />
                 </svg>
               </div>
               <div className="area-name">Ciencias Naturales</div>
-              <div className="area-percent">71%</div>
-              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: '71%' }}></div></div>
+              <div className="area-percent">{displayAreas.cn}%</div>
+              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: `${displayAreas.cn}%` }}></div></div>
             </div>
 
             {/* Area 4: Sociales y Ciudadanas */}
             <div className="area-card">
-              <div className="area-icon-wrap icon-violet">
+              <div className="area-icon-wrap icon-violet area-icon-pulse" style={{ animationDelay: '1.2s' }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="7" r="4" />
                   <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
                 </svg>
               </div>
               <div className="area-name">Sociales y Ciudadanas</div>
-              <div className="area-percent">76%</div>
-              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: '76%' }}></div></div>
+              <div className="area-percent">{displayAreas.soc}%</div>
+              <div className="area-bar-bg"><div className="area-bar-fill" style={{ width: `${displayAreas.soc}%` }}></div></div>
             </div>
           </div>
 

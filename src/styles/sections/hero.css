@@ -384,6 +384,51 @@
   overflow: visible;
 }
 
+.dash-sparkline-stroke {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  animation: drawSparkline 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s;
+}
+
+.dash-sparkline-area {
+  opacity: 0;
+  animation: fadeSparklineArea 1.4s ease-out forwards 0.4s;
+}
+
+.dash-sparkline-ping {
+  opacity: 0.35;
+  transform-origin: 190px 12px;
+  animation: pingSparklineDot 2s ease-in-out infinite;
+}
+
+@keyframes drawSparkline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeSparklineArea {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pingSparklineDot {
+  0%, 100% {
+    r: 6;
+    opacity: 0.2;
+  }
+  50% {
+    r: 10;
+    opacity: 0.55;
+  }
+}
+
 /* Areas Performance Section */
 .dash-areas-head {
   display: flex;
@@ -444,6 +489,20 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 0.65rem;
+  transition: transform var(--transition-fast);
+}
+
+.area-icon-pulse {
+  animation: areaIconShimmer 3.2s ease-in-out infinite;
+}
+
+@keyframes areaIconShimmer {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.14);
+  }
 }
 
 .icon-purple {
@@ -494,6 +553,7 @@
   height: 100%;
   background: var(--brand-red);
   border-radius: var(--radius-pill);
+  transition: width 0.35s ease-out;
 }
 
 /* Bottom Split Widgets */
