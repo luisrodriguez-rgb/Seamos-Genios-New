@@ -11,6 +11,21 @@ export default function Hero({ onSelectRole }: HeroProps) {
   const { openAuth } = useCart();
   const [daysRemaining, setDaysRemaining] = useState<number>(155);
 
+  const rotatingWords = [
+    'aquí.',
+    'con nosotros.',
+    'con Seamos Genios.',
+    'con neurociencia.',
+  ];
+  const [wordIndex, setWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((prev) => (prev + 1) % rotatingWords.length);
+    }, 2800);
+    return () => clearInterval(interval);
+  }, [rotatingWords.length]);
+
   useEffect(() => {
     const targetDate = new Date('July 26, 2026 07:00:00 GMT-0500').getTime();
 
@@ -51,7 +66,12 @@ export default function Hero({ onSelectRole }: HeroProps) {
           <h1 className="hero-main-title">
             Tu mejor resultado<br />
             en el <span className="text-brand-red">ICFES</span><br />
-            empieza aquí.
+            empieza{' '}
+            <span className="hero-rotating-container">
+              <span key={wordIndex} className="hero-rotating-word text-brand-red">
+                {rotatingWords[wordIndex]}
+              </span>
+            </span>
           </h1>
 
           <p className="hero-main-desc">
