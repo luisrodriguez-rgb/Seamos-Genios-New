@@ -6,19 +6,27 @@ import { useCart } from '@/context/CartContext';
 const faqItems = [
   {
     q: '¿Los simulacros son virtuales o presenciales?',
-    a: 'Nuestros simulacros son 100% virtuales a través de nuestra plataforma web interactiva, accesibles desde cualquier computador, tablet o smartphone en cualquier ciudad de Colombia.',
+    a: 'Ofrecemos ambas modalidades: 100% virtual a través de nuestra plataforma web interactiva con cronómetro oficial, o en formato físico impreso con cuadernillos de 254 preguntas y hojas de respuesta óptica para colegios e instituciones aliadas.',
   },
   {
     q: '¿Cuándo y cómo recibo los resultados de mi prueba?',
-    a: 'Garantizamos la entrega de tu dashboard analítico completo al día siguiente de presentar el simulacro (menos de 24 horas), con desglose por componente, percentil nacional y retroalimentación interactiva.',
+    a: 'Garantizamos la entrega de tu dashboard analítico completo al día siguiente de presentar el simulacro (menos de 24 horas hábiles), con desglose por componente, percentil nacional, semáforo de fortalezas y retroalimentación interactiva.',
+  },
+  {
+    q: '¿Pueden aplicar simulacros impresos en papel en mi colegio?',
+    a: 'Sí. Para colegios y secretarías enviamos cuadernillos impresos con diagramación idéntica al examen oficial y hojas de respuesta codificadas, encargándonos del escaneo y entrega de reportes comparativos por salón.',
+  },
+  {
+    q: '¿Emiten Factura Electrónica legal validada por la DIAN?',
+    a: 'Sí. Todas las adquisiciones familiares e institucionales cuentan con Factura Electrónica legal validada ante la DIAN mediante nuestro operador tecnológico Factus SAS, cumpliendo con los requisitos fiscales vigentes.',
   },
   {
     q: '¿Cuántas preguntas incluye cada simulacro calibrado?',
-    a: 'Cada simulacro consta de 254 preguntas calibradas que replican exactamente la estructura, distribución por áreas (Lectura Crítica, Matemáticas, Ciencias Naturales, Sociales y Ciudadanas, Inglés) y tiempos oficiales del examen ICFES.',
+    a: 'Cada simulacro consta de 254 preguntas calibradas que replican con precisión la estructura, distribución por áreas (Lectura Crítica, Matemáticas, Ciencias Naturales, Sociales y Ciudadanas, Inglés) y tiempos oficiales del examen Saber 11.',
   },
   {
-    q: '¿Cómo funcionan los convenios para colegios y secretarías?',
-    a: 'Ofrecemos planes institucionales con panel de control para rectores, reportes comparativos por salón, talleres docentes y emisión de factura electrónica legal para deducción y soporte contable.',
+    q: '¿Qué facilidades de pago ofrecen para familias y estudiantes?',
+    a: 'Contamos con pasarelas de pago 100% seguras que soportan PSE, Nequi, Daviplata, tarjetas de crédito/débito y financiamiento en cuotas mensuales sin intereses a través de Addi.',
   },
 ];
 
