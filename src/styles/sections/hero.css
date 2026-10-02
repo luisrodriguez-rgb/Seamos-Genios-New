@@ -117,7 +117,77 @@
   color: #64748B;
   line-height: 1.6;
   max-width: 520px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Quick Role Navigation Selector in Hero */
+.hero-role-nav {
+  margin: 1.25rem 0 1.75rem;
+}
+
+.hero-role-label {
+  font-size: 0.775rem;
+  font-weight: 800;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.65rem;
+}
+
+.hero-role-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  display: inline-block;
+  box-shadow: 0 0 6px rgba(255, 30, 39, 0.5);
+}
+
+.hero-role-pills-row {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.hero-role-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.48rem 0.95rem;
+  font-size: 0.825rem;
+  font-weight: 750;
+  color: #1E293B;
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  transition: all var(--transition-fast);
+}
+
+.hero-role-pill svg {
+  color: #64748B;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero-role-pill:hover {
+  background: #FFF5F5;
+  border-color: var(--brand-red);
+  color: var(--brand-red);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 30, 39, 0.16);
+}
+
+.hero-role-pill:hover svg {
+  color: var(--brand-red);
+  transform: scale(1.15);
+}
+
+.hero-role-pill:active {
+  transform: translateY(0);
 }
 
 /* Action Buttons Row */

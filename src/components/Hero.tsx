@@ -117,72 +117,64 @@ export default function Hero({ onSelectRole }: HeroProps) {
           </p>
 
           {/* Quick Role Navigation Selector in Hero */}
-          <div style={{ margin: '1.25rem 0 1.5rem' }}>
-            <span
-              style={{
-                fontSize: '0.8rem',
-                fontWeight: 800,
-                color: 'var(--text-light)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-                display: 'block',
-                marginBottom: '0.5rem',
-              }}
-            >
+          {/* Quick Role Navigation Selector in Hero */}
+          <div className="hero-role-nav">
+            <span className="hero-role-label">
+              <span className="hero-role-indicator"></span>
               Selecciona tu perfil para guiarte:
             </span>
-            <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap' }}>
+            <div className="hero-role-pills-row">
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="hero-role-pill"
                 onClick={() => handleRoleJump('estudiante')}
-                style={{
-                  padding: '0.35rem 0.85rem',
-                  fontSize: '0.8rem',
-                  borderRadius: 'var(--radius-pill)',
-                  cursor: 'pointer',
-                }}
+                aria-label="Ver soluciones para Estudiantes"
               >
-                Estudiante
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+                <span>Estudiante</span>
               </button>
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="hero-role-pill"
                 onClick={() => handleRoleJump('colegio')}
-                style={{
-                  padding: '0.35rem 0.85rem',
-                  fontSize: '0.8rem',
-                  borderRadius: 'var(--radius-pill)',
-                  cursor: 'pointer',
-                }}
+                aria-label="Ver soluciones para Colegios y Rectores"
               >
-                Colegio / Rector
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+                  <line x1="9" y1="22" x2="9" y2="22.01" />
+                  <line x1="15" y1="22" x2="15.01" />
+                  <line x1="9" y1="18" x2="9" y2="18.01" />
+                  <line x1="15" y1="18" x2="15.01" />
+                </svg>
+                <span>Colegio / Rector</span>
               </button>
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="hero-role-pill"
                 onClick={() => handleRoleJump('padre')}
-                style={{
-                  padding: '0.35rem 0.85rem',
-                  fontSize: '0.8rem',
-                  borderRadius: 'var(--radius-pill)',
-                  cursor: 'pointer',
-                }}
+                aria-label="Ver soluciones para Familias y Acudientes"
               >
-                Familia / Acudiente
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                </svg>
+                <span>Familia / Acudiente</span>
               </button>
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="hero-role-pill"
                 onClick={() => handleRoleJump('docente')}
-                style={{
-                  padding: '0.35rem 0.85rem',
-                  fontSize: '0.8rem',
-                  borderRadius: 'var(--radius-pill)',
-                  cursor: 'pointer',
-                }}
+                aria-label="Ver soluciones para Docentes"
               >
-                Docente
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+                <span>Docente</span>
               </button>
             </div>
           </div>
